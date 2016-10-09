@@ -5,17 +5,25 @@
 // Note: Pay attention to order
 
 // -------------------------------------------
+// Tools
+// -------------------------------------------
+
+@import "tools/border";
+
+// -------------------------------------------
 // Themes
 // -------------------------------------------
 
 @import "themes/default/index";
 
 // -------------------------------------------
-// Base and Themes
+// Base
 // -------------------------------------------
 
 @import "base/normalize";
+@import "base/border";
 @import "base/colors";
+@import "base/components";
 @import "base/typography";
 
 // -------------------------------------------
@@ -25,3 +33,10 @@
 @import "elements/heading";
 @import "elements/html";
 @import "elements/images";
+
+
+// -------------------------------------------
+// Components
+// -------------------------------------------
+
+@import "components/button";

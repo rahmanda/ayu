@@ -1,10 +1,8 @@
+// =================================================================
 // Typography Settings
 // =================================================================
 // You should declare list of typography settings on theme folder,
 // then include it on app.scss
-
-// Note: You must exactly follow color structures to get it work.
-//       See theme/_default.scss
 
 $global-use-theme: false !default;
 
@@ -12,8 +10,8 @@ $global-use-theme: false !default;
     @error "You should import a theme, otherwise it will not work!";
 }
 
-$global-font-family: $font-family;
-$global-font-size: map-get($font-size, medium);
-$global-line-height: map-get($line-height, medium);
-$global-letter-spacing: $letter-spacing;
-$global-word-spacing: $word-spacing;
+$global-font-family: $theme-font-family;
+$global-font-size: $theme-font-size;
+$global-line-height: $theme-line-height;
+$global-letter-spacing: $theme-letter-spacing;
+$global-word-spacing: $theme-word-spacing;

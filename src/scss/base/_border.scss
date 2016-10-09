@@ -1,0 +1,15 @@
+// ==============================================================
+// Border Settings
+// ==============================================================
+// You should declare list of border settings on theme folder,
+// then include it on app.scss
+
+$global-use-theme: false !default;
+
+@if ($global-use-theme == false) {
+    @error "You should import a theme, otherwise it will not work!";
+}
+
+$global-border-size: $theme-border-size;
+$global-border-style: $theme-border-style;
+$global-border-radius: $theme-border-radius;

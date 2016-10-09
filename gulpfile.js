@@ -47,8 +47,8 @@ gulp.task('serve', ['sass', 'browserify', 'pug', 'democss'], function() {
 
   gulp.watch(PATH.sass.src, ['sass']);
   gulp.watch(PATH.css.entry, ['democss']);
-  gulp.watch(PATH.js.src, ['browserify'], browserSync.reload);
-  gulp.watch(PATH.view.src, ['pug'], browserSync.reload);
+  gulp.watch(PATH.js.src, ['js-watch']);
+  gulp.watch(PATH.view.src, ['pug-watch']);
 });
 
 // Compile sass into CSS & auto-inject into browsers
@@ -70,11 +70,21 @@ gulp.task('browserify', function() {
     .pipe(gulp.dest(PATH.js.dist));
 });
 
+gulp.task('js-watch', ['browserify'], function(done) {
+  browserSync.reload();
+  done();
+});
+
 // Compile all pug files into one file
 gulp.task('pug', function() {
   return gulp.src(PATH.view.entry)
     .pipe(pug())
     .pipe(gulp.dest(PATH.view.dist));
+});
+
+gulp.task('pug-watch', ['pug'], function(done) {
+  browserSync.reload();
+  done();
 });
 
 // Minify and clone demo css

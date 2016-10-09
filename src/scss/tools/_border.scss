@@ -1,0 +1,64 @@
+// =====================================================
+// Border Tools
+// =====================================================
+
+$tool-border-size   : null;
+$tool-border-radius : null;
+$tool-border-color  : null;
+
+@mixin border-size($top    : $tool-border-size,
+		           $right  : $tool-border-size,
+		           $bottom : $tool-border-size,
+		           $left   : $tool-border-size,
+		           $all    : $tool-border-size) {
+    @if ($all) {
+	    border : $all;
+    } @else {
+	    border-top    : $top;
+	    border-right  : $right;
+	    border-bottom : $bottom;
+	    border-left   : $left;
+    }
+}
+
+@mixin border-radius($top-left     : $tool-border-radius,
+		             $top-right    : $tool-border-radius,
+		             $bottom-right : $tool-border-radius,
+		             $bottom-left  : $tool-border-radius,
+		             $all          : $tool-border-radius) {
+    @if ($all) {
+	    border-radius : $all;
+    } @else {
+	    border-top-left-radius     : $top-left;
+	    border-top-right-radius    : $top-right;
+	    border-bottom-right-radius : $bottom-right;
+	    border-bottom-left-radius  : $bottom-left;
+    }
+}
+
+@mixin border-color($top    : $tool-border-color,
+		            $right  : $tool-border-color,
+		            $bottom : $tool-border-color,
+		            $left   : $tool-border-color,
+		            $all    : $tool-border-color) {
+    @if ($all) {
+	    border-color: $all;
+    } @else {
+	    border-top-color    : $top;
+	    border-right-color  : $right;
+	    border-bottom-color : $bottom;
+	    border-left-color   : $left;
+    }
+}
+
+@mixin border($size, $style, $color, $radius: $tool-border-radius) {
+    @include border-size($all : $size);
+
+    border-style : $style;
+
+    @include border-color($all : $color);
+
+    @if ($radius) {
+	    @include border-radius($all : $radius);
+    }
+}

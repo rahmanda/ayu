@@ -1,0 +1,17 @@
+// ==============================================================
+// Component Settings
+// ==============================================================
+// You should declare list of component settings on theme folder,
+// then include it on app.scss
+
+$global-use-theme: false !default;
+
+@if ($global-use-theme == false) {
+    @error "You should import a theme, otherwise it will not work!";
+}
+
+// -------------------------------------------
+// Button
+// -------------------------------------------
+
+$global-button-padding: $theme-button-padding;

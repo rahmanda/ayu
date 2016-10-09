@@ -1,0 +1,55 @@
+// ===========================================
+// Color - Default Theme
+// ===========================================
+
+$bright-gray: #edf2f4;
+$gray: #d8dcde;
+$deep-gray: #979b9c;
+$navy: #8d99ae;
+$blues: #2b2d42;
+$white: #fff;
+$black: #0c0d12;
+$pink: #ef233c;
+$bright-red: #dc1a3c;
+$red: #d90429;
+
+// -------------------------------------------
+// Super Global Color
+// -------------------------------------------
+
+$theme-color-text: $black;
+$theme-color-background: $white;
+
+// -------------------------------------------
+// Component Color
+// -------------------------------------------
+
+$theme-color-link-cta-normal: (
+    dark: $red,
+    light: $bright-gray
+);
+
+$theme-color-link-cta-hover: (
+    dark: $bright-red,
+    light: $white
+);
+
+$theme-color-button-cta-normal: (
+    background: $red,
+    foreground: $white
+);
+
+$theme-color-button-cta-hover: (
+    background: $bright-red,
+    foreground: $white
+);
+
+$theme-color-button-inverse-cta-normal: (
+    background: transparent,
+    foreground: $red
+);
+
+$theme-color-button-inverse-cta-hover: (
+    background: transparent,
+    foreground: $bright-red
+);
