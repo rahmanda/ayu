@@ -1,0 +1,15 @@
+// HTML Element Style
+// =====================================================
+// We need to style it because we don't like the default
+
+html {
+    min-height: 100%; // always fill entire viewport height at minimum
+    color: $global-color-text;
+    background-color: $global-color-background;
+    font-family: $global-font-family;
+    font-size: $global-font-size;
+    line-height: $global-line-height;
+    letter-spacing: $global-letter-spacing;
+    word-spacing: $global-word-spacing;
+    overflow-y: scroll; // always show scrollbar
+}

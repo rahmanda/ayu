@@ -1,0 +1,18 @@
+// Color Settings
+// ==============================================================
+// You should declare list of colors on theme folder,
+// then include it on app.scss
+
+// Note: You must exactly follow color structures to get it work.
+//       See theme/_default.scss
+
+$global-use-theme: false !default;
+
+@if ($global-use-theme == false) {
+    @error "You should import a theme, otherwise it will not work!";
+}
+
+$global-color-text: $color-text !global;
+$global-color-background: $color-background !global;
+$global-color-link: $color-link !global;
+$global-color-button: $color-button !global;

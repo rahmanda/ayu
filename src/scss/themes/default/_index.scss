@@ -1,0 +1,9 @@
+// Default Theme
+// =================================================
+// Declare all color variable on top of files,
+// and put it into pallete structures
+
+$global-use-theme: true; // set to use theme
+
+@import "colors";
+@import "typography";
