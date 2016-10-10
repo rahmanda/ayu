@@ -1,0 +1,55 @@
+// =====================================================
+// Field
+// =====================================================
+// "We style it because the built-in is suck"
+
+$field-prefix: "field";
+
+.#{$field-prefix} {
+    font-family: $global-font-family;
+
+    position: relative;
+    display: block;
+
+    &__label {
+        color: $global-color-text;
+        font-size: map-get($global-font-size, medium);
+
+        display: block;
+    }
+}
+
+.#{$field-prefix}__input {
+    @include border($global-border-size,
+		            $global-border-style,
+                    $global-border-color,
+		            $global-border-radius);
+
+    font-size: map-get($global-font-size, medium);
+    font-family: $global-font-family;
+
+    color: $global-color-text;
+
+    letter-spacing: $global-letter-spacing;
+    word-spacing: $global-word-spacing;
+
+    padding: map-get($global-field-input-padding, medium);
+    width: 100%;
+    box-sizing: border-box;
+
+    display: block;
+
+    &--large {
+        font-size: map-get($global-font-size, large);
+        padding: map-get($global-field-input-padding, large);
+    }
+
+    &--x-large {
+        font-size: map-get($global-font-size, x-large);
+        padding: map-get($global-field-input-padding, x-large);
+    }
+
+    &.is-error {
+        border-color: $global-field-input-error-color;
+    }
+}

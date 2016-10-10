@@ -1,0 +1,29 @@
+// ==============================================================
+// Grid Settings
+// ==============================================================
+
+@import "gridle/gridle";
+
+$gridle-setup: (
+    context: 12,
+    gutter-width: 20px
+);
+
+$gridle-breakpoint-mobile: (
+    max-width: 480px
+);
+
+$gridle-breakpoint-tablet: (
+    min-width : 481px,
+    max-width : 1024px
+);
+
+@include gridle_setup($gridle-setup);
+@include gridle_register_state(mobile, $gridle-breakpoint-mobile);
+@include gridle_register_state(tablet, $gridle-breakpoint-tablet);
+@include gridle_generate_classes();
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}

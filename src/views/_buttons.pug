@@ -1,13 +1,24 @@
-section
-  header
+section.section
+  header.section__header
     h2 Buttons
-  .section-content
-    button.button.button--cta.button--x-large x-large
-    button.button.button--cta.button--large large
-    button.button.button--cta medium
-    button.button.button--cta.button--small small
-  .section-content
-    button.button.button--i-cta.button--x-large x-large
-    button.button.button--i-cta.button--large large
-    button.button.button--i-cta medium
-    button.button.button--i-cta.button--small small
+  .section__content
+    p Button CTA
+    .section__items
+      button.button.button--cta.button--x-large x-large
+      button.button.button--cta.button--large large
+      button.button.button--cta medium
+      button.button.button--cta.button--small small
+  .section__content
+    p Button Inverse CTA
+    .section__items
+      button.button.button--i-cta.button--x-large x-large
+      button.button.button--i-cta.button--large large
+      button.button.button--i-cta medium
+      button.button.button--i-cta.button--small small
+  .section__content
+    p Button Disabled
+    .section__items
+      button.button.button--cta.button--x-large(disabled= true) x-large
+      button.button.button--cta.button--large(disabled= true) large
+      button.button.button--cta(disabled= true) medium
+      button.button.button--cta.button--small(disabled= true) small    

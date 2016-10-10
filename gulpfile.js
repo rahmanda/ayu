@@ -54,10 +54,12 @@ gulp.task('serve', ['sass', 'browserify', 'pug', 'democss'], function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
   return gulp.src(PATH.sass.src)
-         .pipe(sass())
-         .pipe(cssnano())
-         .pipe(gulp.dest(PATH.sass.dist))
-         .pipe(browserSync.stream());
+    .pipe(sass({
+      includePaths: ['node_modules/gridle/sass']
+    }))
+    .pipe(cssnano())
+    .pipe(gulp.dest(PATH.sass.dist))
+    .pipe(browserSync.stream());
 });
 
 // Compile all js files into one file

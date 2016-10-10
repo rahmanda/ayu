@@ -10,12 +10,13 @@ $global-use-theme: true; // set to use theme
 // Base
 // -------------------------------------------
 
-@import "base/border";
 @import "base/colors";
 @import "base/typography";
+@import "base/border";
 
 // -------------------------------------------
 // Components
 // -------------------------------------------
 
 @import "components/button";
+@import "components/field";

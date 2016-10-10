@@ -40,6 +40,23 @@ $button-prefix: "button";
     }
 }
 
+.#{$button-prefix}[disabled] {
+    @include border($global-border-size,
+		            $global-border-style,
+		            map-get($global-color-button-disabled, foreground),
+		            $global-border-radius);
+
+    background : map-get($global-color-button-disabled, background);
+    color      : map-get($global-color-button-disabled, foreground);
+
+    &:hover {
+        cursor       : not-allowed;
+        background   : map-get($global-color-button-disabled, background);
+        color        : map-get($global-color-button-disabled, foreground);
+        border-color : map-get($global-color-button-disabled, foreground);
+    }
+}
+
 .#{$button-prefix}--cta {
     @include border($global-border-size,
 		            $global-border-style,

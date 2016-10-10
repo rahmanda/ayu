@@ -24,6 +24,7 @@ $theme-color-background: $white;
 // Component Color
 // -------------------------------------------
 
+// Link
 $theme-color-link-cta-normal: (
     dark: $red,
     light: $bright-gray
@@ -32,6 +33,12 @@ $theme-color-link-cta-normal: (
 $theme-color-link-cta-hover: (
     dark: $bright-red,
     light: $white
+);
+
+// Button
+$theme-color-button-disabled: (
+    background: $gray,
+    foreground: $deep-gray
 );
 
 $theme-color-button-cta-normal: (
