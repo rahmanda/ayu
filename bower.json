@@ -1,0 +1,23 @@
+{
+  "name": "lightning",
+  "description": "My static website scaffolding",
+  "main": "dist/index.html",
+  "authors": [
+    "Rahmanda Wibowo"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "scaffolding"
+  ],
+  "homepage": "https://github.com/rahmanda/lightning",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Ionicons": "ionicons#^2.0.1"
+  }
+}

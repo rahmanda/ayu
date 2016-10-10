@@ -1,7 +1,11 @@
 html {
-    background: #f0f0f0;
+  background: #f0f0f0;
 }
 
 .button {
   margin-right: 5px;
+}
+
+.section {
+  margin-bottom: 3em;
 }

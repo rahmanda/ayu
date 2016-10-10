@@ -36,11 +36,15 @@ var PATH = {
     entry: PREFIX_PATH.src + "/js/app.js",
     src:   PREFIX_PATH.src + "/js/**/*.js",
     dist:  PREFIX_PATH.dist + "/assets/js"
+  },
+  static: {
+    src: PREFIX_PATH.src + "/**/*.{ttf,woff,woff2,eot,svg}",
+    dist: PREFIX_PATH.dist
   }
 };
 
 // Static server + watching asset files
-gulp.task('serve', ['sass', 'browserify', 'pug', 'democss'], function() {
+gulp.task('serve', ['sass', 'browserify', 'pug', 'democss', 'static'], function() {
   browserSync.init({
     proxy: SERVER
   });
@@ -49,13 +53,14 @@ gulp.task('serve', ['sass', 'browserify', 'pug', 'democss'], function() {
   gulp.watch(PATH.css.entry, ['democss']);
   gulp.watch(PATH.js.src, ['js-watch']);
   gulp.watch(PATH.view.src, ['pug-watch']);
+  gulp.watch(PATH.static.src, ['static-watch']);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
   return gulp.src(PATH.sass.src)
     .pipe(sass({
-      includePaths: ['node_modules/gridle/sass']
+      includePaths: ['node_modules/gridle/sass', 'bower_components/Ionicons/scss']
     }))
     .pipe(cssnano())
     .pipe(gulp.dest(PATH.sass.dist))
@@ -95,6 +100,17 @@ gulp.task('democss', function() {
     .pipe(cssnano())
     .pipe(gulp.dest(PATH.css.dist))
     .pipe(browserSync.stream());
+});
+
+// Move all static files to dist
+gulp.task('static', function() {
+  return gulp.src(PATH.static.src)
+    .pipe(gulp.dest(PATH.static.dist));
+});
+
+gulp.task('static-watch', ['static'], function(done) {
+  browserSync.reload();
+  done();
 });
 
 // Create static website server

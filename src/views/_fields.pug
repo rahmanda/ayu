@@ -2,11 +2,11 @@ section.section
   header.section__header
     h2 Fields
   .section__content
-    p Normal text field
+    p 1. Normal text field
     .section__items.row
       .field.gr-4
         label.field__label Text field
-        input.field__input.field__input--x-large(type=text, placeholder="Type here")                
+        input.field__input.field__input--x-large(type=text, placeholder="Type here")
       .field.gr-4
         label.field__label Text field
         input.field__input.field__input--large(type=text, placeholder="Type here")
@@ -14,14 +14,29 @@ section.section
         label.field__label Text field
         input.field__input(type=text, placeholder="Type here")
   .section__content
-    p Error text field
+    p 2. Error text field
     .section__items.row
       .field.gr-4
         label.field__label Text field
-        input.field__input.field__input--x-large.is-error(type=text, placeholder="Type here")                
+        input.field__input.field__input--x-large.is-error(type=text, placeholder="Type here")
       .field.gr-4
         label.field__label Text field
         input.field__input.field__input--large.is-error(type=text, placeholder="Type here")
       .field.gr-4
         label.field__label Text field
-        input.field__input.is-error(type=text, placeholder="Type here")        
+        input.field__input.is-error(type=text, placeholder="Type here")
+  .section__content
+    p 3. Error text field with message
+    .section__items.row
+      .field.is-error.gr-4
+        label.field__label Text field
+        input.field__input.field__input--x-large.is-error(type=text, placeholder="Type here")
+        p.field__error-message Error message
+      .field.is-error.gr-4
+        label.field__label Text field
+        input.field__input.field__input--large.is-error(type=text, placeholder="Type here")
+        p.field__error-message Error message
+      .field.is-error.gr-4
+        label.field__label Text field
+        input.field__input.is-error(type=text, placeholder="Type here")
+        p.field__error-message Error message

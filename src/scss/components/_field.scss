@@ -11,12 +11,23 @@ $field-prefix: "field";
     position: relative;
     display: block;
 
-    &__label {
-        color: $global-color-text;
-        font-size: map-get($global-font-size, medium);
+    &.is-error > &__input {
+        border-color: $global-field-input-error-color;
+    }
 
+    &.is-error > &__error-message {
         display: block;
     }
+}
+
+.#{$field-prefix}__label {
+    font-size: map-get($global-font-size, medium);
+
+    color: $global-color-text;
+
+    margin-bottom: 2px;
+
+    display: block;
 }
 
 .#{$field-prefix}__input {
@@ -48,8 +59,16 @@ $field-prefix: "field";
         font-size: map-get($global-font-size, x-large);
         padding: map-get($global-field-input-padding, x-large);
     }
+}
 
-    &.is-error {
-        border-color: $global-field-input-error-color;
-    }
+.#{$field-prefix}__error-message {
+    font-size: map-get($global-font-size, small);
+    font-family: $global-font-family;
+
+    color: $global-field-input-error-color;
+
+    margin-top: 2px;
+    margin-bottom: 0;
+
+    display: none;
 }

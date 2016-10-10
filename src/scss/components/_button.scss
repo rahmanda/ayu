@@ -11,6 +11,7 @@ $button-prefix: "button";
 
     font-family : $global-font-family;
     font-size   : map-get($global-font-size, medium);
+    font-weight : $global-button-font-weight;
 
     letter-spacing : $global-letter-spacing;
     word-spacing   : $global-word-spacing;
@@ -54,6 +55,20 @@ $button-prefix: "button";
         background   : map-get($global-color-button-disabled, background);
         color        : map-get($global-color-button-disabled, foreground);
         border-color : map-get($global-color-button-disabled, foreground);
+    }
+}
+
+.#{$button-prefix}--common {
+    @include border($global-border-size,
+		            $global-border-style,
+		            map-get($global-color-button-disabled, foreground),
+		            $global-border-radius);
+
+    background : map-get($global-color-button-common-normal, background);
+    color      : map-get($global-color-button-common-normal, foreground);
+
+    &:hover {
+        background : map-get($global-color-button-common-hover, background);
     }
 }
 
