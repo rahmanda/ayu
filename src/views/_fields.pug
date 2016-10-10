@@ -1,4 +1,4 @@
-section.section
+section.section(id= "fields")
   header.section__header
     h2 Fields
   .section__content
@@ -30,13 +30,58 @@ section.section
     .section__items.row
       .field.is-error.gr-4
         label.field__label Text field
-        input.field__input.field__input--x-large.is-error(type=text, placeholder="Type here")
+        input.field__input.field__input--x-large(type=text, placeholder="Type here")
         p.field__error-message Error message
       .field.is-error.gr-4
         label.field__label Text field
-        input.field__input.field__input--large.is-error(type=text, placeholder="Type here")
+        input.field__input.field__input--large(type=text, placeholder="Type here")
         p.field__error-message Error message
       .field.is-error.gr-4
         label.field__label Text field
-        input.field__input.is-error(type=text, placeholder="Type here")
+        input.field__input(type=text, placeholder="Type here")
+        p.field__error-message Error message
+
+  .section__content
+    p 4. Field Group
+    .section__items.row
+      .field.gr-4
+        label.field__label Text field
+        .field__input-group
+          span.field__input-addon.field__input-addon--x-large #[i.i-social-yen]
+          input.field__input.field__input--x-large(type=text, placeholder="Type here")
+        p.field__error-message Error message
+      .field.gr-4
+        label.field__label Text field
+        .field__input-group
+          span.field__input-addon.field__input-addon--large #[i.i-social-yen]
+          input.field__input.field__input--large(type=text, placeholder="Type here")
+          span.field__input-addon.field__input-addon--large .00
+        p.field__error-message Error message
+      .field.gr-4
+        label.field__label Text field
+        .field__input-group
+          input.field__input(type=text, placeholder="Type here")
+          span.field__input-addon .00
+        p.field__error-message Error message
+  .section__content
+    p 5. Field Group with Error Message
+    .section__items.row
+      .field.gr-4.is-error
+        label.field__label Text field
+        .field__input-group
+          span.field__input-addon.field__input-addon--x-large #[i.i-social-yen]
+          input.field__input.field__input--x-large(type=text, placeholder="Type here")
+        p.field__error-message Error message
+      .field.gr-4.is-error
+        label.field__label Text field
+        .field__input-group
+          span.field__input-addon.field__input-addon--large #[i.i-social-yen]
+          input.field__input.field__input--large(type=text, placeholder="Type here")
+          span.field__input-addon.field__input-addon--large .00
+        p.field__error-message Error message
+      .field.gr-4.is-error
+        label.field__label Text field
+        .field__input-group
+          input.field__input(type=text, placeholder="Type here")
+          span.field__input-addon .00
         p.field__error-message Error message

@@ -7,15 +7,13 @@ $field-prefix: "field";
 
 .#{$field-prefix} {
     font-family: $global-font-family;
-
-    position: relative;
     display: block;
 
-    &.is-error > &__input {
+    &.is-error &__input {
         border-color: $global-field-input-error-color;
     }
 
-    &.is-error > &__error-message {
+    &.is-error &__error-message {
         display: block;
     }
 }
@@ -49,6 +47,75 @@ $field-prefix: "field";
     box-sizing: border-box;
 
     display: block;
+
+    &--large {
+        font-size: map-get($global-font-size, large);
+        padding: map-get($global-field-input-padding, large);
+    }
+
+    &--x-large {
+        font-size: map-get($global-font-size, x-large);
+        padding: map-get($global-field-input-padding, x-large);
+    }
+}
+
+.#{$field-prefix}__input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+
+    & > .#{$field-prefix}__input,
+    & > .#{$field-prefix}__input-addon {
+        display: table-cell;
+    }
+
+    & .#{$field-prefix}__input:not(:first-child):not(:last-child) {
+        border-radius: 0;
+    }
+
+    & .#{$field-prefix}__input:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    & .#{$field-prefix}__input:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+.#{$field-prefix}__input-addon {
+    @include border($global-border-size,
+		            $global-border-style,
+                    $global-border-color,
+		            $global-border-radius);
+
+    background : map-get($global-color-button-common-normal, background);
+    color      : map-get($global-color-button-common-normal, foreground);
+
+    line-height: 1;
+    text-align: center;
+
+    padding: map-get($global-field-input-padding, medium);
+    box-sizing: border-box;
+
+    &:hover {
+        cursor: pointer;
+        background : map-get($global-color-button-common-hover, background);
+    }
+
+    &:first-child {
+        border-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+        border-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
 
     &--large {
         font-size: map-get($global-font-size, large);

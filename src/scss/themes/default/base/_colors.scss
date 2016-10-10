@@ -12,6 +12,9 @@ $black: #0c0d12;
 $pink: #ef233c;
 $bright-red: #dc1a3c;
 $red: #d90429;
+$bright-green: #60b044;
+$green: #569e3d;
+$deep-green: #5ca941;
 
 // -------------------------------------------
 // Super Global Color
@@ -52,21 +55,21 @@ $theme-color-button-common-hover: (
 );
 
 $theme-color-button-cta-normal: (
-    background: $red,
+    background: $bright-green,
     foreground: $white
 );
 
 $theme-color-button-cta-hover: (
-    background: $bright-red,
+    background: $green,
     foreground: $white
 );
 
 $theme-color-button-inverse-cta-normal: (
     background: transparent,
-    foreground: $red
+    foreground: $bright-green
 );
 
 $theme-color-button-inverse-cta-hover: (
     background: transparent,
-    foreground: $bright-red
+    foreground: $green
 );

@@ -2,10 +2,14 @@ html {
   background: #f0f0f0;
 }
 
-.button {
+.btn {
   margin-right: 5px;
 }
 
 .section {
   margin-bottom: 3em;
+}
+
+.d-title {
+  margin: 1em 0;
 }

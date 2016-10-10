@@ -3,7 +3,7 @@
 // =====================================================
 // "We style it because the built-in is suck"
 
-$button-prefix: "button";
+$button-prefix: "btn";
 
 .#{$button-prefix} {
     display     : inline-block;
@@ -56,6 +56,10 @@ $button-prefix: "button";
         color        : map-get($global-color-button-disabled, foreground);
         border-color : map-get($global-color-button-disabled, foreground);
     }
+}
+
+.#{$button-prefix}--block {
+    width: 100%;
 }
 
 .#{$button-prefix}--common {
