@@ -6,6 +6,7 @@ var concat      = require("gulp-concat");
 var pug         = require("gulp-pug");
 var uglify      = require("gulp-uglify");
 var rename      = require("gulp-rename");
+var autoprefixer= require("gulp-autoprefixer");
 var browserSync = require("browser-sync").create();
 var source      = require("vinyl-source-stream");
 var buffer      = require("vinyl-buffer");
@@ -62,6 +63,7 @@ gulp.task('sass', function() {
     .pipe(sass({
       includePaths: ['node_modules/gridle/sass', 'bower_components/Ionicons/scss']
     }))
+    .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(gulp.dest(PATH.sass.dist))
     .pipe(browserSync.stream());

@@ -12,6 +12,7 @@ $button-prefix: "btn";
     font-family : $global-font-family;
     font-size   : map-get($global-font-size, medium);
     font-weight : $global-button-font-weight;
+    text-transform: capitalize;
 
     letter-spacing : $global-letter-spacing;
     word-spacing   : $global-word-spacing;

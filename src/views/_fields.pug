@@ -16,15 +16,15 @@ section.section(id= "fields")
   .section__content
     p 2. Error text field
     .section__items.row
-      .field.gr-4
+      .field.gr-4.is-error
         label.field__label Text field
-        input.field__input.field__input--x-large.is-error(type=text, placeholder="Type here")
-      .field.gr-4
+        input.field__input.field__input--x-large(type=text, placeholder="Type here")
+      .field.gr-4.is-error
         label.field__label Text field
-        input.field__input.field__input--large.is-error(type=text, placeholder="Type here")
-      .field.gr-4
+        input.field__input.field__input--large(type=text, placeholder="Type here")
+      .field.gr-4.is-error
         label.field__label Text field
-        input.field__input.is-error(type=text, placeholder="Type here")
+        input.field__input(type=text, placeholder="Type here")
   .section__content
     p 3. Error text field with message
     .section__items.row
@@ -83,5 +83,130 @@ section.section(id= "fields")
         label.field__label Text field
         .field__input-group
           input.field__input(type=text, placeholder="Type here")
+          span.field__input-addon .00
+        p.field__error-message Error message
+  .section__content
+    p 6. Normal Select Field
+    .section__items.row
+      .field.gr-4
+        label.field__label Select field
+        select.field__select.field__select--x-large
+          option One option
+          option Two option
+          option Three option
+      .field.gr-4
+        label.field__label Select field
+        select.field__select.field__select--large
+          option One option
+          option Two option
+          option Three option
+      .field.gr-4
+        label.field__label Select field
+        select.field__select
+          option One option
+          option Two option
+          option Three option
+  .section__content
+    p 7. Error select field
+    .section__items.row
+      .field.gr-4.is-error
+        label.field__label Select field
+        select.field__select.field__select--x-large
+          option One option
+          option Two option
+          option Three option
+      .field.gr-4.is-error
+        label.field__label Select field
+        select.field__select.field__select--large
+          option One option
+          option Two option
+          option Three option
+      .field.gr-4.is-error
+        label.field__label Select field
+        select.field__select
+          option One option
+          option Two option
+          option Three option
+  .section__content
+    p 8. Error select field with message
+    .section__items.row
+      .field.gr-4.is-error
+        label.field__label Select field
+        select.field__select.field__select--x-large
+          option One option
+          option Two option
+          option Three option
+        p.field__error-message Error message
+      .field.gr-4.is-error
+        label.field__label Select field
+        select.field__select.field__select--large
+          option One option
+          option Two option
+          option Three option
+        p.field__error-message Error message
+      .field.gr-4.is-error
+        label.field__label Select field
+        select.field__select
+          option One option
+          option Two option
+          option Three option
+        p.field__error-message Error message
+  .section__content
+    p 9. Field Group with Select as Field
+    .section__items.row
+      .field.gr-4
+        label.field__label Select field
+        .field__input-group
+          span.field__input-addon.field__input-addon--x-large #[i.i-social-yen]
+          select.field__select.field__select--x-large
+            option 1000
+            option 2000
+            option 3000
+      .field.gr-4
+        label.field__label Select field
+        .field__input-group
+          span.field__input-addon.field__input-addon--large #[i.i-social-yen]
+          select.field__select.field__select--large
+            option 1000
+            option 2000
+            option 3000
+          span.field__input-addon.field__input-addon--large .00
+      .field.gr-4
+        label.field__label Select field
+        .field__input-group
+          select.field__select
+            option 1000
+            option 2000
+            option 3000
+          span.field__input-addon .00
+  .section__content
+    p 10. Field Group with Select as Field and Error Message
+    .section__items.row
+      .field.gr-4.is-error
+        label.field__label Select field
+        .field__input-group
+          span.field__input-addon.field__input-addon--x-large #[i.i-social-yen]
+          select.field__select.field__select--x-large
+            option 1000
+            option 2000
+            option 3000
+        p.field__error-message Error message
+      .field.gr-4.is-error
+        label.field__label Select field
+        .field__input-group
+          span.field__input-addon.field__input-addon--large #[i.i-social-yen]
+          select.field__select.field__select--large
+            option 1000
+            option 2000
+            option 3000
+          span.field__input-addon.field__input-addon--large .00
+        p.field__error-message Error message
+      .field.gr-4.is-error
+        label.field__label Select field
+        .field__input-group
+          select.field__select
+            option 1000
+            option 2000
+            option 3000
           span.field__input-addon .00
         p.field__error-message Error message

@@ -18,6 +18,7 @@ $global-use-theme: true; // set to use theme
 // Components
 // -------------------------------------------
 
+@import "components/box";
 @import "components/button";
 @import "components/field";
 @import "components/icon";

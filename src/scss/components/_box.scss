@@ -1,0 +1,51 @@
+// =====================================================
+// Box
+// =====================================================
+// "We style it because the built-in is suck"
+
+$box-prefix: "box" !default;
+
+.#{$box-prefix} {
+    box-sizing: border-box;
+    border-collapse: separate;
+
+    &__header {
+        border: 1px solid map-get($global-color-box-header, foreground);
+        border-bottom: 0;
+        border-top-right-radius: $global-border-radius;
+        border-top-left-radius: $global-border-radius;
+
+        background: map-get($global-color-box-header, background);
+        color: $global-color-text;
+
+        font-size: map-get($global-font-size, medium);
+        font-weight: bold;
+
+        padding: $theme-box-padding;
+    }
+
+    &__content {
+        border: 1px solid map-get($global-color-box-header, foreground);
+        border-bottom-right-radius: $global-border-radius;
+        border-bottom-left-radius: $global-border-radius;
+
+        background: map-get($global-color-box-content, background);
+        color: $global-color-text;
+
+        font-size: map-get($global-font-size, medium);
+
+        padding: $theme-box-padding;
+    }
+
+    &__separator {
+        display: block;
+
+        background: map-get($global-color-box-header, foreground);
+
+        margin-left: -8px;
+        padding-right: 16px;
+
+        width: 100%;
+        height: 1px;
+    }
+}
