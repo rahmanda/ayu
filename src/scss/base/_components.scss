@@ -11,6 +11,13 @@ $global-use-theme: false !default;
 }
 
 // -------------------------------------------
+// Icon
+// -------------------------------------------
+
+$global-icon-font-family: $theme-icon-font-family;
+$global-icon-dropdown: $ionicon-var-android-arrow-dropdown;
+
+// -------------------------------------------
 // Button
 // -------------------------------------------
 

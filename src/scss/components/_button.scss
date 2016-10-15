@@ -25,6 +25,10 @@ $button-prefix: "btn";
         cursor : pointer;
     }
 
+    // -------------------------------------------
+    // Size Variants
+    // -------------------------------------------
+
     &--small {
         font-size : map-get($global-font-size, small);
         padding   : map-get($global-button-padding, small);
@@ -39,7 +43,15 @@ $button-prefix: "btn";
         font-size : map-get($global-font-size, x-large);
         padding   : map-get($global-button-padding, x-large);
     }
+
+    &--block {
+        width: 100%;
+    }
 }
+
+// -------------------------------------------
+// Color Variants
+// -------------------------------------------
 
 .#{$button-prefix}[disabled] {
     @include border($global-border-size,
@@ -56,10 +68,6 @@ $button-prefix: "btn";
         color        : map-get($global-color-button-disabled, foreground);
         border-color : map-get($global-color-button-disabled, foreground);
     }
-}
-
-.#{$button-prefix}--block {
-    width: 100%;
 }
 
 .#{$button-prefix}--common {

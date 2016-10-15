@@ -6,3 +6,6 @@ $ionicons-font-path: "/typefaces";
 $ionicons-prefix: i-;
 
 @import "ionicons";
+
+$theme-icon-font-family: $ionicons-font-family;
+$theme-icon-dropdown: $ionicon-var-android-arrow-dropdown;
