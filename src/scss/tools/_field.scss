@@ -1,0 +1,11 @@
+// =====================================================
+// Field Tools
+// =====================================================
+
+// Calculate field height
+// @param {px} font-size
+// @param {px} border-size
+// @param {px} paddings - expected to use shorthand of two values
+@function field-height($font-size, $border-size, $paddings) {
+    @return $font-size + $font-size / 2 + nth($paddings, 1) + nth($paddings, 2) + 2 * $border-size;
+}

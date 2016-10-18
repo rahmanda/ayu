@@ -11,6 +11,7 @@ html {
     font-size: map-get($global-font-size, medium);
     line-height: map-get($global-line-height, medium);
     letter-spacing: $global-letter-spacing;
-    word-spacing: $global-word-spacing;
     overflow-y: scroll; // always show scrollbar
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

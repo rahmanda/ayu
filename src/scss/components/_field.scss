@@ -38,6 +38,9 @@ $field-prefix: "field";
 
     padding: map-get($global-field-input-padding, medium);
     width: 100%;
+    height: field-height(map-get($global-font-size, medium),
+                         $global-border-size,
+                         map-get($global-field-input-padding, medium));
     box-sizing: border-box;
 
     transition: border .25s ease-out;
@@ -47,16 +50,23 @@ $field-prefix: "field";
     &:active,
     &:focus {
         border-color: $global-field-input-active-color;
+        outline: none;
     }
 
     &--large {
         font-size: map-get($global-font-size, large);
         padding: map-get($global-field-input-padding, large);
+        height: field-height(map-get($global-font-size, large),
+                             $global-border-size,
+                             map-get($global-field-input-padding, large));
     }
 
     &--x-large {
         font-size: map-get($global-font-size, x-large);
         padding: map-get($global-field-input-padding, x-large);
+        height: field-height(map-get($global-font-size, x-large),
+                             $global-border-size,
+                             map-get($global-field-input-padding, x-large));
     }
 
     .is-error & {

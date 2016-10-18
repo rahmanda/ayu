@@ -7,7 +7,20 @@ section.section(id= "boxes")
       .box__header
         h3 Title for box
       .box__content
-        p Whatever you like it
+        .row
+          .field.gr-6
+            label.field__label Text field
+            input.field__input(type=text, placeholder="Type here")
+          .field.gr-6
+            label.field__label Text field
+            select.field__select
+              option 1000
+              option 2000
+              option 3000
+        .row
+          .field.gr-6
+            label.field__label Text field
+            input.field__input(type=text, placeholder="Type here")
         span.box__separator
         p We will use your email when performing our daily operations and sending email on your behalf. If you want command line operations to use your private email you must set your email here.
         div

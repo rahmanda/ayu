@@ -42,8 +42,10 @@ $box-prefix: "box" !default;
 
         background: map-get($global-color-box-header, foreground);
 
-        margin-left: -8px;
-        padding-right: 16px;
+        margin-top: $theme-box-padding;
+        margin-bottom: $theme-box-padding;
+        margin-left: -10px;
+        padding-right: 20px;
 
         width: 100%;
         height: 1px;
