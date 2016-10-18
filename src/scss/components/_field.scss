@@ -7,6 +7,9 @@ $field-prefix: "field";
 
 .#{$field-prefix} {
     font-family: $global-font-family;
+
+    margin-bottom: map-get($global-font-size, medium);
+
     display: block;
 }
 
