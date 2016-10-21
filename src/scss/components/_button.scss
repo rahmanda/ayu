@@ -51,6 +51,32 @@ $button-prefix: "btn";
 }
 
 // -------------------------------------------
+// Grouped Button
+// -------------------------------------------
+
+.#{$button-prefix}-group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    & .#{$button-prefix}:not(:first-child):not(:last-child) {
+        margin-left: -$global-border-size;
+        margin-right: -$global-border-size;
+        border-radius: 0;
+    }
+
+    & .#{$button-prefix}:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    & .#{$button-prefix}:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+// -------------------------------------------
 // Color Variants
 // -------------------------------------------
 

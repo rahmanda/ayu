@@ -1,9 +1,55 @@
 section.section(id= "boxes")
   header.section__header
-    h2 Boxes
+    h2.u-text--large Boxes
   .section__content
-    p 1. Common Box
+    p 1. Common box without header
     .box
+      .box__content
+        .row
+          .field.gr-6
+            label.field__label Text field
+            input.field__input(type=text, placeholder="Type here")
+          .field.gr-6
+            label.field__label Text field
+            select.field__select
+              option 1000
+              option 2000
+              option 3000
+        .row
+          .field.gr-6
+            label.field__label Text field
+            input.field__input(type=text, placeholder="Type here")
+        span.box__separator
+        p We will use your email when performing our daily operations and sending email on your behalf. If you want command line operations to use your private email you must set your email here.
+        div
+          button.btn.btn--cta.btn--medium set my email
+  .section__content
+    p 2. Common box with header
+    .box
+      .box__header
+        h3 Title for box
+      .box__content
+        .row
+          .field.gr-6
+            label.field__label Text field
+            input.field__input(type=text, placeholder="Type here")
+          .field.gr-6
+            label.field__label Text field
+            select.field__select
+              option 1000
+              option 2000
+              option 3000
+        .row
+          .field.gr-6
+            label.field__label Text field
+            input.field__input(type=text, placeholder="Type here")
+        span.box__separator
+        p We will use your email when performing our daily operations and sending email on your behalf. If you want command line operations to use your private email you must set your email here.
+        div
+          button.btn.btn--cta.btn--medium set my email
+  .section__content
+    p 3. Danger Box
+    .box.box--danger
       .box__header
         h3 Title for box
       .box__content

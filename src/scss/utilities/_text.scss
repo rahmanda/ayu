@@ -1,0 +1,30 @@
+// =====================================================
+// Text Utilities
+// =====================================================
+
+$u-text-prefix: "u-text";
+
+.#{$u-text-prefix}--small {
+    font-size: map-get($global-font-size, small);
+    line-height: map-get($global-line-height, small);
+}
+
+.#{$u-text-prefix}--medium {
+    font-size: map-get($global-font-size, medium);
+    line-height: map-get($global-line-height, medium);
+}
+
+.#{$u-text-prefix}--large {
+    font-size: map-get($global-font-size, large);
+    line-height: map-get($global-line-height, large);
+}
+
+.#{$u-text-prefix}--x-large {
+    font-size: map-get($global-font-size, x-large);
+    line-height: map-get($global-line-height, x-large);
+}
+
+.#{$u-text-prefix}--xx-large {
+    font-size: map-get($global-font-size, xx-large);
+    line-height: map-get($global-line-height, xx-large);
+}

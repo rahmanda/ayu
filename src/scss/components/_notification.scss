@@ -1,0 +1,34 @@
+// =====================================================
+// Notification
+// =====================================================
+// "We style it because the built-in is suck"
+
+$notif-prefix: "notif";
+
+.#{$notif-prefix} {
+    @include border($global-border-size,
+		            $global-border-style,
+                    map-get($global-color-notif-warning, foreground),
+		            $global-border-radius);
+
+    font-size: map-get($global-font-size, medium);
+    font-family: $global-font-family;
+
+    color: $global-color-background;
+    background: map-get($global-color-notif-warning, background);
+
+    padding: map-get($global-notif-padding, medium);
+
+    position: relative;
+
+    &__action {
+        position: absolute;
+        top: 3px;
+        right: 5px;
+    }
+
+    &--error {
+        border-color: map-get($global-color-notif-error, foreground);
+        background: map-get($global-color-notif-error, background);
+    }
+}

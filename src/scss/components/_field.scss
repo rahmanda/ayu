@@ -127,6 +127,7 @@ $field-prefix: "field";
 
     padding: map-get($global-field-input-padding, medium);
     box-sizing: border-box;
+    width: 1%;
 
     &:hover {
         cursor: pointer;

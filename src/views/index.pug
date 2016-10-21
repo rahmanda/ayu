@@ -5,14 +5,15 @@ html(lang='en')
     link(href='assets/css/app.css', rel='stylesheet')
     link(href='assets/css/demo.css', rel='stylesheet')
   body.container
-    h1.d-title Lightning Scaffold
+    h1.d-title.u-text--xx-large Lightning Scaffold
     p #[em Why another scaffold dear developer?] Because i need my very own scaffold.
     include _buttons.pug
     include _fields.pug
     include _box.pug
+    include _notifications.pug
     p.
-      Thanks to the developer that made these cool stuff
-      - #[a(href= "http://gulpjs.com/") Gulp]
+      Thanks to the developer that made these cool stuff, they are either become my guide on making this framework or included in this framework -
+      #[a(href="http://getbootstrap.com") Bootstrap Twitter]
+      #[a(href= "http://gulpjs.com/") Gulp]
       #[a(href= "http://gridle.org") Gridle.scss]
-      #[a(href= "https://github.com/driftyco/ionicons") Ionicons] and many others.
-      Without them, i can't create this scaffold.
+      #[a(href= "https://github.com/driftyco/ionicons") Ionicons]

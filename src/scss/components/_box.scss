@@ -26,8 +26,7 @@ $box-prefix: "box" !default;
 
     &__content {
         border: 1px solid map-get($global-color-box-header, foreground);
-        border-bottom-right-radius: $global-border-radius;
-        border-bottom-left-radius: $global-border-radius;
+        border-radius: $global-border-radius;
 
         background: map-get($global-color-box-content, background);
         color: $global-color-text;
@@ -35,6 +34,11 @@ $box-prefix: "box" !default;
         font-size: map-get($global-font-size, medium);
 
         padding: $theme-box-padding;
+    }
+
+    &__header ~ &__content {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
     }
 
     &__separator {
@@ -49,5 +53,14 @@ $box-prefix: "box" !default;
 
         width: 100%;
         height: 1px;
+    }
+}
+
+.#{$box-prefix}--danger {
+    .#{$box-prefix}__header {
+        border-color: map-get($global-color-box-header-danger, foreground);
+
+        background: map-get($global-color-box-header-danger, background);
+        color: $global-color-background;
     }
 }

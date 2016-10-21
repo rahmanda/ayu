@@ -82,7 +82,30 @@ $theme-color-box-header: (
     foreground: $gray
 );
 
+$theme-color-box-header-danger: (
+    background: $pink,
+    foreground: $red
+);
+
 $theme-color-box-content: (
     background: $white,
     foreground: $gray
+);
+
+
+// Notification
+
+$theme-color-notif-success: (
+    background: $green,
+    foreground: $deep-green
+);
+
+$theme-color-notif-error: (
+    background: $pink,
+    foreground: $red
+);
+
+$theme-color-notif-warning: (
+    background: $green,
+    foreground: $deep-green
 );
