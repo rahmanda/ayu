@@ -28,3 +28,7 @@ $u-text-prefix: "u-text";
     font-size: map-get($global-font-size, xx-large);
     line-height: map-get($global-line-height, xx-large);
 }
+
+.#{$u-text-prefix}--bold {
+    font-weight: bold;
+}

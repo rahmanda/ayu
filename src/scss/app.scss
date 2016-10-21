@@ -5,14 +5,17 @@
 // Note: Pay attention to order
 
 // -------------------------------------------
-// Tools
+// Tools - place it here because it may be used
+// by theme
 // -------------------------------------------
 
+@import "tools/clearfix";
 @import "tools/border";
 @import "tools/field";
 
 // -------------------------------------------
-// Themes
+// Theme - need to be imported exactly here
+// and only need one at a time
 // -------------------------------------------
 
 @import "themes/default/index";
@@ -51,4 +54,5 @@
 // Utilities
 // -------------------------------------------
 
+@import "utilities/margin";
 @import "utilities/text";

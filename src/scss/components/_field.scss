@@ -78,6 +78,7 @@ $field-prefix: "field";
 }
 
 .#{$field-prefix}__select {
+    // we must replace this svg because we have no permission to use it commercially
     background: $global-color-background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADQSURBVFiF1c+7ccMwFEXBZS0oUqGgzE2+WqzE9li2KOIrkncGAZDg7BIRF3w45/ICJ0XklNJt+b6dDJFTSjdYfr+eBPETzx8Ah0c8xPMEwGER/+JZAXA4xNN4XgA4DGI1ng0AuyNexlMAYDfEZjyFAN6OKIqnAsDbEMXxVAKYjqiKpwHANER1PI0AhiOa4ukAMAzRHE8ngG5EVzwDADQjuuMZBKAaMSSegQCKEcPiGQxgEzE0ngkAVhHD46cuIi4R8fl1rnv3NC0ickTkmX/cAeicgKu/i7a4AAAAAElFTkSuQmCC") no-repeat right 8px center;
     background-size: 12px 6px;
     appearance: none;
