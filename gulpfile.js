@@ -122,5 +122,7 @@ gulp.task('server', serve({
     port: 8000
 }));
 
+gulp.task('s', ['server']);
+
 // Main task
 gulp.task('default', ['serve']);

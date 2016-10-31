@@ -15,6 +15,7 @@ $field-prefix: "field";
 
 .#{$field-prefix}__label {
     font-size: map-get($global-font-size, medium);
+    text-align: left;
 
     color: $global-color-text;
 

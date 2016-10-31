@@ -6,6 +6,8 @@
 $button-prefix: "btn";
 
 .#{$button-prefix} {
+    @include button-padding(map-get($global-font-size, medium));
+
     display     : inline-block;
     box-sizing  : border-box;
 
@@ -18,7 +20,6 @@ $button-prefix: "btn";
     word-spacing   : $global-word-spacing;
 
     margin  : 0;
-    padding : map-get($global-button-padding, medium);
 
     position : relative;
 
@@ -31,22 +32,26 @@ $button-prefix: "btn";
     // -------------------------------------------
 
     &--small {
+        @include button-padding(map-get($global-font-size, small));
         font-size : map-get($global-font-size, small);
-        padding   : map-get($global-button-padding, small);
     }
 
     &--large {
+        @include button-padding(map-get($global-font-size, large));
         font-size : map-get($global-font-size, large);
-        padding   : map-get($global-button-padding, large);
     }
 
     &--x-large {
+        @include button-padding(map-get($global-font-size, x-large));
         font-size : map-get($global-font-size, x-large);
-        padding   : map-get($global-button-padding, x-large);
     }
 
     &--block {
         width: 100%;
+    }
+
+    &--icon {
+        padding: 0;
     }
 }
 

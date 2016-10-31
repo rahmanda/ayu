@@ -20,8 +20,18 @@ $box-prefix: "box" !default;
 
         font-size: map-get($global-font-size, medium);
         font-weight: bold;
+        text-align: left;
 
         padding: $theme-box-padding;
+
+        position: relative;
+    }
+
+    &__header-close {
+        position: absolute;
+
+        top: $theme-box-padding;
+        right: $theme-box-padding;
     }
 
     &__content {

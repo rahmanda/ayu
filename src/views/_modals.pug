@@ -1,0 +1,35 @@
+section.section(id= "fields")
+  header.section__header
+    h2.u-text--large.u-mg--medium Modal
+  .section__content.u-mg--medium
+    p 1. Normal modal
+    .section__items(data-module="open-modal")
+      button.btn.btn--common(data-type="open-modal") Click to Open Modal
+      .js-modal-template(style="display: none;")
+        .modal__content.js-modal-content
+          .box
+            .box__header
+              h3 Title for box
+              .box__header-close
+                i.btn.btn--icon.i-close(data-type='close-modal')
+            .box__content
+              .row
+                .field.gr-6
+                  label.field__label Text field
+                  input.field__input(type=text, placeholder="Type here")
+                .field.gr-6
+                  label.field__label Text field
+                  select.field__select
+                    option 1000
+                    option 2000
+                    option 3000
+              .row
+                .field.gr-6
+                  label.field__label Text field
+                  input.field__input(type=text, placeholder="Type here")
+              span.box__separator
+              p We will use your email when performing our daily operations and sending email on your behalf. If you want command line operations to use your private email you must set your email here.
+              div
+                button.btn.btn--cta.btn--medium(data-type='close-modal') set my email
+
+.modal.is-hidden(data-module="modal")

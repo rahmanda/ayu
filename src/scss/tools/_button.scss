@@ -1,0 +1,12 @@
+// =====================================================
+// Button Tools
+// =====================================================
+
+// Calculate padding based on font-size
+// @param {px} $font-size
+// @return padding shorthand;
+@mixin button-padding($font-size) {
+    $tb: $font-size / 2;
+    $lr: $tb * 3;
+    padding: $tb $lr;
+}

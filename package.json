@@ -36,6 +36,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "oboe": "^2.1.2",
     "t3js": "^2.7.0"
   }
 }

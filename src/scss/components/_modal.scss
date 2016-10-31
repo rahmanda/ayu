@@ -1,0 +1,29 @@
+// =====================================================
+// Modal
+// =====================================================
+// "We style it because the built-in is suck"
+
+$modal-prefix: "modal" !default;
+
+.#{$modal-prefix} {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: transparentize($global-color-text, .3);
+
+    text-align: center;
+
+    &__content {
+        display: inline-block;
+        width: 650px;
+        margin-top: 4em;
+    }
+
+    &.is-hidden {
+        display: none;
+    }
+}
