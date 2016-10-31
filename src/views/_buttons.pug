@@ -57,11 +57,37 @@ section.section(id= "buttons")
           button.btn.btn--common.btn--small.btn--block #[i.i-android-attach] small
   .section__content.u-mg--medium
     p 8. Button Dropdown
-    .section__items
-      button.btn.btn--cta.btn--x-large.btn--dropdown x-large #[i.i-android-arrow-dropdown]
-      button.btn.btn--cta.btn--large.btn--dropdown(disabled= true) large #[i.i-android-arrow-dropdown]
-      button.btn.btn--i-cta.btn--dropdown medium #[i.i-android-arrow-dropdown]
-      button.btn.btn--common.btn--small.btn--dropdown small #[i.i-android-arrow-dropdown]
+    .section__items(data-module="actions")
+      .btn-dropdown(data-type="dropdown")
+        button.btn.btn--cta common dropdown #[i.i-android-arrow-dropdown]
+        .dropdown
+          .dropdown__item.
+            #[h4 Item dropdown 1]
+            #[.dropdown__item-content Lorem ipsum dolor sit amet, bla blab blab bla bla]
+          .dropdown__item.
+            #[h4 Item dropdown 2]
+            #[.dropdown__item-content Lorem ipsum dolor sit amet, bla blab blab bla bla]
+          .dropdown__item.
+            #[h4 Item dropdown 3]
+            #[.dropdown__item-content Lorem ipsum dolor sit amet, bla blab blab bla bla]
+      .btn-dropdown(data-type="dropdown")
+        button.btn.btn--cta dropdown right #[i.i-android-arrow-dropdown]
+        ul.dropdown.dropdown--right
+          li.dropdown__item Item dropdown 1
+          li.dropdown__item Item dropdown 2
+          li.dropdown__item Item dropdown 3
+      .btn-dropdown(data-type="dropdown")
+        button.btn.btn--cta dropdown top #[i.i-android-arrow-dropdown]
+        ul.dropdown.dropdown--top
+          li.dropdown__item Item dropdown 1
+          li.dropdown__item Item dropdown 2
+          li.dropdown__item Item dropdown 3
+      .btn-dropdown(data-type="dropdown")
+        button.btn.btn--cta dropdown top right #[i.i-android-arrow-dropdown]
+        ul.dropdown.dropdown--top.dropdown--right
+          li.dropdown__item Item dropdown 1
+          li.dropdown__item Item dropdown 2
+          li.dropdown__item Item dropdown 3
   .section__content.u-mg--medium
     p 9. Button Group
     .section__items

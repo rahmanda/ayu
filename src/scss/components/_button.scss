@@ -59,11 +59,13 @@ $button-prefix: "btn";
 // Grouped Button
 // -------------------------------------------
 
-.#{$button-prefix}-group {
+.#{$button-prefix}-group,
+.#{$button-prefix}-dropdown {
     position: relative;
     display: inline-block;
-    width: 100%;
+}
 
+.#{$button-prefix}-group {
     & .#{$button-prefix}:not(:first-child):not(:last-child) {
         margin-left: -$global-border-size;
         margin-right: -$global-border-size;
