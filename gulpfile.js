@@ -11,6 +11,8 @@ var browserSync = require("browser-sync").create();
 var source      = require("vinyl-source-stream");
 var buffer      = require("vinyl-buffer");
 var browserify  = require("browserify");
+var argv        = require("yargs").argv;
+var chalk       = require("chalk");
 
 var ROOTPATH = "/";
 var SERVER   = "http://localhost:8000";
@@ -122,7 +124,29 @@ gulp.task('server', serve({
     port: 8000
 }));
 
-gulp.task('s', ['server']);
+// Export assets to other directory
+// accept three argument:
+// path = main directory target's path (required),
+// sass = sass folder (optional),
+// js = js folder (optional)
+gulp.task('export-assets', function(done) {
+  var sassPath = argv.sass ? argv.sass : '/assets/sass';
+  var jsPath = argv.js ? argv.js : '/assets/js';
+
+  if (argv.path === undefined) {
+    console.log(chalk.red('Please provide path parameter by using --path flag'));
+  } else {
+    console.log('Target path: ' + chalk.cyan(argv.path));
+    gulp.src(PATH.sass.src)
+      .pipe(gulp.dest(argv.path + sassPath))
+      .on('end', function() { console.log('Copying sass files: ' + chalk.cyan('Done')); });
+    gulp.src(PATH.js.src)
+      .pipe(gulp.dest(argv.path + jsPath))
+      .on('end', function() { console.log('Copying js files: ' + chalk.cyan('Done')); });
+  }
+
+  return done();
+});
 
 // Main task
 gulp.task('default', ['serve']);
