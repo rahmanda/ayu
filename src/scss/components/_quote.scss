@@ -1,0 +1,13 @@
+// =====================================================
+// Quote
+// =====================================================
+// "We style it because the built-in is suck"
+
+$quote-prefix: "quote" !default;
+
+.#{$quote-prefix} {
+    box-sizing: border-box;
+    padding: $theme-quote-padding;
+    border-radius: $theme-quote-border-radius;
+    background: $theme-color-quote-background;
+}
