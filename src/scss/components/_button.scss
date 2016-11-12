@@ -6,18 +6,18 @@
 $button-prefix: "btn";
 
 .#{$button-prefix} {
-    @include button-padding(map-get($global-font-size, medium));
+    @include button-padding(map-get($theme-font-size, medium));
 
     display     : inline-block;
     box-sizing  : border-box;
 
-    font-family : $global-font-family;
-    font-size   : map-get($global-font-size, medium);
-    font-weight : $global-button-font-weight;
+    font-family : $theme-font-family;
+    font-size   : map-get($theme-font-size, medium);
+    font-weight : $theme-button-font-weight;
     text-transform: capitalize;
 
-    letter-spacing : $global-letter-spacing;
-    word-spacing   : $global-word-spacing;
+    letter-spacing : $theme-letter-spacing;
+    word-spacing   : $theme-word-spacing;
 
     margin  : 0;
 
@@ -32,18 +32,18 @@ $button-prefix: "btn";
     // -------------------------------------------
 
     &--small {
-        @include button-padding(map-get($global-font-size, small));
-        font-size : map-get($global-font-size, small);
+        @include button-padding(map-get($theme-font-size, small));
+        font-size : map-get($theme-font-size, small);
     }
 
     &--large {
-        @include button-padding(map-get($global-font-size, large));
-        font-size : map-get($global-font-size, large);
+        @include button-padding(map-get($theme-font-size, large));
+        font-size : map-get($theme-font-size, large);
     }
 
     &--x-large {
-        @include button-padding(map-get($global-font-size, x-large));
-        font-size : map-get($global-font-size, x-large);
+        @include button-padding(map-get($theme-font-size, x-large));
+        font-size : map-get($theme-font-size, x-large);
     }
 
     &--block {
@@ -67,8 +67,8 @@ $button-prefix: "btn";
 
 .#{$button-prefix}-group {
     & .#{$button-prefix}:not(:first-child):not(:last-child) {
-        margin-left: -$global-border-size;
-        margin-right: -$global-border-size;
+        margin-left: -$theme-border-size;
+        margin-right: -$theme-border-size;
         border-radius: 0;
     }
 
@@ -88,63 +88,63 @@ $button-prefix: "btn";
 // -------------------------------------------
 
 .#{$button-prefix}[disabled] {
-    @include border($global-border-size,
-		            $global-border-style,
-		            map-get($global-color-button-disabled, foreground),
-		            $global-border-radius);
+    @include border($theme-border-size,
+		            $theme-border-style,
+		            map-get($theme-color-button-disabled, foreground),
+		            $theme-border-radius);
 
-    background : map-get($global-color-button-disabled, background);
-    color      : map-get($global-color-button-disabled, foreground);
+    background : map-get($theme-color-button-disabled, background);
+    color      : map-get($theme-color-button-disabled, foreground);
 
     &:hover {
         cursor       : not-allowed;
-        background   : map-get($global-color-button-disabled, background);
-        color        : map-get($global-color-button-disabled, foreground);
-        border-color : map-get($global-color-button-disabled, foreground);
+        background   : map-get($theme-color-button-disabled, background);
+        color        : map-get($theme-color-button-disabled, foreground);
+        border-color : map-get($theme-color-button-disabled, foreground);
     }
 }
 
 .#{$button-prefix}--common {
-    @include border($global-border-size,
-		            $global-border-style,
-		            map-get($global-color-button-disabled, foreground),
-		            $global-border-radius);
+    @include border($theme-border-size,
+		            $theme-border-style,
+		            map-get($theme-color-button-disabled, foreground),
+		            $theme-border-radius);
 
-    background : map-get($global-color-button-common-normal, background);
-    color      : map-get($global-color-button-common-normal, foreground);
+    background : map-get($theme-color-button-common-normal, background);
+    color      : map-get($theme-color-button-common-normal, foreground);
 
     &:hover {
-        background : map-get($global-color-button-common-hover, background);
+        background : map-get($theme-color-button-common-hover, background);
     }
 }
 
 .#{$button-prefix}--cta {
-    @include border($global-border-size,
-		            $global-border-style,
-		            map-get($global-color-button-cta-normal, background),
-		            $global-border-radius);
+    @include border($theme-border-size,
+		            $theme-border-style,
+		            map-get($theme-color-button-cta-normal, background),
+		            $theme-border-radius);
 
-    background : map-get($global-color-button-cta-normal, background);
-    color      : map-get($global-color-button-cta-normal, foreground);
+    background : map-get($theme-color-button-cta-normal, background);
+    color      : map-get($theme-color-button-cta-normal, foreground);
 
     &:hover {
-        background   : map-get($global-color-button-cta-hover, background);
-        border-color : map-get($global-color-button-cta-hover, background);
+        background   : map-get($theme-color-button-cta-hover, background);
+        border-color : map-get($theme-color-button-cta-hover, background);
     }
 }
 
 .#{$button-prefix}--i-cta {
-    @include border($global-border-size,
-		            $global-border-style,
-		            map-get($global-color-button-inverse-cta-normal, foreground),
-		            $global-border-radius);
+    @include border($theme-border-size,
+		            $theme-border-style,
+		            map-get($theme-color-button-inverse-cta-normal, foreground),
+		            $theme-border-radius);
 
-    background : map-get($global-color-button-inverse-cta-normal, background);
-    color      : map-get($global-color-button-inverse-cta-normal, foreground);
+    background : map-get($theme-color-button-inverse-cta-normal, background);
+    color      : map-get($theme-color-button-inverse-cta-normal, foreground);
 
     &:hover {
-        color        : map-get($global-color-button-inverse-cta-hover, foreground);
-        background   : map-get($global-color-button-inverse-cta-hover, background);
-        border-color : map-get($global-color-button-inverse-cta-hover, foreground);
+        color        : map-get($theme-color-button-inverse-cta-hover, foreground);
+        background   : map-get($theme-color-button-inverse-cta-hover, background);
+        border-color : map-get($theme-color-button-inverse-cta-hover, foreground);
     }
 }

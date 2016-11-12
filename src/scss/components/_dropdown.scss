@@ -4,24 +4,24 @@
 // "We style it because the built-in is suck"
 
 $dropdown-prefix: "dropdown" !default;
-$dropdown-font-size: map-get($global-font-size, medium) !default;
+$dropdown-font-size: map-get($theme-font-size, medium) !default;
 $dropdown-item-margin-hz: -1 * calc-button-padding-hz($dropdown-font-size);
 
 .#{$dropdown-prefix} {
-    @include border($global-border-size,
-		            $global-border-style,
-		            map-get($global-color-button-disabled, foreground),
-		            $global-border-radius);
+    @include border($theme-border-size,
+		            $theme-border-style,
+		            map-get($theme-color-button-disabled, foreground),
+		            $theme-border-radius);
 
     list-style: none;
 
-    font-family : $global-font-family;
-    font-size   : map-get($global-font-size, medium);
+    font-family : $theme-font-family;
+    font-size   : map-get($theme-font-size, medium);
 
-    letter-spacing : $global-letter-spacing;
-    word-spacing   : $global-word-spacing;
+    letter-spacing : $theme-letter-spacing;
+    word-spacing   : $theme-word-spacing;
 
-    background: $global-color-background;
+    background: $theme-color-background;
 
     margin: 10px 0;
     padding: 0;
@@ -46,18 +46,18 @@ $dropdown-item-margin-hz: -1 * calc-button-padding-hz($dropdown-font-size);
     // -------------------------------------------
 
     &--small {
-        @include button-padding(map-get($global-font-size, small));
-        font-size : map-get($global-font-size, small);
+        @include button-padding(map-get($theme-font-size, small));
+        font-size : map-get($theme-font-size, small);
     }
 
     &--large {
-        @include button-padding(map-get($global-font-size, large));
-        font-size : map-get($global-font-size, large);
+        @include button-padding(map-get($theme-font-size, large));
+        font-size : map-get($theme-font-size, large);
     }
 
     &--x-large {
-        @include button-padding(map-get($global-font-size, x-large));
-        font-size : map-get($global-font-size, x-large);
+        @include button-padding(map-get($theme-font-size, x-large));
+        font-size : map-get($theme-font-size, x-large);
     }
 
     // -------------------------------------------
@@ -79,18 +79,18 @@ $dropdown-item-margin-hz: -1 * calc-button-padding-hz($dropdown-font-size);
     @include button-padding($dropdown-font-size);
 
     &:first-child {
-        border-top-left-radius: $global-border-radius;
-        border-top-right-radius: $global-border-radius;
+        border-top-left-radius: $theme-border-radius;
+        border-top-right-radius: $theme-border-radius;
     }
 
     &:last-child {
-        border-bottom-left-radius: $global-border-radius;
-        border-bottom-right-radius: $global-border-radius;
+        border-bottom-left-radius: $theme-border-radius;
+        border-bottom-right-radius: $theme-border-radius;
     }
 
     &:hover {
         cursor: pointer;
-        background: $global-color-dropdown-item-hover;
+        background: $theme-color-dropdown-item-hover;
     }
 
     &__item-title {

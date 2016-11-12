@@ -13,7 +13,7 @@ $modal-prefix: "modal" !default;
     width: 100%;
     height: 100%;
 
-    background: transparentize($global-color-text, .3);
+    background: transparentize($theme-color-text, .3);
 
     text-align: center;
 

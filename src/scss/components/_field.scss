@@ -6,18 +6,18 @@
 $field-prefix: "field";
 
 .#{$field-prefix} {
-    font-family: $global-font-family;
+    font-family: $theme-font-family;
 
-    margin-bottom: map-get($global-font-size, medium);
+    margin-bottom: map-get($theme-font-size, medium);
 
     display: block;
 }
 
 .#{$field-prefix}__label {
-    font-size: map-get($global-font-size, medium);
+    font-size: map-get($theme-font-size, medium);
     text-align: left;
 
-    color: $global-color-text;
+    color: $theme-color-text;
 
     margin-bottom: 2px;
 
@@ -26,25 +26,25 @@ $field-prefix: "field";
 
 .#{$field-prefix}__input,
 .#{$field-prefix}__select {
-    @include border($global-border-size,
-		            $global-border-style,
-                    $global-border-color,
-		            $global-border-radius);
+    @include border($theme-border-size,
+		            $theme-border-style,
+                    $theme-border-color,
+		            $theme-border-radius);
 
-    font-size: map-get($global-font-size, medium);
-    font-family: $global-font-family;
+    font-size: map-get($theme-font-size, medium);
+    font-family: $theme-font-family;
 
-    color: $global-color-text;
-    background: $global-color-background;
+    color: $theme-color-text;
+    background: $theme-color-background;
 
-    letter-spacing: $global-letter-spacing;
-    word-spacing: $global-word-spacing;
+    letter-spacing: $theme-letter-spacing;
+    word-spacing: $theme-word-spacing;
 
-    padding: map-get($global-field-input-padding, medium);
+    padding: map-get($theme-field-input-padding, medium);
     width: 100%;
-    height: field-height(map-get($global-font-size, medium),
-                         $global-border-size,
-                         map-get($global-field-input-padding, medium));
+    height: field-height(map-get($theme-font-size, medium),
+                         $theme-border-size,
+                         map-get($theme-field-input-padding, medium));
     box-sizing: border-box;
 
     transition: border .25s ease-out;
@@ -53,34 +53,34 @@ $field-prefix: "field";
 
     &:active,
     &:focus {
-        border-color: $global-field-input-active-color;
+        border-color: $theme-field-input-active-color;
         outline: none;
     }
 
     &--large {
-        font-size: map-get($global-font-size, large);
-        padding: map-get($global-field-input-padding, large);
-        height: field-height(map-get($global-font-size, large),
-                             $global-border-size,
-                             map-get($global-field-input-padding, large));
+        font-size: map-get($theme-font-size, large);
+        padding: map-get($theme-field-input-padding, large);
+        height: field-height(map-get($theme-font-size, large),
+                             $theme-border-size,
+                             map-get($theme-field-input-padding, large));
     }
 
     &--x-large {
-        font-size: map-get($global-font-size, x-large);
-        padding: map-get($global-field-input-padding, x-large);
-        height: field-height(map-get($global-font-size, x-large),
-                             $global-border-size,
-                             map-get($global-field-input-padding, x-large));
+        font-size: map-get($theme-font-size, x-large);
+        padding: map-get($theme-field-input-padding, x-large);
+        height: field-height(map-get($theme-font-size, x-large),
+                             $theme-border-size,
+                             map-get($theme-field-input-padding, x-large));
     }
 
     .is-error & {
-        border-color: $global-field-input-error-color;
+        border-color: $theme-field-input-error-color;
     }
 }
 
 .#{$field-prefix}__select {
     // we must replace this svg because we have no permission to use it commercially
-    background: $global-color-background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADQSURBVFiF1c+7ccMwFEXBZS0oUqGgzE2+WqzE9li2KOIrkncGAZDg7BIRF3w45/ICJ0XklNJt+b6dDJFTSjdYfr+eBPETzx8Ah0c8xPMEwGER/+JZAXA4xNN4XgA4DGI1ng0AuyNexlMAYDfEZjyFAN6OKIqnAsDbEMXxVAKYjqiKpwHANER1PI0AhiOa4ukAMAzRHE8ngG5EVzwDADQjuuMZBKAaMSSegQCKEcPiGQxgEzE0ngkAVhHD46cuIi4R8fl1rnv3NC0ickTkmX/cAeicgKu/i7a4AAAAAElFTkSuQmCC") no-repeat right 8px center;
+    background: $theme-color-background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADQSURBVFiF1c+7ccMwFEXBZS0oUqGgzE2+WqzE9li2KOIrkncGAZDg7BIRF3w45/ICJ0XklNJt+b6dDJFTSjdYfr+eBPETzx8Ah0c8xPMEwGER/+JZAXA4xNN4XgA4DGI1ng0AuyNexlMAYDfEZjyFAN6OKIqnAsDbEMXxVAKYjqiKpwHANER1PI0AhiOa4ukAMAzRHE8ngG5EVzwDADQjuuMZBKAaMSSegQCKEcPiGQxgEzE0ngkAVhHD46cuIi4R8fl1rnv3NC0ickTkmX/cAeicgKu/i7a4AAAAAElFTkSuQmCC") no-repeat right 8px center;
     background-size: 12px 6px;
     appearance: none;
 }
@@ -116,24 +116,24 @@ $field-prefix: "field";
 }
 
 .#{$field-prefix}__input-addon {
-    @include border($global-border-size,
-		            $global-border-style,
-                    $global-border-color,
-		            $global-border-radius);
+    @include border($theme-border-size,
+		            $theme-border-style,
+                    $theme-border-color,
+		            $theme-border-radius);
 
-    background : map-get($global-color-button-common-normal, background);
-    color      : map-get($global-color-button-common-normal, foreground);
+    background : map-get($theme-color-button-common-normal, background);
+    color      : map-get($theme-color-button-common-normal, foreground);
 
     line-height: 1;
     text-align: center;
 
-    padding: map-get($global-field-input-padding, medium);
+    padding: map-get($theme-field-input-padding, medium);
     box-sizing: border-box;
     width: 1%;
 
     &:hover {
         cursor: pointer;
-        background : map-get($global-color-button-common-hover, background);
+        background : map-get($theme-color-button-common-hover, background);
     }
 
     &:first-child {
@@ -149,21 +149,21 @@ $field-prefix: "field";
     }
 
     &--large {
-        font-size: map-get($global-font-size, large);
-        padding: map-get($global-field-input-padding, large);
+        font-size: map-get($theme-font-size, large);
+        padding: map-get($theme-field-input-padding, large);
     }
 
     &--x-large {
-        font-size: map-get($global-font-size, x-large);
-        padding: map-get($global-field-input-padding, x-large);
+        font-size: map-get($theme-font-size, x-large);
+        padding: map-get($theme-field-input-padding, x-large);
     }
 }
 
 .#{$field-prefix}__error-message {
-    font-size: map-get($global-font-size, small);
-    font-family: $global-font-family;
+    font-size: map-get($theme-font-size, small);
+    font-family: $theme-font-family;
 
-    color: $global-field-input-error-color;
+    color: $theme-field-input-error-color;
 
     margin-top: 2px;
     margin-bottom: 0;

@@ -5,5 +5,5 @@
 $u-margin-prefix: "u-mg";
 
 .#{$u-margin-prefix}--medium {
-    margin-bottom: map-get($global-font-size, medium);
+    margin-bottom: map-get($theme-font-size, medium);
 }

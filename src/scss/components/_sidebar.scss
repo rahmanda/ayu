@@ -1,0 +1,44 @@
+// =====================================================
+// Sidebar
+// =====================================================
+// "We style it because the built-in is suck"
+
+$sidebar-prefix: "sidebar" !default;
+
+.#{$sidebar-prefix} {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: $theme-sidebar-width;
+    background: $theme-color-sidebar-background;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    transition: all .15s ease-out;
+    text-align: left;
+
+    &--super {
+        z-index: 10000;
+    }
+
+    &__item {
+        font-size: map-get($theme-font-size, large);
+        padding: $theme-sidebar-padding;
+    }
+
+    &__item:hover {
+        background: darken($theme-color-sidebar-background, 5%);
+        cursor: pointer;
+    }
+
+    &__item-icon {
+        font-size: map-get($theme-font-size, x-large);
+        margin-right: 5px;
+    }
+
+    &.is-open {
+        right: 0;
+        left: initial;
+    }
+}

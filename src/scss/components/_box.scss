@@ -10,15 +10,15 @@ $box-prefix: "box" !default;
     border-collapse: separate;
 
     &__header {
-        border: 1px solid map-get($global-color-box-header, foreground);
+        border: 1px solid map-get($theme-color-box-header, foreground);
         border-bottom: 0;
-        border-top-right-radius: $global-border-radius;
-        border-top-left-radius: $global-border-radius;
+        border-top-right-radius: $theme-border-radius;
+        border-top-left-radius: $theme-border-radius;
 
-        background: map-get($global-color-box-header, background);
-        color: $global-color-text;
+        background: map-get($theme-color-box-header, background);
+        color: $theme-color-text;
 
-        font-size: map-get($global-font-size, medium);
+        font-size: map-get($theme-font-size, medium);
         font-weight: bold;
         text-align: left;
 
@@ -35,13 +35,13 @@ $box-prefix: "box" !default;
     }
 
     &__content {
-        border: 1px solid map-get($global-color-box-header, foreground);
-        border-radius: $global-border-radius;
+        border: 1px solid map-get($theme-color-box-header, foreground);
+        border-radius: $theme-border-radius;
 
-        background: map-get($global-color-box-content, background);
-        color: $global-color-text;
+        background: map-get($theme-color-box-content, background);
+        color: $theme-color-text;
 
-        font-size: map-get($global-font-size, medium);
+        font-size: map-get($theme-font-size, medium);
 
         padding: $theme-box-padding;
     }
@@ -54,7 +54,7 @@ $box-prefix: "box" !default;
     &__separator {
         display: block;
 
-        background: map-get($global-color-box-header, foreground);
+        background: map-get($theme-color-box-header, foreground);
 
         margin-top: $theme-box-padding;
         margin-bottom: $theme-box-padding;
@@ -68,9 +68,9 @@ $box-prefix: "box" !default;
 
 .#{$box-prefix}--danger {
     .#{$box-prefix}__header {
-        border-color: map-get($global-color-box-header-danger, foreground);
+        border-color: map-get($theme-color-box-header-danger, foreground);
 
-        background: map-get($global-color-box-header-danger, background);
-        color: $global-color-background;
+        background: map-get($theme-color-box-header-danger, background);
+        color: $theme-color-background;
     }
 }

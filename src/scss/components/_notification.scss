@@ -6,18 +6,18 @@
 $notif-prefix: "notif";
 
 .#{$notif-prefix} {
-    @include border($global-border-size,
-		            $global-border-style,
-                    map-get($global-color-notif-warning, foreground),
-		            $global-border-radius);
+    @include border($theme-border-size,
+		            $theme-border-style,
+                    map-get($theme-color-notif-warning, foreground),
+		            $theme-border-radius);
 
-    font-size: map-get($global-font-size, medium);
-    font-family: $global-font-family;
+    font-size: map-get($theme-font-size, medium);
+    font-family: $theme-font-family;
 
-    color: $global-color-background;
-    background: map-get($global-color-notif-warning, background);
+    color: $theme-color-background;
+    background: map-get($theme-color-notif-warning, background);
 
-    padding: map-get($global-notif-padding, medium);
+    padding: map-get($theme-notif-padding, medium);
 
     position: relative;
 
@@ -28,7 +28,7 @@ $notif-prefix: "notif";
     }
 
     &--error {
-        border-color: map-get($global-color-notif-error, foreground);
-        background: map-get($global-color-notif-error, background);
+        border-color: map-get($theme-color-notif-error, foreground);
+        background: map-get($theme-color-notif-error, background);
     }
 }
