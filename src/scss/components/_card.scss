@@ -1,0 +1,75 @@
+// =====================================================
+// Card
+// =====================================================
+// "We style it because the built-in is suck"
+
+$card-prefix: "card" !default;
+
+@if ($theme-card-enable == true) {
+.#{$card-prefix} {
+    @include clearfix;
+    box-sizing: border-box;
+    padding: $theme-card-padding;
+    margin-bottom: $theme-card-margin;
+    background: map-get($theme-color-card, background);
+    border: 1px solid map-get($theme-color-card, border);
+    border-radius: 3px;
+
+    &__thumbnail {
+        margin-bottom: $theme-card-padding;
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        color: map-get($theme-color-card, link-default);
+        font-size: map-get($theme-font-size, large);
+        font-weight: map-get($theme-font-weight, bold);
+        line-height: map-get($theme-line-height, large);
+        text-decoration: none;
+
+        .#{$card-prefix}--fixed-title & {
+            display: block;
+            height: 2.6em;
+            overflow: hidden;
+            margin-bottom: $theme-card-padding;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: map-get($theme-color-card, link-hover);
+        }
+    }
+
+    &__content {
+        margin-top: $theme-card-margin;
+        position: relative;
+    }
+
+    &__category {
+        color: map-get($theme-color-card, category-default);
+
+        &:hover {
+            cursor: pointer;
+            color: map-get($theme-color-card, category-hover);
+        }
+    }
+}
+
+.#{$card-prefix}-info {
+    position: relative;
+    display: block;
+
+    &__date {
+        color: map-get($theme-color-card, date);
+    }
+
+    &__tags {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+}

@@ -89,7 +89,8 @@ $theme-color-box-header-danger: (
 
 $theme-color-box-content: (
     background: $white,
-    foreground: $gray
+    foreground: $gray,
+    border: $gray
 );
 
 
@@ -116,5 +117,55 @@ $theme-color-dropdown-item-hover: $bright-gray;
 // Sidebar
 $theme-color-sidebar-background: $bright-gray;
 
+// Topbar
+$theme-color-topbar: (
+    background: $white,
+    foreground: $deep-green,
+    link-default: $gray,
+    link-hover: $deep-gray,
+    link-active: $deep-green,
+    border: $gray
+);
+
 // Quote
-$theme-color-quote-background: $bright-gray;
+$theme-color-quote: (
+    background: $bright-gray,
+    foreground: $white
+);
+
+// Card
+$theme-color-card: (
+    background: $white,
+    foreground: $black,
+    link-default: $deep-green,
+    link-hover: $green,
+    border: $gray,
+    date: $gray,
+    category-default: $deep-green,
+    category-hover: $deep-green
+);
+
+// Tag
+$theme-color-tag: (
+    background: $deep-green,
+    foreground: $white,
+    hover: $green
+);
+
+// Post
+$theme-color-post: (
+    background: $white,
+    foreground: $black,
+    title: $deep-green,
+    border: $gray,
+    link-default: $deep-green,
+    link-hover: $green,
+    date: $gray
+);
+
+// Tree
+$theme-color-tree: (
+    subtitle: $deep-green,
+    list-default: $deep-green,
+    list-hover: $green
+);

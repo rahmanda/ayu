@@ -1,0 +1,13 @@
+// =====================================================
+// Figure Element Style
+// =====================================================
+// We need to style it because we don't like the default
+
+figure {
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 5px 20px;
+    border-radius: 3px;
+
+    overflow-y: auto;
+}

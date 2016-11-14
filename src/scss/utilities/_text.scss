@@ -3,32 +3,27 @@
 // =====================================================
 
 $u-text-prefix: "u-text";
+$u-text-variants: small medium large x-large xx-large;
+$u-text-post-variants: medium large x-large;
 
-.#{$u-text-prefix}--small {
-    font-size: map-get($theme-font-size, small);
-    line-height: map-get($theme-line-height, small);
+@each $variant in $u-text-variants {
+    .#{$u-text-prefix}--#{$variant} {
+        font-size: map-get($theme-font-size, $variant);
+        line-height: map-get($theme-line-height, $variant);
+    }
 }
 
-.#{$u-text-prefix}--medium {
-    font-size: map-get($theme-font-size, medium);
-    line-height: map-get($theme-line-height, medium);
-}
-
-.#{$u-text-prefix}--large {
-    font-size: map-get($theme-font-size, large);
-    line-height: map-get($theme-line-height, large);
-}
-
-.#{$u-text-prefix}--x-large {
-    font-size: map-get($theme-font-size, x-large);
-    line-height: map-get($theme-line-height, x-large);
-}
-
-.#{$u-text-prefix}--xx-large {
-    font-size: map-get($theme-font-size, xx-large);
-    line-height: map-get($theme-line-height, xx-large);
+@each $variant in $u-text-post-variants {
+    .#{$u-text-prefix}-post--#{$variant} {
+        font-size: map-get($theme-post-font-size, $variant);
+        line-height: map-get($theme-post-line-height, $variant);
+    }
 }
 
 .#{$u-text-prefix}--bold {
     font-weight: bold;
+}
+
+.#{$u-text-prefix}--op-3 {
+    opacity: .3;
 }

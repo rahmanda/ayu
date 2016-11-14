@@ -5,6 +5,8 @@
 
 $field-prefix: "field";
 
+@if ($theme-field-enable == true) {
+
 .#{$field-prefix} {
     font-family: $theme-font-family;
 
@@ -173,4 +175,6 @@ $field-prefix: "field";
     .is-error & {
         display: block;
     }
+}
+
 }

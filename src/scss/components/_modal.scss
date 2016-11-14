@@ -5,6 +5,8 @@
 
 $modal-prefix: "modal" !default;
 
+@if ($theme-modal-enable == true) {
+
 .#{$modal-prefix} {
     position: fixed;
     top: 0;
@@ -26,4 +28,6 @@ $modal-prefix: "modal" !default;
     &.is-hidden {
         display: none;
     }
+}
+
 }

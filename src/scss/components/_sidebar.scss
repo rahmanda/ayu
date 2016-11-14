@@ -5,6 +5,8 @@
 
 $sidebar-prefix: "sidebar" !default;
 
+@if ($theme-sidebar-enable == true) {
+
 .#{$sidebar-prefix} {
     position: fixed;
     top: 0;
@@ -41,4 +43,6 @@ $sidebar-prefix: "sidebar" !default;
         right: 0;
         left: initial;
     }
+}
+
 }

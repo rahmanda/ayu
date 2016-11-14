@@ -5,6 +5,8 @@
 
 $button-prefix: "btn";
 
+@if ($theme-button-enable == true) {
+
 .#{$button-prefix} {
     @include button-padding(map-get($theme-font-size, medium));
 
@@ -15,6 +17,7 @@ $button-prefix: "btn";
     font-size   : map-get($theme-font-size, medium);
     font-weight : $theme-button-font-weight;
     text-transform: capitalize;
+    text-decoration: none;
 
     letter-spacing : $theme-letter-spacing;
     word-spacing   : $theme-word-spacing;
@@ -147,4 +150,6 @@ $button-prefix: "btn";
         background   : map-get($theme-color-button-inverse-cta-hover, background);
         border-color : map-get($theme-color-button-inverse-cta-hover, foreground);
     }
+}
+
 }

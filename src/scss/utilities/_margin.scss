@@ -4,6 +4,18 @@
 
 $u-margin-prefix: "u-mg";
 
+.#{$u-margin-prefix}--small {
+    margin: map-get($theme-margin, small);
+}
+
 .#{$u-margin-prefix}--medium {
-    margin-bottom: map-get($theme-font-size, medium);
+    margin: map-get($theme-margin, medium);
+}
+
+.#{$u-margin-prefix}-btm--small {
+    margin-bottom: map-get($theme-margin, small);
+}
+
+.#{$u-margin-prefix}-btm--medium {
+    margin-bottom: map-get($theme-margin, medium);
 }

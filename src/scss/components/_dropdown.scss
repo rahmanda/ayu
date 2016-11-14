@@ -7,6 +7,8 @@ $dropdown-prefix: "dropdown" !default;
 $dropdown-font-size: map-get($theme-font-size, medium) !default;
 $dropdown-item-margin-hz: -1 * calc-button-padding-hz($dropdown-font-size);
 
+@if ($theme-dropdown-enable == true) {
+
 .#{$dropdown-prefix} {
     @include border($theme-border-size,
 		            $theme-border-style,
@@ -96,4 +98,6 @@ $dropdown-item-margin-hz: -1 * calc-button-padding-hz($dropdown-font-size);
     &__item-title {
         font-weight: bold;
     }
+}
+
 }

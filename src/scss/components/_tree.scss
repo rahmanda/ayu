@@ -1,0 +1,41 @@
+// =====================================================
+// Tree
+// =====================================================
+// "We style it because the built-in is suck"
+
+$tree-prefix: "tree" !default;
+
+@if ($theme-tree-enable == true) {
+
+.#{$tree-prefix} {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__subtitle {
+        font-weight: map-get($theme-font-weight, bold);
+        font-size: map-get($theme-font-size, medium);
+        color: map-get($theme-color-tree, subtitle);
+        margin-bottom: $theme-tree-subtitle-margin;
+        text-decoration: none;
+
+        &:hover {
+            color: map-get($theme-color-tree, list-default);
+        }
+    }
+
+    &__link {
+        display: block;
+        font-weight: map-get($theme-font-weight, normal);
+        font-size: map-get($theme-font-size, medium);
+        color: map-get($theme-color-tree, list-default);
+        text-decoration: underline;
+        margin-bottom: $theme-tree-link-margin;
+
+        &:hover {
+            color: map-get($theme-color-tree, list-hover);
+        }
+    }
+}
+
+}

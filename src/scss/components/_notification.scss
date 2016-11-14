@@ -5,6 +5,8 @@
 
 $notif-prefix: "notif";
 
+@if ($theme-notif-enable == true) {
+
 .#{$notif-prefix} {
     @include border($theme-border-size,
 		            $theme-border-style,
@@ -31,4 +33,6 @@ $notif-prefix: "notif";
         border-color: map-get($theme-color-notif-error, foreground);
         background: map-get($theme-color-notif-error, background);
     }
+}
+
 }

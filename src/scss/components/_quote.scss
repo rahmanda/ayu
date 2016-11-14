@@ -5,9 +5,15 @@
 
 $quote-prefix: "quote" !default;
 
+@if ($theme-quote-enable == true) {
+
 .#{$quote-prefix} {
+    display: block;
     box-sizing: border-box;
     padding: $theme-quote-padding;
     border-radius: $theme-quote-border-radius;
-    background: $theme-color-quote-background;
+    background: map-get($theme-color-quote, background);
+    color: map-get($theme-color-quote, foreground);
+}
+
 }

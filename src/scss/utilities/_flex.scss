@@ -1,0 +1,19 @@
+// =====================================================
+// Flex Utilities
+// =====================================================
+
+$flex-prefix: "u-flex" !default;
+
+.#{$flex-prefix}-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.#{$flex-prefix}-1 {
+    flex: 1 1 auto;
+}
+
+.#{$flex-prefix}-0 {
+    flex: 0 0 auto;
+}
