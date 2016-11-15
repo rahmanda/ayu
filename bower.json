@@ -21,7 +21,6 @@
   ],
   "dependencies": {
     "Ionicons": "ionicons#^2.0.1",
-    "ayu": "^0.1.5",
     "gridle": "^2.0.48"
   }
 }
