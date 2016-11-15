@@ -7,7 +7,7 @@ html {
     min-height: 100%; // always fill entire viewport height at minimum
     color: $theme-color-text;
     background-color: $theme-color-background;
-    font-family: $theme-font-family !important;
+    font-family: $theme-font-family;
     font-size: map-get($theme-font-size, medium);
     font-weight: map-get($theme-font-weight, normal);
     line-height: map-get($theme-line-height, medium);
