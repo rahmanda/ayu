@@ -1,0 +1,44 @@
+// =====================================================
+// Inline Page
+// =====================================================
+// "We style it because the built-in is suck"
+
+$ipage-prefix: "ipage" !default;
+
+.#{$ipage-prefix} {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background: map-get($theme-color-ipage, background);
+    transition: $theme-ipage-transition;
+
+    &--right {
+        right: 100%;
+        left: initial;
+
+        &.is-open {
+            right: 0;
+        }
+    }
+
+    &--top {
+        top: initial;
+        bottom: 100%;
+
+        &.is-open {
+            bottom: 0;
+        }
+    }
+
+    &--bottom {
+        top: 100%;
+
+        &.is-open {
+            top: 0;
+        }
+    }
+
+    &.is-open {
+        left: 0;
+    }
+}

@@ -5294,6 +5294,30 @@ p {
   .is-error .field__error-message {
     display: block; }
 
+.ipage {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  background: #fff;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out; }
+  .ipage--right {
+    right: 100%;
+    left: initial; }
+    .ipage--right.is-open {
+      right: 0; }
+  .ipage--top {
+    top: initial;
+    bottom: 100%; }
+    .ipage--top.is-open {
+      bottom: 0; }
+  .ipage--bottom {
+    top: 100%; }
+    .ipage--bottom.is-open {
+      top: 0; }
+  .ipage.is-open {
+    left: 0; }
+
 .modal {
   position: fixed;
   top: 0;
