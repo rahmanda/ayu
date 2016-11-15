@@ -18,41 +18,47 @@ var ROOTPATH = "/";
 var SERVER   = "http://localhost:8000";
 var PREFIX_PATH = {
   src: 'src',
-  dist: 'dist'
+  dist: 'dist',
+  demo: 'demo',
+  public: 'public'
 };
 var PATH = {
   css    : {
-    entry: PREFIX_PATH.src + "/views/demo.css",
-    dist:  PREFIX_PATH.dist + "/assets/css"
+    entry: PREFIX_PATH.demo + "/views/demo.css"
   },
   sass   : {
-    entry: PREFIX_PATH.src + "/scss/app.scss",
-    src:   PREFIX_PATH.src + "/scss/**/*.scss",
-    dist:  PREFIX_PATH.dist + "/assets/css"
-  },
-  view   : {
-    entry: PREFIX_PATH.src + "/views/index.pug",
-    src:   PREFIX_PATH.src + "/views/**/*.pug",
+    entry: PREFIX_PATH.src + "/ayu.scss",
+    src:   PREFIX_PATH.src + "/**/*.scss",
     dist:  PREFIX_PATH.dist
   },
+  view   : {
+    entry: PREFIX_PATH.demo + "/views/index.pug",
+    src:   PREFIX_PATH.demo + "/views/**/*.pug"
+  },
   js     : {
-    entry: PREFIX_PATH.src + "/js/app.js",
-    src:   PREFIX_PATH.src + "/js/**/*.js",
-    dist:  PREFIX_PATH.dist + "/assets/js"
+    entry: PREFIX_PATH.demo + "/js/app.js",
+    src:   PREFIX_PATH.demo + "/js/**/*.js"
   },
   static: {
-    src: PREFIX_PATH.src + "/**/*.{ttf,woff,woff2,eot,svg}",
-    dist: PREFIX_PATH.dist
+    src: PREFIX_PATH.demo + "/**/*.{ttf,woff,woff2,eot,svg}"
+  }
+};
+
+var BUILD_NAME = {
+  css: {
+    minified: 'ayu.css',
+    unminified: 'ayu.min.css'
   }
 };
 
 // Static server + watching asset files
-gulp.task('serve', ['sass', 'browserify', 'pug', 'democss', 'static'], function() {
+gulp.task('serve', ['sass-minified', 'sass-unminified', 'browserify', 'pug', 'democss', 'static'], function() {
   browserSync.init({
     proxy: SERVER
   });
 
-  gulp.watch(PATH.sass.src, ['sass']);
+  gulp.watch(PATH.sass.src, ['sass-minified']);
+  gulp.watch(PATH.sass.src, ['sass-unminified']);
   gulp.watch(PATH.css.entry, ['democss']);
   gulp.watch(PATH.js.src, ['js-watch']);
   gulp.watch(PATH.view.src, ['pug-watch']);
@@ -60,15 +66,27 @@ gulp.task('serve', ['sass', 'browserify', 'pug', 'democss', 'static'], function(
 });
 
 // Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
+gulp.task('sass-unminified', function() {
   return gulp.src(PATH.sass.src)
     .pipe(sass({
       includePaths: ['node_modules/gridle/sass', 'bower_components/Ionicons/scss']
     }))
     .pipe(autoprefixer())
     .pipe(cssnano())
+    .pipe(rename(BUILD_NAME.css.unminified))
     .pipe(gulp.dest(PATH.sass.dist))
     .pipe(browserSync.stream());
+});
+
+// Compile sass into CSS & auto-inject into browsers
+gulp.task('sass-minified', function() {
+  return gulp.src(PATH.sass.src)
+    .pipe(sass({
+      includePaths: ['node_modules/gridle/sass', 'bower_components/Ionicons/scss']
+    }))
+    .pipe(autoprefixer())
+    .pipe(rename(BUILD_NAME.css.minified))
+    .pipe(gulp.dest(PATH.sass.dist));
 });
 
 // Compile all js files into one file
@@ -78,7 +96,7 @@ gulp.task('browserify', function() {
     .pipe(source('app.min.js'))
     .pipe(buffer())
     .pipe(uglify())
-    .pipe(gulp.dest(PATH.js.dist));
+    .pipe(gulp.dest(PREFIX_PATH.public));
 });
 
 gulp.task('js-watch', ['browserify'], function(done) {
@@ -90,7 +108,7 @@ gulp.task('js-watch', ['browserify'], function(done) {
 gulp.task('pug', function() {
   return gulp.src(PATH.view.entry)
     .pipe(pug())
-    .pipe(gulp.dest(PATH.view.dist));
+    .pipe(gulp.dest(PREFIX_PATH.public));
 });
 
 gulp.task('pug-watch', ['pug'], function(done) {
@@ -102,14 +120,14 @@ gulp.task('pug-watch', ['pug'], function(done) {
 gulp.task('democss', function() {
   return gulp.src(PATH.css.entry)
     .pipe(cssnano())
-    .pipe(gulp.dest(PATH.css.dist))
+    .pipe(gulp.dest(PREFIX_PATH.public))
     .pipe(browserSync.stream());
 });
 
 // Move all static files to dist
 gulp.task('static', function() {
   return gulp.src(PATH.static.src)
-    .pipe(gulp.dest(PATH.static.dist));
+    .pipe(gulp.dest(PREFIX_PATH.public));
 });
 
 gulp.task('static-watch', ['static'], function(done) {
@@ -120,7 +138,7 @@ gulp.task('static-watch', ['static'], function(done) {
 // Create static website server
 // need to be executed separately from main task
 gulp.task('server', serve({
-    root: ['dist'],
+    root: [PREFIX_PATH.public],
     port: 8000
 }));
 

@@ -1,0 +1,10 @@
+// =====================================================
+// Border Tools
+// =====================================================
+
+@mixin border($width: null, $style: null, $color: null, $radius: null) {
+    border-width: $width;
+    border-style : $style;
+    border-color: $color;
+    border-radius: $radius;
+}

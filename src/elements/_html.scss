@@ -1,0 +1,18 @@
+// =====================================================
+// HTML Element Style
+// =====================================================
+// We need to style it because we don't like the default
+
+html {
+    min-height: 100%; // always fill entire viewport height at minimum
+    color: $theme-color-text;
+    background-color: $theme-color-background;
+    font-family: $theme-font-family;
+    font-size: map-get($theme-font-size, medium);
+    font-weight: map-get($theme-font-weight, normal);
+    line-height: map-get($theme-line-height, medium);
+    letter-spacing: $theme-letter-spacing;
+    overflow-y: scroll; // always show scrollbar
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

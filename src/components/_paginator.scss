@@ -1,0 +1,25 @@
+// =====================================================
+// Paginator
+// =====================================================
+// "We style it because the built-in is suck"
+
+$paginator-prefix: "paginator" !default;
+$theme-paginator-enable: false !default;
+
+@if ($theme-paginator-enable == true) {
+
+.#{$paginator-prefix} {
+    @include clearfix;
+    display: block;
+    margin: $theme-paginator-margin;
+
+    &__prev {
+        float: left;
+    }
+
+    &__next {
+        float: right;
+    }
+}
+
+}

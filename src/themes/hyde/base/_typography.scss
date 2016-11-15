@@ -1,0 +1,35 @@
+// ===========================================
+// Typography - Default Theme
+// ==========================================
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+
+$theme-font-family: "Open Sans", Helvetica, Arial, Serif;
+
+// All values should be even number
+$theme-font-size: (
+    small: 12px,
+    medium: 14px,
+    large: 18px,
+    x-large: 20px,
+    xx-large: 22px
+);
+
+$theme-line-height: (
+    small: 1.4,
+    medium: 1.4,
+    large: 1.2,
+    x-large: 1.2,
+    xx-large: 1.2
+);
+
+$theme-font-weight: (
+    light: 300,
+    normal: 400,
+    bold: 700,
+    super-bold: 800
+);
+
+$theme-letter-spacing: 0;
+
+$theme-word-spacing: 1px;

@@ -1,15 +1,15 @@
 {
-  "name": "lightning",
-  "description": "My static website scaffolding",
-  "main": "dist/index.html",
+  "name": "ayu",
+  "description": "Another css bootstrap for web UI, powered by Gridle and Ionicons",
+  "main": "src/ayu.scss",
   "authors": [
-    "Rahmanda Wibowo"
+    "Rahmanda Wibowo <rahmandawibowo@gmail.com>"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
-    "scaffolding"
+    "bootstrap", "css", "scss"
   ],
-  "homepage": "https://github.com/rahmanda/lightning",
+  "homepage": "https://github.com/rahmanda/ayu",
   "ignore": [
     "**/.*",
     "node_modules",

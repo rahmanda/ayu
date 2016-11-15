@@ -1,0 +1,167 @@
+// ===========================================
+// Color - Default Theme
+// ===========================================
+
+$bright-gray: #edf2f4;
+$gray: #d8dcde;
+$deep-gray: #979b9c;
+$navy: #8d99ae;
+$blues: #2b2d42;
+$bright-blues: #51a7e8;
+$white: #fff;
+$black: #0c0d12;
+$pink: #ef233c;
+$bright-red: #dc1a3c;
+$red: #d90429;
+$bright-green: #60b044;
+$green: #569e3d;
+$deep-green: #5ca941;
+$zomp: #43aa8b;
+$dark-zomp: #54b195;
+$jelly-bean: #db504a;
+$bitter-sweet: #ff6f59;
+$melon: #ffbdb3;
+$peach: #ffb0a4;
+$japanese-indigo: #254441;
+$timberwolf: #dcdbd1;
+$laurel-green: #b2b09b;
+$deep-laurel-green: #515047;
+$white-smoke: #f8f7f5;
+
+// -------------------------------------------
+// Super Global Color
+// -------------------------------------------
+
+$theme-color-text: $black;
+$theme-color-background: $white-smoke;
+
+// Button
+$theme-color-button-disabled: (
+    background: $gray,
+    foreground: $deep-gray
+);
+
+$theme-color-button-common-normal: (
+    background: $white,
+    foreground: $black
+);
+
+$theme-color-button-common-hover: (
+    background: $bright-gray,
+    foreground: $black
+);
+
+$theme-color-button-cta-normal: (
+    background: $zomp,
+    foreground: $white
+);
+
+$theme-color-button-cta-hover: (
+    background: $dark-zomp,
+    foreground: $white
+);
+
+$theme-color-button-inverse-cta-normal: (
+    background: transparent,
+    foreground: $bright-green
+);
+
+$theme-color-button-inverse-cta-hover: (
+    background: transparent,
+    foreground: $green
+);
+
+// Box
+
+$theme-color-box-header: (
+    background: $bright-gray,
+    foreground: $gray
+);
+
+$theme-color-box-header-danger: (
+    background: $pink,
+    foreground: $red
+);
+
+$theme-color-box-content: (
+    background: $white,
+    foreground: $gray,
+    border: $timberwolf
+);
+
+
+// Notification
+
+$theme-color-notif-success: (
+    background: $green,
+    foreground: $deep-green
+);
+
+$theme-color-notif-error: (
+    background: $pink,
+    foreground: $red
+);
+
+$theme-color-notif-warning: (
+    background: $green,
+    foreground: $deep-green
+);
+
+// Dropdown
+$theme-color-dropdown-item-hover: $bright-gray;
+
+// Sidebar
+$theme-color-sidebar-background: $bright-gray;
+
+// Topbar
+$theme-color-topbar: (
+    background: $white,
+    foreground: $zomp,
+    link-default: $laurel-green,
+    link-hover: $deep-laurel-green,
+    link-active: $zomp,
+    border: $timberwolf
+);
+
+// Quote
+$theme-color-quote: (
+    background: $peach,
+    foreground: $white
+);
+
+// Card
+$theme-color-card: (
+    background: $white,
+    foreground: $black,
+    link-default: $japanese-indigo,
+    link-hover: $dark-zomp,
+    border: $timberwolf,
+    date: $laurel-green,
+    category-default: $zomp,
+    category-hover: $dark-zomp
+);
+
+// Tag
+$theme-color-tag: (
+    background: $zomp,
+    foreground: $white,
+    hover: $dark-zomp
+);
+
+// Post
+$theme-color-post: (
+    background: $white,
+    foreground: $black,
+    title: $japanese-indigo,
+    border: $timberwolf,
+    link-default: $zomp,
+    link-hover: $dark-zomp,
+    date: $laurel-green
+);
+
+// Tree
+$theme-color-tree: (
+    subtitle: $japanese-indigo,
+    list-default: $zomp,
+    list-hover: $dark-zomp
+);

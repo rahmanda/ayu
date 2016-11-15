@@ -1,0 +1,29 @@
+// =====================================================
+// Tag
+// =====================================================
+// "We style it because the built-in is suck"
+
+$tag-prefix: "tag" !default;
+$theme-tag-enable: false !default;
+
+@if ($theme-tag-enable == true) {
+.#{$tag-prefix} {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: $theme-tag-margin;
+    padding: $theme-tag-padding;
+    color: map-get($theme-color-tag, foreground);
+    background: map-get($theme-color-tag, background);
+    font-size: map-get($theme-font-size, small);
+    line-height: map-get($theme-line-height, small);
+    font-weight: map-get($theme-font-weight, normal);
+    border-radius: $theme-tag-border-radius;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        background: map-get($theme-color-tag, hover);
+    }
+}
+
+}
