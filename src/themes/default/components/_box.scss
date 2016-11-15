@@ -3,3 +3,23 @@
 // ==========================================
 
 $theme-box-padding: 20px;
+$theme-box-border-width: $theme-border-width;
+$theme-box-border-radius: $theme-border-radius;
+$theme-box-border-style: $theme-border-style;
+$theme-box-text-align: left;
+
+$theme-color-box-header: (
+    background: $bright-gray,
+    foreground: $gray
+);
+
+$theme-color-box-header-danger: (
+    background: $pink,
+    foreground: $red
+);
+
+$theme-color-box-content: (
+    background: $white,
+    foreground: $gray,
+    border: $gray
+);

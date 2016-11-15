@@ -2,12 +2,17 @@
 // Margin - Default Theme
 // ===========================================
 
+// Caution! It should be set to single value for
+// every variant
+
 $theme-margin: (
+    x-small: 5px,
     small: 10px,
     medium: 20px
 );
 
 $theme-padding: (
+    x-small: 5px,
     small: 10px,
     medium: 20px
 );

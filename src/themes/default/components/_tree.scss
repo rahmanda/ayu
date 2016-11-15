@@ -2,5 +2,12 @@
 // Tree - Default Theme
 // ==========================================
 
-$theme-tree-subtitle-margin: 5px;
-$theme-tree-link-margin: 5px;
+$theme-tree-subtitle-margin: map-get($theme-margin, x-small);
+$theme-tree-link-margin: map-get($theme-margin, x-small);
+
+// Tree
+$theme-color-tree: (
+    subtitle: $japanese-indigo,
+    list-default: $zomp,
+    list-hover: $dark-zomp
+);

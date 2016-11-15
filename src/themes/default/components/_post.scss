@@ -2,12 +2,16 @@
 // Post - Default Theme
 // ==========================================
 
-$theme-post-margin: 20px;
-$theme-post-padding: 20px;
-$theme-post-border-radius: 3px;
-$theme-post-title-margin: 20px;
-$theme-post-subtitle-margin: 10px;
-$theme-post-paragraph-margin: 10px;
+$theme-post-margin: map-get($theme-margin, medium);
+$theme-post-padding: map-get($theme-margin, medium);
+$theme-post-border-radius: $theme-border-radius;
+$theme-post-title-margin: map-get($theme-margin, medium);
+$theme-post-subtitle-margin: map-get($theme-margin, small);
+$theme-post-paragraph-margin: map-get($theme-margin, small);
+$theme-post-paragraph-text-align: justify;
+$theme-post-blockquote-border-width: 3px;
+$theme-post-blockquote-padding-left: 1em;
+
 
 $theme-post-font-size: (
     medium: 21px,
@@ -21,13 +25,14 @@ $theme-post-line-height: (
     x-large: 1.2
 );
 
-// Link
-$theme-color-link-cta-normal: (
-    dark: $zomp,
-    light: $laurel-green
-);
-
-$theme-color-link-cta-hover: (
-    dark: $dark-zomp,
-    light: $deep-laurel-green
+// Post
+$theme-color-post: (
+    background: $white,
+    foreground: $black,
+    title: $japanese-indigo,
+    blockquote: $japanese-indigo,
+    border: $timberwolf,
+    link-default: $zomp,
+    link-hover: $dark-zomp,
+    date: $laurel-green
 );

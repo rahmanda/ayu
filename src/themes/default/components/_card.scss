@@ -3,4 +3,18 @@
 // ==========================================
 
 $theme-card-padding: 15px;
-$theme-card-margin: 20px;
+$theme-card-margin: map-get($theme-margin, medium);
+$theme-card-border-radius: $theme-border-radius;
+$theme-card-fixed-title-height: 2.6em;
+
+// Card
+$theme-color-card: (
+    background: $white,
+    foreground: $black,
+    link-default: $japanese-indigo,
+    link-hover: $dark-zomp,
+    border: $timberwolf,
+    date: $laurel-green,
+    category-default: $zomp,
+    category-hover: $dark-zomp
+);

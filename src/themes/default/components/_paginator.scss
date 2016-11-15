@@ -2,4 +2,4 @@
 // Paginator - Default Theme
 // ==========================================
 
-$theme-paginator-margin: 20px 0;
+$theme-paginator-margin: map-get($theme-margin, medium) 0;
