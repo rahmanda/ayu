@@ -5603,6 +5603,9 @@ p {
 .u-text--op-3 {
   opacity: .3; }
 
+.u-text--centered {
+  text-align: center; }
+
 @media screen and (min-width: 768px) {
   .u-h--292 {
     height: 292px; } }
