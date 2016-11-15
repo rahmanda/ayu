@@ -1,8 +1,8 @@
 {
-  "name": "lightning",
+  "name": "ayu",
   "version": "1.0.0",
-  "description": "My static website scaffolding",
-  "main": "index.js",
+  "description": "Another css bootstrap for web UI, powered by Gridle and Ionicons",
+  "main": "src/ayu.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,12 +13,12 @@
   "keywords": [
     "scaffolding"
   ],
-  "author": "Rahmanda Wibowo",
-  "license": "ISC",
+  "author": "Rahmanda Wibowo <rahmandawibowo@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rahmanda/lightning/issues"
+    "url": "https://github.com/rahmanda/ayu/issues"
   },
-  "homepage": "https://github.com/rahmanda/lightning#readme",
+  "homepage": "https://github.com/rahmanda/ayu#readme",
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "browserify": "^13.0.1",
@@ -35,10 +35,8 @@
     "gulp-uglify": "^1.5.4",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-    "yargs": "^6.3.0"
-  },
-  "dependencies": {
+    "yargs": "^6.3.0",
     "oboe": "^2.1.2",
-    "t3js": "^2.7.0"
+    "t3js": "^2.7.0"    
   }
 }
