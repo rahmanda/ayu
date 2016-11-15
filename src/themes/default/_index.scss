@@ -4,24 +4,24 @@
 // See how it has the same structure as main
 // framework?
 
-$global-use-theme: true; // set to use theme
-$theme-max-breakpoint: 1224px;
+$global-use-theme: true !default; // set to use theme
+$theme-max-breakpoint: 1224px !default;
 
-$theme-box-enable: true;
-$theme-button-enable: true;
-$theme-card-enable: true;
-$theme-dropdown-enable: true;
-$theme-field-enable: true;
-$theme-icon-enable: true;
-$theme-modal-enable: true;
-$theme-notif-enable: true;
-$theme-paginator-enable: true;
-$theme-post-enable: true;
-$theme-quote-enable: true;
-$theme-sidebar-enable: true;
-$theme-tag-enable: true;
-$theme-topbar-enable: true;
-$theme-tree-enable: true;
+$theme-box-enable: true !default;
+$theme-button-enable: true !default;
+$theme-card-enable: true !default;
+$theme-dropdown-enable: true !default;
+$theme-field-enable: true !default;
+$theme-icon-enable: true !default;
+$theme-modal-enable: true !default;
+$theme-notif-enable: true !default;
+$theme-paginator-enable: true !default;
+$theme-post-enable: true !default;
+$theme-quote-enable: true !default;
+$theme-sidebar-enable: true !default;
+$theme-tag-enable: true !default;
+$theme-topbar-enable: true !default;
+$theme-tree-enable: true !default;
 
 // -------------------------------------------
 // Base

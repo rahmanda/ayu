@@ -2,13 +2,13 @@
 // Tag - Default Theme
 // ==========================================
 
-$theme-tag-padding: 2px 4px;
-$theme-tag-margin: 5px;
-$theme-tag-border-radius: $theme-border-radius;
+$theme-tag-padding: 2px 4px !default;
+$theme-tag-margin: 5px !default;
+$theme-tag-border-radius: $theme-border-radius !default;
 
 // Tag
 $theme-color-tag: (
     background: $zomp,
     foreground: $white,
     hover: $dark-zomp
-);
+) !default;

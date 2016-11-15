@@ -2,8 +2,8 @@
 // Border - Default Theme
 // ===========================================
 
-$theme-border-size: 1px;
-$theme-border-width: 1px;
-$theme-border-style: solid;
-$theme-border-radius: 3px;
-$theme-border-color: $gray;
+$theme-border-size: 1px !default;
+$theme-border-width: 1px !default;
+$theme-border-style: solid !default;
+$theme-border-radius: 3px !default;
+$theme-border-color: $gray !default;

@@ -65,11 +65,13 @@ gulp.task('serve', ['sass-minified', 'sass-unminified', 'browserify', 'pug', 'de
   gulp.watch(PATH.static.src, ['static-watch']);
 });
 
+gulp.task('build', ['sass-unminified', 'sass-minified']);
+
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass-unminified', function() {
   return gulp.src(PATH.sass.src)
     .pipe(sass({
-      includePaths: ['node_modules/gridle/sass', 'bower_components/Ionicons/scss']
+      includePaths: ['bower_components/gridle/sass', 'bower_components/Ionicons/scss']
     }))
     .pipe(autoprefixer())
     .pipe(cssnano())
@@ -82,7 +84,7 @@ gulp.task('sass-unminified', function() {
 gulp.task('sass-minified', function() {
   return gulp.src(PATH.sass.src)
     .pipe(sass({
-      includePaths: ['node_modules/gridle/sass', 'bower_components/Ionicons/scss']
+      includePaths: ['bower_components/gridle/sass', 'bower_components/Ionicons/scss']
     }))
     .pipe(autoprefixer())
     .pipe(rename(BUILD_NAME.css.minified))

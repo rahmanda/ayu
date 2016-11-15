@@ -36,5 +36,5 @@ $white-smoke: #f8f7f5;
 // Super Global Color
 // -------------------------------------------
 
-$theme-color-text: $black;
-$theme-color-background: $white;
+$theme-color-text: $black !default;
+$theme-color-background: $white !default;

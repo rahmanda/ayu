@@ -2,7 +2,7 @@
 // Typography - Default Theme
 // ==========================================
 
-$theme-font-family: "Helvetica", Arial, Serif;
+$theme-font-family: "Helvetica", Arial, Serif !default;
 
 // All values should be even number
 $theme-font-size: (
@@ -11,7 +11,7 @@ $theme-font-size: (
     large: 18px,
     x-large: 20px,
     xx-large: 22px
-);
+) !default;
 
 $theme-line-height: (
     small: 1.4,
@@ -19,15 +19,15 @@ $theme-line-height: (
     large: 1.2,
     x-large: 1.2,
     xx-large: 1.2
-);
+) !default;
 
 $theme-font-weight: (
     light: 300,
     normal: 400,
     bold: 700,
     super-bold: 800
-);
+) !default;
 
-$theme-letter-spacing: 0;
+$theme-letter-spacing: 0 !default;
 
-$theme-word-spacing: 1px;
+$theme-word-spacing: 1px !default;

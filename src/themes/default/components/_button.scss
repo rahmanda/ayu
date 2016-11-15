@@ -2,8 +2,8 @@
 // Button - Default Theme
 // ==========================================
 
-$theme-button-text-transform: capitalize;
-$theme-button-margin: 0;
+$theme-button-text-transform: capitalize !default;
+$theme-button-margin: 0 !default;
 
 // -------------------------------------------
 // Button Color
@@ -12,34 +12,34 @@ $theme-button-margin: 0;
 $theme-color-button-disabled: (
     background: $gray,
     foreground: $deep-gray
-);
+) !default;
 
 $theme-color-button-common-normal: (
     background: $white,
     foreground: $black
-);
+) !default;
 
 $theme-color-button-common-hover: (
     background: $bright-gray,
     foreground: $black
-);
+) !default;
 
 $theme-color-button-cta-normal: (
     background: $bright-green,
     foreground: $white
-);
+) !default;
 
 $theme-color-button-cta-hover: (
     background: $green,
     foreground: $white
-);
+) !default;
 
 $theme-color-button-inverse-cta-normal: (
     background: transparent,
     foreground: $bright-green
-);
+) !default;
 
 $theme-color-button-inverse-cta-hover: (
     background: transparent,
     foreground: $green
-);
+) !default;

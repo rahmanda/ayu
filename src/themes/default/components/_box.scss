@@ -2,24 +2,24 @@
 // Box - Default Theme
 // ==========================================
 
-$theme-box-padding: 20px;
-$theme-box-border-width: $theme-border-width;
-$theme-box-border-radius: $theme-border-radius;
-$theme-box-border-style: $theme-border-style;
-$theme-box-text-align: left;
+$theme-box-padding: 20px !default;
+$theme-box-border-width: $theme-border-width !default;
+$theme-box-border-radius: $theme-border-radius !default;
+$theme-box-border-style: $theme-border-style !default;
+$theme-box-text-align: left !default;
 
 $theme-color-box-header: (
     background: $bright-gray,
     foreground: $gray
-);
+) !default;
 
 $theme-color-box-header-danger: (
     background: $pink,
     foreground: $red
-);
+) !default;
 
 $theme-color-box-content: (
     background: $white,
     foreground: $gray,
     border: $gray
-);
+) !default;

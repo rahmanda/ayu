@@ -5,19 +5,19 @@
 $theme-notif-padding: (
     medium: 3px 5px,
     large: 5px 8px
-);
+) !default;
 
 $theme-color-notif-success: (
     background: $green,
     foreground: $deep-green
-);
+) !default;
 
 $theme-color-notif-error: (
     background: $pink,
     foreground: $red
-);
+) !default;
 
 $theme-color-notif-warning: (
     background: $green,
     foreground: $deep-green
-);
+) !default;

@@ -2,13 +2,13 @@
 // Topbar - Default Theme
 // ==========================================
 
-$theme-topbar-padding: map-get($theme-margin, small);
-$theme-topbar-padding-tablet: 0 map-get($theme-padding, medium);
-$theme-topbar-padding-mobile: map-get($theme-padding, x-small) map-get($theme-padding, medium);
-$theme-topbar-z-index: 1;
-$theme-topbar-title-line-height: 1.8;
-$theme-topbar-border-width: 1px;
-$theme-topbar-link-active-border-width: 3px;
+$theme-topbar-padding: map-get($theme-margin, small) !default;
+$theme-topbar-padding-tablet: 0 map-get($theme-padding, medium) !default;
+$theme-topbar-padding-mobile: map-get($theme-padding, x-small) map-get($theme-padding, medium) !default;
+$theme-topbar-z-index: 1 !default;
+$theme-topbar-title-line-height: 1.8 !default;
+$theme-topbar-border-width: 1px !default;
+$theme-topbar-link-active-border-width: 3px !default;
 
 // Topbar
 $theme-color-topbar: (
@@ -18,4 +18,4 @@ $theme-color-topbar: (
     link-hover: $deep-laurel-green,
     link-active: $zomp,
     border: $timberwolf
-);
+) !default;
