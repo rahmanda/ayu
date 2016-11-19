@@ -2963,7 +2963,6 @@
   content: ""; }
 
 html {
-  font-family: sans-serif;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -3069,7 +3068,6 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0; }
@@ -5462,11 +5460,6 @@ p {
   border-style: solid;
   border-color: #dcdbd1;
   box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
   background: #fff; }
   .topbar::before, .topbar::after {
     content: " ";

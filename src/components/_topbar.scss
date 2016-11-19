@@ -14,11 +14,12 @@ $theme-topbar-enable: false !default;
                     solid,
                     map-get($theme-color-topbar, border));
     box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: $theme-topbar-z-index;
-    width: 100%;
+    // some how it is not work with chrome
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // z-index: $theme-topbar-z-index;
+    // width: 100%;
     background: map-get($theme-color-topbar, background);
 
     // scss-lint:disable  NameFormat
