@@ -4925,6 +4925,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+body {
+  overflow: hidden; }
+
 img {
   max-width: 100%;
   height: auto;
