@@ -140,8 +140,8 @@ gulp.task('static-watch', ['static'], function(done) {
 // Create static website server
 // need to be executed separately from main task
 gulp.task('server', serve({
-    root: [PREFIX_PATH.public],
-    port: 8000
+  root: [PREFIX_PATH.public, PREFIX_PATH.dist],
+  port: 8000
 }));
 
 // Export assets to other directory

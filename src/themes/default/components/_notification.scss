@@ -21,3 +21,8 @@ $theme-color-notif-warning: (
     background: $green,
     foreground: $deep-green
 ) !default;
+
+$theme-notif-position-top: -50px !default;
+$theme-notif-position-show-top: 12px !default;
+$theme-notif-transition: all .15s ease-out !default;
+$theme-notif-width: 500px !default;
