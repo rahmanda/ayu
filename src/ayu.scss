@@ -22,6 +22,12 @@
 @import "themes/default/index";
 
 // -------------------------------------------
+// Tools - place it here if it use theme variable
+// -------------------------------------------
+
+@import "tools/margin";
+
+// -------------------------------------------
 // Base
 // -------------------------------------------
 
@@ -48,6 +54,7 @@
 @import "components/card";
 @import "components/dropdown";
 @import "components/field";
+@import "components/hero";
 @import "components/inline-page";
 @import "components/modal";
 @import "components/notification";

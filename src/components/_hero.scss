@@ -1,0 +1,23 @@
+// =====================================================
+// Hero we deserve a good hero for your landing page
+// =====================================================
+// "We deserve a good hero for some landing page"
+
+$hero-prefix: "hero";
+$theme-hero-enable: false !default;
+
+@if ($theme-hero-enable == true) {
+
+.#{$hero-prefix} {
+
+    &__title {
+        @include margin(1 0);
+    }
+
+    &__body {
+        @include margin(1, bottom);
+    }
+
+}
+
+}

@@ -3,19 +3,44 @@
 // =====================================================
 
 $u-margin-prefix: "u-mg";
+$u-margin-variants: $theme-margin;
 
-.#{$u-margin-prefix}--small {
-    margin: map-get($theme-margin, small);
+@each $variant, $size in $u-margin-variants {
+
+    .#{$u-margin-prefix}--#{$variant} {
+        margin: $size;
+    }
+
 }
 
-.#{$u-margin-prefix}--medium {
-    margin: map-get($theme-margin, medium);
+@each $variant, $size in $u-margin-variants {
+
+    .#{$u-margin-prefix}-top--#{$variant} {
+        margin-top: $size;
+    }
+
 }
 
-.#{$u-margin-prefix}-btm--small {
-    margin-bottom: map-get($theme-margin, small);
+@each $variant, $size in $u-margin-variants {
+
+    .#{$u-margin-prefix}-rgt--#{$variant} {
+        margin-right: $size;
+    }
+
 }
 
-.#{$u-margin-prefix}-btm--medium {
-    margin-bottom: map-get($theme-margin, medium);
+@each $variant, $size in $u-margin-variants {
+
+    .#{$u-margin-prefix}-btm--#{$variant} {
+        margin-bottom: $size;
+    }
+
+}
+
+@each $variant, $size in $u-margin-variants {
+
+    .#{$u-margin-prefix}-lft--#{$variant} {
+        margin-left: $size;
+    }
+
 }

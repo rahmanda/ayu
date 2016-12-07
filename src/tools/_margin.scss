@@ -1,0 +1,27 @@
+// =====================================================
+// Margin Tools
+// =====================================================
+// "It is highly recommended to use this tool every time
+// you want to add margin space because it will ensure
+// your design will have consistency across pages"
+
+$margin-tool-base: map-get($theme-margin, medium) !default;
+
+@function calculate-margin-list-scale($scales) {
+    $results: ();
+    @each $scale in $scales {
+        $calculated-margin: $scale * $margin-tool-base;
+        $results: join($results, $calculated-margin);
+    }
+    @return $results;
+}
+
+// Units can use shorthand with prefix {rem|em|px}
+// Direction use string {left|right|top|bottom}
+@mixin margin($units: 0, $direction: null) {
+    @if (length($units) == 1) and ($direction != null) {
+        margin-#{$direction}: $units * $margin-tool-base;
+    } @else {
+        margin: calculate-margin-list-scale($units);
+    }
+}

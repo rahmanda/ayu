@@ -5079,7 +5079,7 @@ p {
   *zoom: 1;
   box-sizing: border-box;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   background: #fff;
   border: 1px solid #dcdbd1;
   border-radius: 3px; }
@@ -5107,7 +5107,7 @@ p {
       cursor: pointer;
       color: #54b195; }
   .card__content {
-    margin-top: 20px;
+    margin-top: 18px;
     position: relative; }
   .card__category {
     color: #43aa8b; }
@@ -5295,6 +5295,12 @@ p {
   .is-error .field__error-message {
     display: block; }
 
+.hero__title {
+  margin: 18px 0px; }
+
+.hero__body {
+  margin-bottom: 18px; }
+
 .ipage {
   position: fixed;
   top: 0;
@@ -5365,7 +5371,7 @@ p {
 .paginator {
   *zoom: 1;
   display: block;
-  margin: 20px 0; }
+  margin: 18px 0; }
   .paginator::before, .paginator::after {
     content: " ";
     display: table; }
@@ -5380,14 +5386,14 @@ p {
   display: block;
   background: #fff;
   color: #0c0d12;
-  margin-bottom: 20px; }
+  margin-bottom: 18px; }
   .post__title {
     display: block;
     font-size: 40px;
     line-height: 1.2;
     font-weight: 800;
     color: #254441;
-    margin-bottom: 20px; }
+    margin-bottom: 18px; }
   .post__body {
     display: block;
     font-size: 21px;
@@ -5399,7 +5405,7 @@ p {
       font-weight: 700;
       color: #254441;
       margin-top: 32px;
-      margin-bottom: 10px; }
+      margin-bottom: 12px; }
     .post__body h2:first-child {
       margin-top: 0; }
     .post__body p {
@@ -5417,7 +5423,7 @@ p {
 .quote {
   display: block;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 12px;
   border-radius: 5px;
   background: #ffb0a4;
   color: #fff; }
@@ -5480,10 +5486,10 @@ p {
     clear: both; }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     .topbar {
-      padding: 0 20px; } }
+      padding: 0 18px; } }
   @media screen and (max-width: 767px) {
     .topbar {
-      padding: 5px 20px; } }
+      padding: 6px 18px; } }
   .topbar__title {
     text-decoration: none;
     font-size: 18px;
@@ -5513,7 +5519,7 @@ p {
     font-weight: 700;
     color: #b2b09b;
     text-decoration: none;
-    padding: 10px;
+    padding: 12px;
     display: inline-block; }
     .topbar-nav__link.active {
       border-width: 0 0 3px;
@@ -5544,7 +5550,7 @@ p {
     font-weight: 700;
     font-size: 14px;
     color: #254441;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     text-decoration: none; }
     .tree__subtitle:hover {
       color: #43aa8b; }
@@ -5554,21 +5560,114 @@ p {
     font-size: 14px;
     color: #43aa8b;
     text-decoration: underline;
-    margin-bottom: 5px; }
+    margin-bottom: 6px; }
     .tree__link:hover {
       color: #54b195; }
 
+.u-mg--xx-small {
+  margin: 3px; }
+
+.u-mg--x-small {
+  margin: 6px; }
+
 .u-mg--small {
-  margin: 10px; }
+  margin: 12px; }
 
 .u-mg--medium {
-  margin: 20px; }
+  margin: 18px; }
+
+.u-mg--large {
+  margin: 24px; }
+
+.u-mg--x-large {
+  margin: 30px; }
+
+.u-mg--xx-large {
+  margin: 36px; }
+
+.u-mg-top--xx-small {
+  margin-top: 3px; }
+
+.u-mg-top--x-small {
+  margin-top: 6px; }
+
+.u-mg-top--small {
+  margin-top: 12px; }
+
+.u-mg-top--medium {
+  margin-top: 18px; }
+
+.u-mg-top--large {
+  margin-top: 24px; }
+
+.u-mg-top--x-large {
+  margin-top: 30px; }
+
+.u-mg-top--xx-large {
+  margin-top: 36px; }
+
+.u-mg-rgt--xx-small {
+  margin-right: 3px; }
+
+.u-mg-rgt--x-small {
+  margin-right: 6px; }
+
+.u-mg-rgt--small {
+  margin-right: 12px; }
+
+.u-mg-rgt--medium {
+  margin-right: 18px; }
+
+.u-mg-rgt--large {
+  margin-right: 24px; }
+
+.u-mg-rgt--x-large {
+  margin-right: 30px; }
+
+.u-mg-rgt--xx-large {
+  margin-right: 36px; }
+
+.u-mg-btm--xx-small {
+  margin-bottom: 3px; }
+
+.u-mg-btm--x-small {
+  margin-bottom: 6px; }
 
 .u-mg-btm--small {
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 .u-mg-btm--medium {
-  margin-bottom: 20px; }
+  margin-bottom: 18px; }
+
+.u-mg-btm--large {
+  margin-bottom: 24px; }
+
+.u-mg-btm--x-large {
+  margin-bottom: 30px; }
+
+.u-mg-btm--xx-large {
+  margin-bottom: 36px; }
+
+.u-mg-lft--xx-small {
+  margin-left: 3px; }
+
+.u-mg-lft--x-small {
+  margin-left: 6px; }
+
+.u-mg-lft--small {
+  margin-left: 12px; }
+
+.u-mg-lft--medium {
+  margin-left: 18px; }
+
+.u-mg-lft--large {
+  margin-left: 24px; }
+
+.u-mg-lft--x-large {
+  margin-left: 30px; }
+
+.u-mg-lft--xx-large {
+  margin-left: 36px; }
 
 .u-text--small {
   font-size: 12px;
