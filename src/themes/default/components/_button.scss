@@ -33,6 +33,12 @@ $theme-color-button-cta-hover: (
     background: $green,
     foreground: $white
 ) !default;
+$theme-button-padding: (
+    small: calculate-spacing(.5),
+    medium: calculate-spacing(.5) calculate-spacing(1),
+    large: calculate-spacing(1) calculate-spacing(1.5),
+    x-large: calculate-spacing(1.5) calculate-spacing(2)
+) !default;
 
 $theme-color-button-inverse-cta-normal: (
     background: transparent,

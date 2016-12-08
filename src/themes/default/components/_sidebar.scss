@@ -3,6 +3,7 @@
 // ==========================================
 
 $theme-sidebar-width: 250px !default;
-$theme-sidebar-padding: 20px !default;
+$theme-sidebar-padding: calculate-spacing(3) !default;
+$theme-sidebar-item-icon-margin: calculate-spacing(1) !default;
 
 $theme-color-sidebar-background: $bright-gray !default;

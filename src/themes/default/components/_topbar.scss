@@ -2,9 +2,9 @@
 // Topbar - Default Theme
 // ==========================================
 
-$theme-topbar-padding: map-get($theme-margin, small) !default;
-$theme-topbar-padding-tablet: 0 map-get($theme-padding, medium) !default;
-$theme-topbar-padding-mobile: map-get($theme-padding, x-small) map-get($theme-padding, medium) !default;
+$theme-topbar-padding: calculate-spacing(2) !default;
+$theme-topbar-padding-tablet: 0 calculate-spacing(2) !default;
+$theme-topbar-padding-mobile: calculate-spacing(.5) calculate-spacing(3) !default;
 $theme-topbar-z-index: 1 !default;
 $theme-topbar-title-line-height: 1.8 !default;
 $theme-topbar-border-width: 1px !default;

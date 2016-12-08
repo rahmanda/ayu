@@ -37,7 +37,7 @@ $theme-sidebar-enable: false !default;
 
     &__item-icon {
         font-size: map-get($theme-font-size, x-large);
-        margin-right: 5px;
+        margin-right: $theme-sidebar-item-icon-margin;
     }
 
     &.is-open {

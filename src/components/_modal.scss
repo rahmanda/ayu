@@ -22,8 +22,8 @@ $theme-modal-enable: false !default;
 
     &__content {
         display: inline-block;
-        width: 650px;
-        margin-top: 4em;
+        width: $theme-modal-content-width;
+        margin-top: $theme-modal-content-margin-top;
     }
 
     &.is-hidden {

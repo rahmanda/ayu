@@ -2,7 +2,7 @@
 // Quote - Default Theme
 // ==========================================
 
-$theme-quote-padding: map-get($theme-margin, small) !default;
+$theme-quote-padding: calculate-spacing(2) !default;
 $theme-quote-border-radius: 5px !default;
 
 // Quote

@@ -2,7 +2,7 @@
 // Box - Default Theme
 // ==========================================
 
-$theme-box-padding: 20px !default;
+$theme-box-padding: calculate-spacing(3) !default;
 $theme-box-border-width: $theme-border-width !default;
 $theme-box-border-radius: $theme-border-radius !default;
 $theme-box-border-style: $theme-border-style !default;

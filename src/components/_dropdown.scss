@@ -6,7 +6,7 @@
 $dropdown-prefix: "dropdown" !default;
 $theme-dropdown-enable: false !default;
 $dropdown-font-size: map-get($theme-font-size, medium) !default;
-$dropdown-item-margin-hz: -1 * calc-button-padding-hz($dropdown-font-size);
+$dropdown-item-margin-hz: $theme-dropdown-item-margin-hz !default;
 
 @if ($theme-dropdown-enable == true) {
 
@@ -49,17 +49,17 @@ $dropdown-item-margin-hz: -1 * calc-button-padding-hz($dropdown-font-size);
     // -------------------------------------------
 
     &--small {
-        @include button-padding(map-get($theme-font-size, small));
+        padding: map-get($theme-dropdown-padding, small);
         font-size : map-get($theme-font-size, small);
     }
 
     &--large {
-        @include button-padding(map-get($theme-font-size, large));
+        padding: map-get($theme-dropdown-padding, large);
         font-size : map-get($theme-font-size, large);
     }
 
     &--x-large {
-        @include button-padding(map-get($theme-font-size, x-large));
+        padding: map-get($theme-dropdown-padding, x-large);
         font-size : map-get($theme-font-size, x-large);
     }
 
@@ -79,7 +79,7 @@ $dropdown-item-margin-hz: -1 * calc-button-padding-hz($dropdown-font-size);
 }
 
 .#{$dropdown-prefix}__item {
-    @include button-padding($dropdown-font-size);
+    padding: map-get($theme-dropdown-padding, medium);
 
     &:first-child {
         border-top-left-radius: $theme-border-radius;

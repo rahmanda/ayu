@@ -2,12 +2,12 @@
 // Post - Default Theme
 // ==========================================
 
-$theme-post-margin: map-get($theme-margin, medium) !default;
-$theme-post-padding: map-get($theme-margin, medium) !default;
+$theme-post-margin: calculate-spacing(3) !default;
+$theme-post-padding: calcuate-spacing(3) !default;
 $theme-post-border-radius: $theme-border-radius !default;
-$theme-post-title-margin: map-get($theme-margin, medium) !default;
-$theme-post-subtitle-margin: map-get($theme-margin, small) !default;
-$theme-post-paragraph-margin: map-get($theme-margin, small) !default;
+$theme-post-title-margin: calculate-spacing(3) !default;
+$theme-post-subtitle-margin: calculate-spacing(2) !default;
+$theme-post-paragraph-margin: calculate-spacing(2) !default;
 $theme-post-paragraph-text-align: justify !default;
 $theme-post-blockquote-border-width: 3px !default;
 $theme-post-blockquote-padding-left: 1em !default;

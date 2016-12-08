@@ -1,0 +1,12 @@
+// =====================================================
+// Spacing Tools
+// =====================================================
+// "It is highly recommended to use this tool every time
+// you want to add margin space because it will ensure
+// your design will have consistency across pages"
+
+$spacing-tool-base: $theme-spacing !default;
+
+@function calculate-spacing($scale) {
+    @return $scale * $spacing-tool-base;
+}

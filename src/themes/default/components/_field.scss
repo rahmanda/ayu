@@ -3,10 +3,10 @@
 // ==========================================
 
 $theme-field-input-padding: (
-    small: 2px 3px,
-    medium: 3px 5px,
-    large: 5px 8px,
-    x-large: 8px 13px
+    small: calculate-spacing(.5),
+    medium: calculate-spacing(.5) calculate-spacing(1),
+    large: calculate-spacing(1) calculate-spacing(1.5),
+    x-large: calculate-spacing(1.5) calculate-spacing(2)
 ) !default;
 
 $theme-field-input-error-color: $pink !default;

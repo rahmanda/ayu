@@ -8,9 +8,7 @@ $theme-button-enable: false !default;
 
 @if ($theme-button-enable == true) {
 
-.#{$button-prefix} {
-    @include button-padding(map-get($theme-font-size, medium));
-
+  .#{$button-prefix} {
     display     : inline-block;
     box-sizing  : border-box;
 
@@ -23,7 +21,7 @@ $theme-button-enable: false !default;
     letter-spacing : $theme-letter-spacing;
     word-spacing   : $theme-word-spacing;
 
-    margin  : $theme-button-margin;
+    padding: map-get($theme-button-padding, medium);
 
     position : relative;
 
@@ -36,17 +34,17 @@ $theme-button-enable: false !default;
     // -------------------------------------------
 
     &--small {
-        @include button-padding(map-get($theme-font-size, small));
+        padding   : map-get($theme-button-padding, small);
         font-size : map-get($theme-font-size, small);
     }
 
     &--large {
-        @include button-padding(map-get($theme-font-size, large));
+        padding   : map-get($theme-button-padding, large);
         font-size : map-get($theme-font-size, large);
     }
 
     &--x-large {
-        @include button-padding(map-get($theme-font-size, x-large));
+        padding   : map-get($theme-button-padding, x-large);
         font-size : map-get($theme-font-size, x-large);
     }
 

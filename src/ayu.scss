@@ -5,16 +5,6 @@
 // Note: Pay attention to order
 
 // -------------------------------------------
-// Tools - place it here because it may be used
-// by theme
-// -------------------------------------------
-
-@import "tools/clearfix";
-@import "tools/button";
-@import "tools/border";
-@import "tools/field";
-
-// -------------------------------------------
 // Theme - need to be imported exactly here
 // and only need one at a time
 // -------------------------------------------
@@ -22,9 +12,12 @@
 @import "themes/default/index";
 
 // -------------------------------------------
-// Tools - place it here if it use theme variable
+// Tools
 // -------------------------------------------
 
+@import "tools/clearfix";
+@import "tools/border";
+@import "tools/field";
 @import "tools/margin";
 
 // -------------------------------------------

@@ -3,7 +3,7 @@
 // ==========================================
 
 $theme-card-padding: 15px !default;
-$theme-card-margin: map-get($theme-margin, medium) !default;
+$theme-card-margin: calculate-spacing(3) !default;
 $theme-card-border-radius: $theme-border-radius !default;
 $theme-card-fixed-title-height: 2.6em !default;
 

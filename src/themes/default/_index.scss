@@ -31,7 +31,13 @@ $theme-tree-enable: true !default;
 @import "base/colors";
 @import "base/typography";
 @import "base/border";
-@import "base/margin";
+@import "base/spacing";
+
+// -------------------------------------------
+// Spacing
+// -------------------------------------------
+
+@import "tools/spacing";
 
 // -------------------------------------------
 // Components
@@ -42,8 +48,10 @@ $theme-tree-enable: true !default;
 @import "components/card";
 @import "components/dropdown";
 @import "components/field";
+@import "components/hero";
 @import "components/icon";
 @import "components/inline-page";
+@import "components/modal";
 @import "components/notification";
 @import "components/paginator";
 @import "components/post";

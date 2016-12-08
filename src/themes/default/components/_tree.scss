@@ -2,8 +2,8 @@
 // Tree - Default Theme
 // ==========================================
 
-$theme-tree-subtitle-margin: map-get($theme-margin, x-small) !default;
-$theme-tree-link-margin: map-get($theme-margin, x-small) !default;
+$theme-tree-subtitle-margin: calculate-spacing(1) !default;
+$theme-tree-link-margin: calculate-spacing(1) !default;
 
 // Tree
 $theme-color-tree: (

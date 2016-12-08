@@ -11,11 +11,11 @@ $theme-hero-enable: false !default;
 .#{$hero-prefix} {
 
     &__title {
-        @include margin(1 0);
+        margin: $theme-hero-title-margin;
     }
 
     &__body {
-        @include margin(1, bottom);
+        margin-bottom: $theme-hero-body-margin;
     }
 
 }

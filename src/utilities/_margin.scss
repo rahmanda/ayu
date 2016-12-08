@@ -3,44 +3,51 @@
 // =====================================================
 
 $u-margin-prefix: "u-mg";
-$u-margin-variants: $theme-margin;
+$u-margin-variants: (
+    x-small: .5,
+    small: 1,
+    medium: 2,
+    large: 3,
+    x-large: 4,
+    xx-large: 5
+);
 
-@each $variant, $size in $u-margin-variants {
+@each $variant, $scale in $u-margin-variants {
 
     .#{$u-margin-prefix}--#{$variant} {
-        margin: $size;
+        @include margin($scale);
     }
 
 }
 
-@each $variant, $size in $u-margin-variants {
+@each $variant, $scale in $u-margin-variants {
 
     .#{$u-margin-prefix}-top--#{$variant} {
-        margin-top: $size;
+        @include margin($scale, top);
     }
 
 }
 
-@each $variant, $size in $u-margin-variants {
+@each $variant, $scale in $u-margin-variants {
 
     .#{$u-margin-prefix}-rgt--#{$variant} {
-        margin-right: $size;
+        @include margin($scale, right);
     }
 
 }
 
-@each $variant, $size in $u-margin-variants {
+@each $variant, $scale in $u-margin-variants {
 
     .#{$u-margin-prefix}-btm--#{$variant} {
-        margin-bottom: $size;
+        @include margin($scale, bottom);
     }
 
 }
 
-@each $variant, $size in $u-margin-variants {
+@each $variant, $scale in $u-margin-variants {
 
     .#{$u-margin-prefix}-lft--#{$variant} {
-        margin-left: $size;
+        @include margin($scale, left);
     }
 
 }

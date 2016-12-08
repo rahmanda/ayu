@@ -3,8 +3,8 @@
 // ==========================================
 
 $theme-notif-padding: (
-    medium: 3px 5px,
-    large: 5px 8px
+    medium: calculate-spacing(.5) calculates-spacing(1),
+    large: calculate-spacing(1) calculate-spacing(1.5)
 ) !default;
 
 $theme-color-notif-success: (
