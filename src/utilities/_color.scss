@@ -16,7 +16,7 @@ $u-color-variants: $theme-colors !default;
 
 @each $variant, $color in $u-color-variants {
 
-    .#{$u-background-prefix}-top--#{$variant} {
+    .#{$u-background-prefix}--#{$variant} {
         background-color: $color;
     }
 
