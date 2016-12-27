@@ -1,0 +1,23 @@
+// =====================================================
+// Color Utilities
+// =====================================================
+
+$u-foreground-prefix: "u-fg" !default;
+$u-background-prefix: "u-bg" !default;
+$u-color-variants: $theme-colors !default;
+
+@each $variant, $color in $u-color-variants {
+
+    .#{$u-foreground-prefix}--#{$variant} {
+        color: $color;
+    }
+
+}
+
+@each $variant, $color in $u-color-variants {
+
+    .#{$u-background-prefix}-top--#{$variant} {
+        background-color: $color;
+    }
+
+}
