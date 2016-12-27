@@ -25,7 +25,6 @@ $theme-card-enable: false !default;
     &__title {
         color: map-get($theme-color-card, link-default);
         font-size: map-get($theme-font-size, large);
-        font-weight: map-get($theme-font-weight, bold);
         line-height: map-get($theme-line-height, large);
         text-decoration: none;
 
