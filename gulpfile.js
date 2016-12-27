@@ -53,16 +53,20 @@ var BUILD_NAME = {
 
 // Static server + watching asset files
 gulp.task('serve', ['sass-minified', 'sass-unminified', 'browserify', 'pug', 'democss', 'static'], function() {
-  browserSync.init({
-    proxy: SERVER
-  });
+  var sync = argv.browserify ? argv.browserify : 'false';
+
+  if (sync === 'true') {
+    browserSync.init({
+      proxy: SERVER
+    });
+    gulp.watch(PATH.js.src, ['js-watch']);
+    gulp.watch(PATH.view.src, ['pug-watch']);
+    gulp.watch(PATH.static.src, ['static-watch']);
+  }
 
   gulp.watch(PATH.sass.src, ['sass-minified']);
   gulp.watch(PATH.sass.src, ['sass-unminified']);
   gulp.watch(PATH.css.entry, ['democss']);
-  gulp.watch(PATH.js.src, ['js-watch']);
-  gulp.watch(PATH.view.src, ['pug-watch']);
-  gulp.watch(PATH.static.src, ['static-watch']);
 });
 
 gulp.task('build', ['sass-unminified', 'sass-minified']);

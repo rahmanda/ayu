@@ -5,8 +5,8 @@
 @import "gridle/gridle";
 
 $gridle-setup: (
-    context: 12,
-    gutter-width: 20px
+    context: $theme-grid-context,
+    gutter-width: $theme-grid-gutter-width
 );
 
 $gridle-breakpoint-mobile: (
