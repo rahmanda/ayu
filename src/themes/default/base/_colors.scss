@@ -36,5 +36,22 @@ $white-smoke: #f8f7f5;
 // Super Global Color
 // -------------------------------------------
 
-$theme-color-text: $black !default;
-$theme-color-background: $white !default;
+$theme-colors: (
+    bright-gray  : #edf2f4,
+    gray         : #d8dcde,
+    deep-gray    : #979b9c,
+    navy         : #8d99ae,
+    blues        : #2b2d42,
+    bright-blues : #51a7e8,
+    white        : #fff,
+    black        : #0c0d12,
+    pink         : #ef233c,
+    bright-red   : #dc1a3c,
+    red          : #d90429,
+    bright-green : #60b044,
+    green        : #569e3d,
+    deep-green   : #5ca941
+) !default;
+
+$theme-color-text       : map-get($theme-colors, black) !default;
+$theme-color-background : map-get($theme-colors, white) !default;

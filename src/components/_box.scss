@@ -31,7 +31,7 @@ $theme-box-enable: false !default;
         position: relative;
     }
 
-    &__header-close {
+    &__header-actions {
         position: absolute;
 
         top: $theme-box-padding;
@@ -64,8 +64,8 @@ $theme-box-enable: false !default;
 
         background: map-get($theme-color-box-header, foreground);
 
-        margin: $theme-box-padding 0 $theme-box-padding -10px;
-        padding: 0 $theme-box-padding 0 0;
+        margin: $theme-box-padding (-1 * $theme-box-padding);
+        padding: 0 $theme-box-padding;
 
         width: 100%;
         height: $theme-box-border-width;

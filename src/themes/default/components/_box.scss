@@ -2,24 +2,24 @@
 // Box - Default Theme
 // ==========================================
 
-$theme-box-padding: calculate-spacing(3) !default;
-$theme-box-border-width: $theme-border-width !default;
-$theme-box-border-radius: $theme-border-radius !default;
-$theme-box-border-style: $theme-border-style !default;
-$theme-box-text-align: left !default;
+$theme-box-padding       : calculate-spacing(3) !default;
+$theme-box-border-width  : $theme-border-width !default;
+$theme-box-border-radius : $theme-border-radius !default;
+$theme-box-border-style  : $theme-border-style !default;
+$theme-box-text-align    : left !default;
 
 $theme-color-box-header: (
-    background: $bright-gray,
-    foreground: $gray
+    background : map-get($theme-colors, bright-gray),
+    foreground : map-get($theme-colors, gray)
 ) !default;
 
 $theme-color-box-header-danger: (
-    background: $pink,
-    foreground: $red
+    background : map-get($theme-colors, pink),
+    foreground : map-get($theme-colors, red)
 ) !default;
 
 $theme-color-box-content: (
-    background: $white,
-    foreground: $gray,
-    border: $gray
+    background : map-get($theme-colors, white),
+    foreground : map-get($theme-colors, gray),
+    border     : map-get($theme-colors, gray)
 ) !default;

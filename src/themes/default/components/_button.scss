@@ -3,49 +3,50 @@
 // ==========================================
 
 $theme-button-text-transform: capitalize !default;
-$theme-button-margin: 0 !default;
+$theme-button-margin        : 0 !default;
+$theme-button-padding       : (
+    small  : calculate-spacing(.5)  calculate-spacing(1),
+    medium : calculate-spacing(1)   calculate-spacing(1.5),
+    large  : calculate-spacing(1.5) calculate-spacing(2),
+    x-large: calculate-spacing(2.5) calculate-spacing(3)
+) !default;
+
 
 // -------------------------------------------
 // Button Color
 // -------------------------------------------
 
 $theme-color-button-disabled: (
-    background: $gray,
-    foreground: $deep-gray
+    background: map-get($theme-colors, gray),
+    foreground: map-get($theme-colors, deep-gray)
 ) !default;
 
 $theme-color-button-common-normal: (
-    background: $white,
-    foreground: $black
+    background: map-get($theme-colors, white),
+    foreground: map-get($theme-colors, black)
 ) !default;
 
 $theme-color-button-common-hover: (
-    background: $bright-gray,
-    foreground: $black
+    background: map-get($theme-colors, bright-gray),
+    foreground: map-get($theme-colors, black)
 ) !default;
 
 $theme-color-button-cta-normal: (
-    background: $bright-green,
-    foreground: $white
+    background: map-get($theme-colors, bright-green),
+    foreground: map-get($theme-colors, white)
 ) !default;
 
 $theme-color-button-cta-hover: (
-    background: $green,
-    foreground: $white
-) !default;
-$theme-button-padding: (
-    small: calculate-spacing(.5),
-    medium: calculate-spacing(.5) calculate-spacing(1),
-    large: calculate-spacing(1) calculate-spacing(1.5),
-    x-large: calculate-spacing(1.5) calculate-spacing(2)
+    background: map-get($theme-colors, green),
+    foreground: map-get($theme-colors, white)
 ) !default;
 
 $theme-color-button-inverse-cta-normal: (
     background: transparent,
-    foreground: $bright-green
+    foreground: map-get($theme-colors, bright-green)
 ) !default;
 
 $theme-color-button-inverse-cta-hover: (
     background: transparent,
-    foreground: $green
+    foreground: map-get($theme-colors, green)
 ) !default;

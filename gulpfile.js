@@ -40,7 +40,7 @@ var PATH = {
     src:   PREFIX_PATH.demo + "/js/**/*.js"
   },
   static: {
-    src: PREFIX_PATH.demo + "/**/*.{ttf,woff,woff2,eot,svg}"
+    src: PREFIX_PATH.demo + "/**/*.{ttf,woff,woff2,eot,svg,jpeg}"
   }
 };
 

@@ -7,7 +7,7 @@
 
 $margin-tool-base: $theme-spacing !default;
 
-@function calculate-margin-list-scale($scales) {
+@function margin($scales) {
     $results: ();
     @each $scale in $scales {
         $calculated-margin: $scale * $margin-tool-base;
@@ -22,6 +22,6 @@ $margin-tool-base: $theme-spacing !default;
     @if (length($units) == 1) and ($direction != null) {
         margin-#{$direction}: $units * $margin-tool-base;
     } @else {
-        margin: calculate-margin-list-scale($units);
+        margin: margin($units);
     }
 }

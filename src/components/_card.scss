@@ -11,13 +11,11 @@ $theme-card-enable: false !default;
     @include clearfix;
     box-sizing: border-box;
     padding: $theme-card-padding;
-    margin-bottom: $theme-card-margin;
     background: map-get($theme-color-card, background);
     border: 1px solid map-get($theme-color-card, border);
     border-radius: $theme-card-border-radius;
 
     &__thumbnail {
-        margin-bottom: $theme-card-padding;
 
         &__img {
             width: 100%;
@@ -45,7 +43,6 @@ $theme-card-enable: false !default;
     }
 
     &__content {
-        margin-top: $theme-card-margin;
         position: relative;
     }
 

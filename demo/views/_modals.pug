@@ -1,7 +1,7 @@
 section.section(id= "fields")
   header.section__header
-    h2.u-text--large.u-mg-btm--medium Modal
-  .section__content.u-mg-btm--medium
+    h2.u-text--large.u-mg-bottom--medium Modal
+  .section__content.u-mg-bottom--medium
     p 1. Normal modal
     .section__items(data-module="open-modal")
       button.btn.btn--common(data-type="open-modal") Click to Open Modal
@@ -10,8 +10,8 @@ section.section(id= "fields")
           .box
             .box__header
               h3 Title for box
-              .box__header-close
-                i.btn.btn--icon.i-close(data-type='close-modal')
+              .box__header-actions
+                i.btn.btn--icon.i-close.u-mg--none(data-type='close-modal')
             .box__content
               .row
                 .field.gr-6
