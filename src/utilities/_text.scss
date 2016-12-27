@@ -5,6 +5,7 @@
 $u-text-prefix: "u-text";
 $u-text-variants: $theme-font-size;
 $u-text-post-variants: $theme-post-font-size;
+$u-text-weight-variants: $theme-font-weight;
 
 @each $variant, $size in $u-text-variants {
     .#{$u-text-prefix}--#{$variant} {
@@ -20,14 +21,20 @@ $u-text-post-variants: $theme-post-font-size;
     }
 }
 
-.#{$u-text-prefix}--bold {
-    font-weight: bold;
+@each $variant, $weight in $u-text-weight-variants {
+    .#{$u-text-prefix}-weight--#{$variant} {
+        font-weight: $weight;
+    }
 }
 
-.#{$u-text-prefix}--op-3 {
-    opacity: .3;
+@for $opacity from 0 through 10 {
+    .#{$u-text-prefix}-op--#{$opacity} {
+        opacity: $opacity / 10;
+    }
 }
 
-.#{$u-text-prefix}--centered {
-    text-align: center;
+@each $variant in (center, left, right, justify, initial) {
+    .#{$u-text-prefix}-align--#{$variant} {
+        text-align: $variant;
+    }
 }

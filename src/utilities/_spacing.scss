@@ -75,7 +75,7 @@ $u-padding-variants: (
 @each $variant, $scale in $u-padding-variants {
 
     .#{$u-padding-prefix}--#{$variant} {
-        padding: padding($scale);
+        padding: margin($scale);
     }
 
 }
@@ -83,7 +83,7 @@ $u-padding-variants: (
 @each $variant, $scale in $u-padding-variants {
 
     .#{$u-padding-prefix}-top--#{$variant} {
-        padding-top: padding($scale);
+        padding-top: margin($scale);
     }
 
 }
@@ -91,7 +91,7 @@ $u-padding-variants: (
 @each $variant, $scale in $u-padding-variants {
 
     .#{$u-padding-prefix}-right--#{$variant} {
-        padding-right: padding($scale);
+        padding-right: margin($scale);
     }
 
 }
@@ -99,7 +99,7 @@ $u-padding-variants: (
 @each $variant, $scale in $u-padding-variants {
 
     .#{$u-padding-prefix}-bottom--#{$variant} {
-        padding-bottom: padding($scale);
+        padding-bottom: margin($scale);
     }
 
 }
@@ -107,7 +107,7 @@ $u-padding-variants: (
 @each $variant, $scale in $u-padding-variants {
 
     .#{$u-padding-prefix}-left--#{$variant} {
-        padding-left: padding($scale);
+        padding-left: margin($scale);
     }
 
 }
