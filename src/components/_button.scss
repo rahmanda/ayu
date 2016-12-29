@@ -151,4 +151,23 @@ $theme-button-enable: false !default;
     }
 }
 
+@each $social, $colors in $theme-color-button-socials {
+
+    .#{$button-prefix}-social--#{$social} {
+        @include border($theme-border-size,
+    		            $theme-border-style,
+    		            map-get($colors, background),
+    		            $theme-border-radius);
+
+        background : map-get($colors, background);
+        color      : map-get($colors, foreground);
+
+        &:hover {
+            background   : lighten(map-get($colors, background), 5%);
+            border-color : lighten(map-get($colors, background), 5%);
+        }
+    }
+
+}
+
 }

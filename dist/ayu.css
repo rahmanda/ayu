@@ -4929,7 +4929,7 @@ body {
   overflow: hidden; }
 
 img {
-  min-width: 100%;
+  width: 100%;
   height: auto;
   vertical-align: middle; }
 
@@ -5029,6 +5029,39 @@ p {
     color: #569e3d;
     background: transparent;
     border-color: #569e3d; }
+
+.btn-social--facebook {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4b66a0;
+  border-radius: 3px;
+  background: #4b66a0;
+  color: #fff; }
+  .btn-social--facebook:hover {
+    background: #5572af;
+    border-color: #5572af; }
+
+.btn-social--twitter {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #55acee;
+  border-radius: 3px;
+  background: #55acee;
+  color: #fff; }
+  .btn-social--twitter:hover {
+    background: #6cb7f0;
+    border-color: #6cb7f0; }
+
+.btn-social--googleplus {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d8232b;
+  border-radius: 3px;
+  background: #d8232b;
+  color: #fff; }
+  .btn-social--googleplus:hover {
+    background: #de363e;
+    border-color: #de363e; }
 
 .box {
   box-sizing: border-box;

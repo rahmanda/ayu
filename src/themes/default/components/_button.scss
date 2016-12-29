@@ -50,3 +50,18 @@ $theme-color-button-inverse-cta-hover: (
     background: transparent,
     foreground: map-get($theme-colors, green)
 ) !default;
+
+$theme-color-button-socials: (
+    facebook: (
+        background: #4b66a0,
+        foreground: map-get($theme-colors, white)
+    ),
+    twitter: (
+        background: #55acee,
+        foreground: map-get($theme-colors, white)
+    ),
+    googleplus: (
+        background: #d8232b,
+        foreground: map-get($theme-colors, white)
+    )
+) !default;
