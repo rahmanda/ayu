@@ -141,12 +141,6 @@ $_gridle-packages : (
 @include gridle_setup($gridle-setup);
 @include gridle_register_state(mobile, $gridle-breakpoint-mobile);
 @include gridle_register_state(tablet, $gridle-breakpoint-tablet);
-// hack for gridle unecessary breakpoint :|
-@include gridle_register_state(ipad-landscape, (
-	query : "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)",
-	direction : ltr,
-    gutter-width: 20px
-));
 @include gridle_generate_classes;
 
 .container {
