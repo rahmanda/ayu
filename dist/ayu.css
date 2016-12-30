@@ -5444,11 +5444,6 @@ p {
       margin-left: 0;
       border-left: 3px solid #254441;
       padding-left: 1em; }
-    .post__body code {
-      border-radius: 3px;
-      color: #b2b09b;
-      background: white;
-      padding: 2px 3px; }
 
 .quote {
   display: block;
