@@ -62,6 +62,13 @@ $theme-post-enable: false !default;
             border-left: $theme-post-blockquote-border-width solid map-get($theme-color-post, blockquote);
             padding-left: $theme-post-blockquote-padding-left;
         }
+
+        code {
+            border-radius: $theme-post-border-radius;
+            color: map-get($theme-color-post, code);
+            background: lighten(map-get($theme-color-post, code), 50%);
+            padding: $theme-post-code-padding;
+        }
     }
 }
 
