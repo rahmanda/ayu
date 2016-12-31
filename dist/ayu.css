@@ -5100,12 +5100,6 @@ p {
     display: table; }
   .topbar::after {
     clear: both; }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .topbar {
-      padding: 0 12px; } }
-  @media screen and (max-width: 767px) {
-    .topbar {
-      padding: 3px 18px; } }
   .topbar__title {
     text-decoration: none;
     font-size: 18px;
@@ -5113,11 +5107,7 @@ p {
     font-weight: 800;
     color: #43aa8b; }
   .topbar__menu-btn {
-    display: none;
     float: right; }
-    @media screen and (max-width: 767px) {
-      .topbar__menu-btn {
-        display: inline-block; } }
 
 .topbar-nav {
   list-style: none;

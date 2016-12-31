@@ -22,16 +22,6 @@ $theme-topbar-enable: false !default;
     // width: 100%;
     background: map-get($theme-color-topbar, background);
 
-    // scss-lint:disable  NameFormat
-    @include gridle_state(tablet) {
-        padding: $theme-topbar-padding-tablet;
-    }
-
-    @include gridle_state(mobile) {
-        padding: $theme-topbar-padding-mobile; // TODO: set to be configurable
-    }
-    // scss-lint:enable NameFormat
-
     &__title {
         text-decoration: none;
         font-size: map-get($theme-font-size, large);
@@ -41,14 +31,7 @@ $theme-topbar-enable: false !default;
     }
 
     &__menu-btn {
-        display: none;
         float: right;
-
-        // scss-lint:disable  NameFormat
-        @include gridle_state(mobile) {
-            display: inline-block;
-        }
-        // scss-lint:enable NameFormat
     }
 }
 
