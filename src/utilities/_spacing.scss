@@ -6,16 +6,8 @@
 // Margin Utilities
 // -----------------------------------------------------
 
-$u-margin-prefix: "u-mg";
-$u-margin-variants: (
-    none: 0,
-    x-small: .5,
-    small: 1,
-    medium: 2,
-    large: 3,
-    x-large: 4,
-    xx-large: 5
-);
+$u-margin-prefix: "u-mg" !default;
+$u-margin-variants: $theme-margin-variants;
 
 @each $variant, $scale in $u-margin-variants {
 
@@ -61,16 +53,8 @@ $u-margin-variants: (
 // Padding Utilities
 // -----------------------------------------------------
 
-$u-padding-prefix: "u-pd";
-$u-padding-variants: (
-    none: 0,
-    x-small: .5,
-    small: 1,
-    medium: 2,
-    large: 3,
-    x-large: 4,
-    xx-large: 5
-);
+$u-padding-prefix: "u-pd" !default;
+$u-padding-variants: $theme-padding-variants;
 
 @each $variant, $scale in $u-padding-variants {
 

@@ -3,3 +3,16 @@
 // ===========================================
 
 $theme-spacing: 6px !default;
+
+$theme-spacing-variants: (
+    none: 0,
+    x-small: .5,
+    small: 1,
+    medium: 2,
+    large: 3,
+    x-large: 4,
+    xx-large: 5
+) !default;
+
+$theme-margin-variants: $theme-spacing-variants !default;
+$theme-padding-variants: $theme-spacing-variants !default;
