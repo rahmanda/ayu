@@ -6,6 +6,7 @@
 
 $global-use-theme: true !default; // set to use theme
 $theme-max-breakpoint: 1224px !default;
+$theme-cdn-icon: false !default;
 
 $theme-box-enable: true !default;
 $theme-button-enable: true !default;
@@ -50,7 +51,6 @@ $theme-tree-enable: true !default;
 @import "components/dropdown";
 @import "components/field";
 @import "components/hero";
-@import "components/icon";
 @import "components/inline-page";
 @import "components/modal";
 @import "components/notification";

@@ -23,8 +23,9 @@ var PREFIX_PATH = {
   public: 'public'
 };
 var PATH = {
-  css    : {
-    entry: PREFIX_PATH.demo + "/views/demo.css"
+  demo    : {
+    entry: PREFIX_PATH.demo + "/views/demo.scss",
+    dist: PREFIX_PATH.public
   },
   sass   : {
     entry: PREFIX_PATH.src + "/ayu.scss",
@@ -52,7 +53,7 @@ var BUILD_NAME = {
 };
 
 // Static server + watching asset files
-gulp.task('serve', ['sass-minified', 'sass-unminified', 'browserify', 'pug', 'democss', 'static'], function() {
+gulp.task('serve', ['sass-minified', 'sass-unminified', 'browserify', 'pug', 'demo', 'static'], function() {
   var sync = argv.browserify ? argv.browserify : 'false';
 
   if (sync === 'true') {
@@ -66,7 +67,7 @@ gulp.task('serve', ['sass-minified', 'sass-unminified', 'browserify', 'pug', 'de
 
   gulp.watch(PATH.sass.src, ['sass-minified']);
   gulp.watch(PATH.sass.src, ['sass-unminified']);
-  gulp.watch(PATH.css.entry, ['democss']);
+  gulp.watch(PATH.demo.entry, ['demo']);
 });
 
 gulp.task('build', ['sass-unminified', 'sass-minified']);
@@ -75,7 +76,7 @@ gulp.task('build', ['sass-unminified', 'sass-minified']);
 gulp.task('sass-unminified', function() {
   return gulp.src(PATH.sass.src)
     .pipe(sass({
-      includePaths: ['bower_components/gridle/sass', 'bower_components/Ionicons/scss']
+      includePaths: ['bower_components/gridle/sass']
     }))
     .pipe(autoprefixer())
     .pipe(cssnano())
@@ -88,7 +89,7 @@ gulp.task('sass-unminified', function() {
 gulp.task('sass-minified', function() {
   return gulp.src(PATH.sass.src)
     .pipe(sass({
-      includePaths: ['bower_components/gridle/sass', 'bower_components/Ionicons/scss']
+      includePaths: ['bower_components/gridle/sass']
     }))
     .pipe(autoprefixer())
     .pipe(rename(BUILD_NAME.css.minified))
@@ -122,11 +123,15 @@ gulp.task('pug-watch', ['pug'], function(done) {
   done();
 });
 
-// Minify and clone demo css
-gulp.task('democss', function() {
-  return gulp.src(PATH.css.entry)
+// Minify and clone icon css
+gulp.task('demo', function() {
+  return gulp.src(PATH.demo.entry)
+    .pipe(sass({
+      includePaths: ['bower_components/Ionicons/scss']
+    }))
+    .pipe(autoprefixer())
     .pipe(cssnano())
-    .pipe(gulp.dest(PREFIX_PATH.public))
+    .pipe(gulp.dest(PATH.demo.dist))
     .pipe(browserSync.stream());
 });
 
