@@ -1,0 +1,51 @@
+// =====================================================
+// Callout
+// =====================================================
+// Use it for alert or notification on your page
+// "We style it because the built-in is suck"
+
+$callout-prefix: "callout";
+$theme-callout-enable: false !default;
+
+@if ($theme-callout-enable == true) {
+
+.#{$callout-prefix} {
+    @include border($theme-border-size,
+		            $theme-border-style,
+                    map-get($theme-color-callout-warning, foreground),
+		            $theme-border-radius);
+
+    font-size: map-get($theme-font-size, medium);
+    font-family: $theme-font-family;
+
+    color: $theme-color-background;
+    background: map-get($theme-color-callout-warning, background);
+
+    padding: map-get($theme-callout-padding, medium);
+
+    margin: 0 auto;
+    width: $theme-callout-width;
+
+    &__action {
+        float: right;
+    }
+
+    &--notification {
+        position: fixed;
+        top: $theme-callout-position-top;
+        left: 0;
+        right: 0;
+        transition: $theme-callout-transition;
+
+        &.is-show {
+            top: $theme-callout-position-show-top;
+        }
+    }
+
+    &--error {
+        border-color: map-get($theme-color-callout-error, foreground);
+        background: map-get($theme-color-callout-error, background);
+    }
+}
+
+}

@@ -65,23 +65,28 @@ $theme-button-enable: false !default;
 .#{$button-prefix}-dropdown {
     position: relative;
     display: inline-block;
+    font-size: 0; // hack for inline block spacing
 }
 
 .#{$button-prefix}-group {
-    & .#{$button-prefix}:not(:first-child):not(:last-child) {
+    .#{$button-prefix}:not(:first-child):not(:last-child) {
         margin-left: -$theme-border-size;
         margin-right: -$theme-border-size;
         border-radius: 0;
     }
 
-    & .#{$button-prefix}:first-child {
+    .#{$button-prefix}:first-child {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
 
-    & .#{$button-prefix}:last-child {
+    .#{$button-prefix}:last-child {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+    }
+
+    .#{$button-prefix} + .#{$button-prefix} {
+        margin-left: -$theme-border-size; // hack for collapse border
     }
 }
 

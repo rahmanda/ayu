@@ -4,19 +4,18 @@
 // See how it has the same structure as main
 // framework?
 
-$global-use-theme: true !default; // set to use theme
 $theme-max-breakpoint: 1224px !default;
 $theme-cdn-icon: false !default;
 
 $theme-box-enable: true !default;
 $theme-button-enable: true !default;
 $theme-card-enable: true !default;
+$theme-callout-enable: true !default;
 $theme-dropdown-enable: true !default;
 $theme-field-enable: true !default;
 $theme-hero-enable: true !default;
 $theme-icon-enable: true !default;
 $theme-modal-enable: true !default;
-$theme-notif-enable: true !default;
 $theme-paginator-enable: true !default;
 $theme-post-enable: true !default;
 $theme-quote-enable: true !default;
@@ -48,12 +47,12 @@ $theme-tree-enable: true !default;
 @import "components/box";
 @import "components/button";
 @import "components/card";
+@import "components/callout";
 @import "components/dropdown";
 @import "components/field";
 @import "components/hero";
 @import "components/inline-page";
 @import "components/modal";
-@import "components/notification";
 @import "components/paginator";
 @import "components/post";
 @import "components/quote";

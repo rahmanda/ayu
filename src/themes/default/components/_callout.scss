@@ -1,28 +1,28 @@
 // ===========================================
-// Notification - Default Theme
+// Callout - Default Theme
 // ==========================================
 
-$theme-notif-padding: (
+$theme-callout-padding: (
     medium: calculate-spacing(.5) calculate-spacing(1),
     large: calculate-spacing(1) calculate-spacing(1.5)
 ) !default;
 
-$theme-color-notif-success: (
+$theme-color-callout-success: (
     background: $green,
     foreground: $deep-green
 ) !default;
 
-$theme-color-notif-error: (
+$theme-color-callout-error: (
     background: $pink,
     foreground: $red
 ) !default;
 
-$theme-color-notif-warning: (
+$theme-color-callout-warning: (
     background: $green,
     foreground: $deep-green
 ) !default;
 
-$theme-notif-position-top: -50px !default;
-$theme-notif-position-show-top: 12px !default;
-$theme-notif-transition: all .15s ease-out !default;
-$theme-notif-width: 500px !default;
+$theme-callout-position-top: -50px !default;
+$theme-callout-position-show-top: 12px !default;
+$theme-callout-transition: all .15s ease-out !default;
+$theme-callout-width: 500px !default;
