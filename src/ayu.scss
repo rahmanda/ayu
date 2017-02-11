@@ -5,13 +5,6 @@
 // Note: Pay attention to order
 
 // -------------------------------------------
-// Theme - need to be imported exactly here
-// and only need one at a time
-// -------------------------------------------
-
-@import "themes/default/index";
-
-// -------------------------------------------
 // Tools
 // -------------------------------------------
 
@@ -19,6 +12,14 @@
 @import "tools/border";
 @import "tools/field";
 @import "tools/margin";
+@import "tools/spacing";
+
+// -------------------------------------------
+// Default Theme
+// You can leave it be or override it
+// -------------------------------------------
+
+@import "themes/default/index";
 
 // -------------------------------------------
 // Base

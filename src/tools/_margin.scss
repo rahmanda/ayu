@@ -5,7 +5,7 @@
 // you want to add margin space because it will ensure
 // your design will have consistency across pages"
 
-$margin-tool-base: $theme-spacing !default;
+$margin-tool-base: 6px !default;
 
 @function margin($scales) {
     $results: ();
