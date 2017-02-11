@@ -11,7 +11,11 @@
 // you place at ~ will fill the remaining space (using display table)
 // Reference: https://csswizardry.com/2013/05/the-flag-object/
 
-.flag {
+$flag-prefix: "flag" !default;
+$theme-flag-enable: false !default;
+
+@if ($theme-flag-enable == true) {
+.#{$flag-prefix} {
     display: table;
     width: 100%;
 
@@ -22,16 +26,17 @@
     }
 }
 
-.flag--top {
-    .flag__head,
-    .flag__body {
+.#{$flag-prefix}--top {
+    .#{$flag-prefix}__head,
+    .#{$flag-prefix}__body {
         vertical-align: top;
     }
 }
 
-.flag--bottom {
-    .flag__head,
-    .flag__body {
+.#{$flag-prefix}--bottom {
+    .#{$flag-prefix}__head,
+    .#{$flag-prefix}__body {
         vertical-align: bottom;
     }
+}
 }
