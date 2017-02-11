@@ -19,6 +19,7 @@ $theme-modal-enable: false !default;
     background: transparentize($theme-color-text, .3);
 
     text-align: center;
+    z-index: $theme-modal-z-index;
 
     &__content {
         display: inline-block;
