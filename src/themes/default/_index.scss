@@ -9,7 +9,6 @@ $theme-cdn-icon: false !default;
 
 $theme-box-enable: true !default;
 $theme-button-enable: true !default;
-$theme-card-enable: true !default;
 $theme-callout-enable: true !default;
 $theme-dropdown-enable: true !default;
 $theme-field-enable: true !default;
@@ -46,7 +45,6 @@ $theme-tree-enable: true !default;
 
 @import "components/box";
 @import "components/button";
-@import "components/card";
 @import "components/callout";
 @import "components/dropdown";
 @import "components/field";

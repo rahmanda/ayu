@@ -1737,51 +1737,6 @@ p {
   background: #ef233c;
   color: #fff; }
 
-.card {
-  *zoom: 1;
-  box-sizing: border-box;
-  padding: 12px;
-  background: #fff;
-  border: 1px solid #d8dcde;
-  border-radius: 3px; }
-  .card::before, .card::after {
-    content: " ";
-    display: table; }
-  .card::after {
-    clear: both; }
-  .card__thumbnail__img {
-    width: 100%; }
-  .card__title {
-    color: #8d99ae;
-    font-size: 18px;
-    line-height: 1.2;
-    text-decoration: none; }
-    .card--fixed-title .card__title {
-      display: block;
-      height: 2.6em;
-      overflow: hidden;
-      margin-bottom: 12px; }
-    .card__title:hover {
-      cursor: pointer;
-      color: #2b2d42; }
-  .card__content {
-    position: relative; }
-  .card__category {
-    color: #8d99ae; }
-    .card__category:hover {
-      cursor: pointer;
-      color: #2b2d42; }
-
-.card-info {
-  position: relative;
-  display: block; }
-  .card-info__date {
-    color: #8d99ae; }
-  .card-info__tags {
-    position: absolute;
-    top: 0;
-    right: 0; }
-
 .callout {
   border-width: 1px;
   border-style: solid;

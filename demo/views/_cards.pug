@@ -1,16 +1,27 @@
 section.section(id= "cards")
   header.section__header
     h2.u-text--large.u-mg-bottom--medium Cards
+    p.
+      We don't have card component, but we can build it by combining box component with image, grid etc.
   .section__content
     .row
       .gr-4
-        .card
-          .card__thumbnail.u-mg-bottom--medium
-            img.card__img(src= "images/sample-image-1.jpeg")
-          .card__title.u-mg-bottom--medium
-            h3.u-text--large This is card title
-          .card__content.
-            Facer impetus no sed, ne pro zril bonorum. An meliore intellegat philosophia per, et etiam assum reformidans vim. Harum numquam pri ei, vix in feugiat insolens vulputate. Modus omnium forensibus et pri, te mei natum molestiae.
+        .box
+          .box__content
+            img.card__img.u-mg-bottom--medium(src= "images/sample-image-1.jpeg")
+            h3.u-mg-bottom--medium This is card title
+            p.
+              Facer impetus no sed, ne pro zril bonorum. An meliore intellegat philosophia per, et etiam assum reformidans vim. Harum numquam pri ei, vix in feugiat insolens vulputate. Modus omnium forensibus et pri, te mei natum molestiae.
+            span.box__separator
+            p.
+              Facer impetus no sed, ne pro zril bonorum. An meliore intellegat philosophia per, et etiam assum reformidans vim. Harum numquam pri ei, vix in feugiat insolens vulputate. Modus omnium forensibus et pri, te mei natum molestiae.
+            span.box__separator
+            .row
+              .gr-6
+                button.btn.btn--cta.btn--medium.btn--block Buy
+              .gr-6
+                button.btn.btn--common.btn--medium.btn--block Add to cart
+
 
       .gr-4
         .card
