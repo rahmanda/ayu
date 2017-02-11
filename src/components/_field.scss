@@ -124,8 +124,8 @@ $theme-field-enable: false !default;
                     $theme-border-color,
 		            $theme-border-radius);
 
-    background : map-get($theme-color-button-common-normal, background);
-    color      : map-get($theme-color-button-common-normal, foreground);
+    background : map-get($theme-color-button-normal, background);
+    color      : map-get($theme-color-button-normal, foreground);
 
     line-height: 1;
     text-align: center;
@@ -136,7 +136,7 @@ $theme-field-enable: false !default;
 
     &:hover {
         cursor: pointer;
-        background : map-get($theme-color-button-common-hover, background);
+        background : darken(map-get($theme-color-button-normal, background), 5%);
     }
 
     &:first-child {

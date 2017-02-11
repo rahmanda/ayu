@@ -21,34 +21,20 @@ $theme-color-button-disabled: (
     foreground: map-get($theme-colors, gray)
 ) !default;
 
-$theme-color-button-common-normal: (
+$theme-color-button-normal: (
+    border: map-get($theme-colors, gray),
     background: map-get($theme-colors, white),
     foreground: map-get($theme-colors, black)
 ) !default;
 
-$theme-color-button-common-hover: (
-    background: lighten(map-get($theme-colors, gray), 35%),
-    foreground: map-get($theme-colors, black)
-) !default;
-
-$theme-color-button-cta-normal: (
+$theme-color-button-cta: (
     background: lighten(map-get($theme-colors, green), 5%),
     foreground: map-get($theme-colors, white)
 ) !default;
 
-$theme-color-button-cta-hover: (
-    background: map-get($theme-colors, green),
+$theme-color-button-secondary: (
+    background: lighten(map-get($theme-colors, orange), 5%),
     foreground: map-get($theme-colors, white)
-) !default;
-
-$theme-color-button-inverse-cta-normal: (
-    background: transparent,
-    foreground: lighten(map-get($theme-colors, green), 5%)
-) !default;
-
-$theme-color-button-inverse-cta-hover: (
-    background: transparent,
-    foreground: map-get($theme-colors, green)
 ) !default;
 
 $theme-color-button-socials: (

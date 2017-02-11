@@ -1581,6 +1581,10 @@ p {
     background: #60b044; }
 
 .btn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #979b9c;
+  border-radius: 3px;
   display: inline-block;
   box-sizing: border-box;
   font-family: "Helvetica", Arial, Serif;
@@ -1591,8 +1595,11 @@ p {
   letter-spacing: 0;
   word-spacing: 1px;
   padding: 6px 9px;
-  position: relative; }
+  position: relative;
+  background: #fff;
+  color: #0c0d12; }
   .btn:hover {
+    background: #f2f2f2;
     cursor: pointer; }
   .btn--small {
     padding: 3px 6px;
@@ -1643,16 +1650,6 @@ p {
     color: #979b9c;
     border-color: #979b9c; }
 
-.btn--common {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #979b9c;
-  border-radius: 3px;
-  background: #fff;
-  color: #0c0d12; }
-  .btn--common:hover {
-    background: #f2f3f3; }
-
 .btn--cta {
   border-width: 1px;
   border-style: solid;
@@ -1662,6 +1659,7 @@ p {
   color: #fff; }
   .btn--cta:hover {
     background: #569e3d;
+    color: #fff;
     border-color: #569e3d; }
 
 .btn--i-cta {
@@ -1676,6 +1674,30 @@ p {
     background: transparent;
     border-color: #569e3d; }
 
+.btn--secondary {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e3a900;
+  border-radius: 3px;
+  background: #e3a900;
+  color: #fff; }
+  .btn--secondary:hover {
+    background: #c99600;
+    color: #fff;
+    border-color: #c99600; }
+
+.btn--i-secondary {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e3a900;
+  border-radius: 3px;
+  background: transparent;
+  color: #e3a900; }
+  .btn--i-secondary:hover {
+    color: #c99600;
+    background: transparent;
+    border-color: #c99600; }
+
 .btn-social--facebook {
   border-width: 1px;
   border-style: solid;
@@ -1684,8 +1706,8 @@ p {
   background: #4b66a0;
   color: #fff; }
   .btn-social--facebook:hover {
-    background: #5572af;
-    border-color: #5572af; }
+    background: #435b8f;
+    border-color: #435b8f; }
 
 .btn-social--twitter {
   border-width: 1px;
@@ -1695,8 +1717,8 @@ p {
   background: #55acee;
   color: #fff; }
   .btn-social--twitter:hover {
-    background: #6cb7f0;
-    border-color: #6cb7f0; }
+    background: #3ea1ec;
+    border-color: #3ea1ec; }
 
 .btn-social--googleplus {
   border-width: 1px;
@@ -1706,8 +1728,8 @@ p {
   background: #d8232b;
   color: #fff; }
   .btn-social--googleplus:hover {
-    background: #de363e;
-    border-color: #de363e; }
+    background: #c21f27;
+    border-color: #c21f27; }
 
 .box {
   box-sizing: border-box;
@@ -1938,7 +1960,7 @@ p {
   width: 1%; }
   .field__input-addon:hover {
     cursor: pointer;
-    background: #f2f3f3; }
+    background: #f2f2f2; }
   .field__input-addon:first-child {
     border-right: 0;
     border-top-right-radius: 0;

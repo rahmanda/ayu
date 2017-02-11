@@ -2,49 +2,64 @@ section.section(id= "buttons")
   header.section__header
     h2.u-text--large.u-mg-bottom--medium Buttons
   .section__content.u-mg-bottom--medium
-    p 1. Button CTA
+    p 1. Basic Button
+    .section__items
+      button.btn.btn--x-large.u-mg-right--small x-large
+      button.btn.btn--large.u-mg-right--small large
+      button.btn.u-mg-right--small medium
+      button.btn.btn--small small
+  .section__content.u-mg-bottom--medium
+    p 2. Button CTA
     .section__items
       button.btn.btn--cta.btn--x-large.u-mg-right--small x-large
       button.btn.btn--cta.btn--large.u-mg-right--small large
       button.btn.btn--cta.u-mg-right--small medium
       button.btn.btn--cta.btn--small small
   .section__content.u-mg-bottom--medium
-    p 2. Button Inverse CTA
+    p 3. Button Inverse CTA
     .section__items
       button.btn.btn--i-cta.btn--x-large.u-mg-right--small x-large
       button.btn.btn--i-cta.btn--large.u-mg-right--small large
       button.btn.btn--i-cta.u-mg-right--small medium
       button.btn.btn--i-cta.btn--small small
   .section__content.u-mg-bottom--medium
-    p 3. Button Disabled
+    p 4. Button Secondary
+    .section__items
+      button.btn.btn--secondary.btn--x-large.u-mg-right--small x-large
+      button.btn.btn--secondary.btn--large.u-mg-right--small large
+      button.btn.btn--secondary.u-mg-right--small medium
+      button.btn.btn--secondary.btn--small small
+  .section__content.u-mg-bottom--medium
+    p 5. Button Inverse Secondary
+    .section__items
+      button.btn.btn--i-secondary.btn--x-large.u-mg-right--small x-large
+      button.btn.btn--i-secondary.btn--large.u-mg-right--small large
+      button.btn.btn--i-secondary.u-mg-right--small medium
+      button.btn.btn--i-secondary.btn--small small
+  .section__content.u-mg-bottom--medium
+    p 6. Button Disabled
     .section__items
       button.btn.btn--cta.btn--x-large.u-mg-right--small(disabled= true) x-large
       button.btn.btn--cta.btn--large.u-mg-right--small(disabled= true) large
       button.btn.btn--cta.u-mg-right--small(disabled= true) medium
       button.btn.btn--cta.btn--small(disabled= true) small
+
   .section__content.u-mg-bottom--medium
-    p 4. Button Common
+    p 7. Button Common with Icon
     .section__items
-      button.btn.btn--common.btn--x-large.u-mg-right--small x-large
-      button.btn.btn--common.btn--large.u-mg-right--small large
-      button.btn.btn--common.u-mg-right--small medium
-      button.btn.btn--common.btn--small small
+      button.btn.btn--x-large.u-mg-right--small #[i.i-android-attach] x-large
+      button.btn.btn--large.u-mg-right--small #[i.i-android-attach] large
+      button.btn.u-mg-right--small #[i.i-android-attach] medium
+      button.btn.btn--small #[i.i-android-attach] small
   .section__content.u-mg-bottom--medium
-    p 5. Button Common with Icon
-    .section__items
-      button.btn.btn--common.btn--x-large.u-mg-right--small #[i.i-android-attach] x-large
-      button.btn.btn--common.btn--large.u-mg-right--small #[i.i-android-attach] large
-      button.btn.btn--common.u-mg-right--small #[i.i-android-attach] medium
-      button.btn.btn--common.btn--small #[i.i-android-attach] small
-  .section__content.u-mg-bottom--medium
-    p 6. Any Button with Icon
+    p 8. Any Button with Icon
     .section__items
       button.btn.btn--cta.btn--x-large.u-mg-right--small #[i.i-android-attach] x-large
       button.btn.btn--cta.btn--large.u-mg-right--small(disabled= true) #[i.i-android-attach] large
       button.btn.btn--i-cta.u-mg-right--small #[i.i-android-attach] medium
-      button.btn.btn--common.btn--small #[i.i-android-attach] small
+      button.btn.btn--small #[i.i-android-attach] small
   .section__content.u-mg-bottom--medium
-    p 7. Button Block - Use Grid
+    p 9. Button Block - Use Grid
     .section__items
       .row
         .gr-3
@@ -54,9 +69,9 @@ section.section(id= "buttons")
         .gr-3
           button.btn.btn--i-cta.btn--block #[i.i-android-attach] medium
         .gr-3
-          button.btn.btn--common.btn--small.btn--block #[i.i-android-attach] small
+          button.btn.btn--small.btn--block #[i.i-android-attach] small
   .section__content.u-mg-bottom--medium
-    p 8. Button Dropdown
+    p 10. Button Dropdown
     .section__items(data-module="actions")
       .btn-dropdown.u-mg-right--small(data-type="dropdown")
         button.btn.btn--cta common dropdown #[i.i-android-arrow-dropdown]
@@ -89,16 +104,16 @@ section.section(id= "buttons")
           li.dropdown__item Item dropdown 2
           li.dropdown__item Item dropdown 3
   .section__content.u-mg-bottom--medium
-    p 9. Button Group
+    p 11. Button Group
     .section__items
       .btn-group
-        button.btn.btn--common.btn--x-large #[i.i-android-attach] x-large
-        button.btn.btn--common.btn--x-large(disabled= true) x-large
-        button.btn.btn--common.btn--x-large x-large
+        button.btn.btn--x-large #[i.i-android-attach] x-large
+        button.btn.btn--x-large(disabled= true) x-large
+        button.btn.btn--x-large x-large
   .section__content.u-mg-bottom--medium
-    p 10. Button with Anchor Tag
+    p 12. Button with Anchor Tag
     .section__items
       .btn-group
-        a.btn.btn--common.btn--x-large(href= '#') x-large
-        a.btn.btn--common.btn--x-large(href= '#', disabled= true) x-large
-        a.btn.btn--common.btn--x-large(href= '#') x-large
+        a.btn.btn--x-large(href= '#') x-large
+        a.btn.btn--x-large(href= '#', disabled= true) x-large
+        a.btn.btn--x-large(href= '#') x-large
