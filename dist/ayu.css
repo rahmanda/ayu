@@ -2031,14 +2031,6 @@ p {
       border-left: 3px solid #254441;
       padding-left: 1em; }
 
-.quote {
-  display: block;
-  box-sizing: border-box;
-  padding: 12px;
-  border-radius: 5px;
-  background: #ffb0a4;
-  color: #fff; }
-
 .sidebar {
   position: fixed;
   top: 0;
