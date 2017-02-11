@@ -1,0 +1,37 @@
+// =====================================================
+// Flag
+// =====================================================
+// This is basically a meta component to help you
+// adjusting content layout like this
+// ##### ~~~~~~~ Legend: # can be an icon or image or anything
+// #   # ~~~~~~~         ~ can be a text or anything
+// ##### ~~ ~~~~
+// The different is you can adjust vertical alignment of
+// the object you store inside of #, and the rest of content
+// you place at ~ will fill the remaining space (using display table)
+// Reference: https://csswizardry.com/2013/05/the-flag-object/
+
+.flag {
+    display: table;
+    width: 100%;
+
+    &__head,
+    &__body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+.flag--top {
+    .flag__head,
+    .flag__body {
+        vertical-align: top;
+    }
+}
+
+.flag--bottom {
+    .flag__head,
+    .flag__body {
+        vertical-align: bottom;
+    }
+}

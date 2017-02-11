@@ -1,0 +1,14 @@
+$utilities-align-direction: left center right;
+$utilities-valign-direction: top middle bottom;
+
+@each $direction in $utilities-align-direction {
+    .u-align-#{$direction} {
+        text-align: $direction;
+    }
+}
+
+@each $direction in $utilities-valign-direction {
+    .u-valign-#{$direction} {
+        vertical-align: $direction;
+    }
+}

@@ -1564,6 +1564,22 @@ p {
   margin-bottom: 14px;
   text-align: left; }
 
+.badge {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 6px;
+  padding: 3px 6px;
+  color: #fff;
+  background: #569e3d;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 400;
+  border-radius: 3px;
+  text-decoration: none; }
+  .badge:hover {
+    cursor: pointer;
+    background: #60b044; }
+
 .btn {
   display: inline-block;
   box-sizing: border-box;
@@ -1749,8 +1765,6 @@ p {
   padding: 3px 6px;
   box-sizing: border-box;
   width: 500px; }
-  .callout__action {
-    float: right; }
   .callout--notification {
     position: fixed;
     top: -50px;
@@ -1950,6 +1964,21 @@ p {
   .is-error .field__error-message {
     display: block; }
 
+.flag {
+  display: table;
+  width: 100%; }
+  .flag__head, .flag__body {
+    display: table-cell;
+    vertical-align: middle; }
+
+.flag--top .flag__head,
+.flag--top .flag__body {
+  vertical-align: top; }
+
+.flag--bottom .flag__head,
+.flag--bottom .flag__body {
+  vertical-align: bottom; }
+
 .ipage {
   position: fixed;
   top: 0;
@@ -2040,22 +2069,6 @@ p {
       margin-left: 0;
       border-left: 3px solid #0c0d12;
       padding-left: 1em; }
-
-.badge {
-  display: inline-block;
-  box-sizing: border-box;
-  margin-right: 6px;
-  padding: 3px 6px;
-  color: #fff;
-  background: #569e3d;
-  font-size: 12px;
-  line-height: 1.4;
-  font-weight: 400;
-  border-radius: 3px;
-  text-decoration: none; }
-  .badge:hover {
-    cursor: pointer;
-    background: #60b044; }
 
 .tree {
   list-style: none;
@@ -2449,3 +2462,57 @@ p {
 
 .u-bg--orange {
   background-color: #c99600; }
+
+.u-width--1-12 {
+  width: 8.33333%; }
+
+.u-width--2-12 {
+  width: 16.66667%; }
+
+.u-width--3-12 {
+  width: 25%; }
+
+.u-width--4-12 {
+  width: 33.33333%; }
+
+.u-width--5-12 {
+  width: 41.66667%; }
+
+.u-width--6-12 {
+  width: 50%; }
+
+.u-width--7-12 {
+  width: 58.33333%; }
+
+.u-width--8-12 {
+  width: 66.66667%; }
+
+.u-width--9-12 {
+  width: 75%; }
+
+.u-width--10-12 {
+  width: 83.33333%; }
+
+.u-width--11-12 {
+  width: 91.66667%; }
+
+.u-width--12-12 {
+  width: 100%; }
+
+.u-align-left {
+  text-align: left; }
+
+.u-align-center {
+  text-align: center; }
+
+.u-align-right {
+  text-align: right; }
+
+.u-valign-top {
+  vertical-align: top; }
+
+.u-valign-middle {
+  vertical-align: middle; }
+
+.u-valign-bottom {
+  vertical-align: bottom; }

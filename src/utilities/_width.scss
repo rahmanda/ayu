@@ -1,0 +1,7 @@
+$utilities-total-column: 12 !default;
+
+@for $i from 1 through $utilities-total-column {
+    .u-width--#{$i}-#{$utilities-total-column} {
+        width: ($i / $utilities-total-column) * 100%;
+    }
+}

@@ -26,9 +26,6 @@ $theme-callout-enable: false !default;
 
     width: $theme-callout-width;
 
-    &__action {
-        float: right;
-    }
 
     &--notification {
         position: fixed;
