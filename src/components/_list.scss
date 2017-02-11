@@ -1,0 +1,51 @@
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    overflow-y: auto;
+    background: map-get($theme-list-color, background);
+
+    .list__item {
+        @include border($theme-list-border-size,
+                        $theme-list-border-style,
+                        $theme-list-border-color);
+
+    }
+
+    .list__nav {
+        display: block;
+        padding: $theme-list-padding;
+        color: map-get($theme-list-color, foreground);
+        font-size: $theme-list-font-size;
+
+        &:hover {
+            cursor: pointer;
+            background: darken(map-get($theme-list-color, background), 5%);
+        }
+    }
+
+    .list__section {
+        @include border($theme-list-border-size,
+                        $theme-list-border-style,
+                        $theme-list-border-color);
+        padding: $theme-list-section-padding;
+        color: map-get($theme-list-color, foreground);
+        font-size: $theme-list-section-font-size;
+        background: darken(map-get($theme-list-color, background), 10%);
+    }
+
+    &--with-border {
+        @include border($theme-border-size,
+                        $theme-border-style,
+                        $theme-border-color,
+                        $theme-border-radius);
+        .list__item:last-child {
+            border: 0;
+        }
+    }
+}

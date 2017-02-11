@@ -1,0 +1,11 @@
+$theme-list-border-size: 0 0 1px 0;
+$theme-list-border-style: solid;
+$theme-list-border-color: lighten(map-get($theme-colors, gray), 10%);
+$theme-list-padding: calculate-spacing(1.5) calculate-spacing(2);
+$theme-list-section-padding: calculate-spacing(1) calculate-spacing(2);
+$theme-list-font-size: map-get($theme-font-size, small);
+$theme-list-section-font-size: $theme-list-font-size * .85;
+$theme-list-color: (
+    background: lighten(map-get($theme-colors, gray), 30%),
+    foreground: map-get($theme-colors, black)
+);

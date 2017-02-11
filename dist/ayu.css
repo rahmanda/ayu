@@ -1554,6 +1554,10 @@ html {
 body {
   overflow: hidden; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 img {
   width: 100%;
   height: auto;
@@ -2001,6 +2005,45 @@ p {
 .flag--bottom .flag__body {
   vertical-align: bottom; }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 100%;
+  overflow-y: auto;
+  background: #e5e6e7; }
+  .list .list__item {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #b1b4b5; }
+  .list .list__nav {
+    display: block;
+    padding: 9px 12px;
+    color: #0c0d12;
+    font-size: 12px; }
+    .list .list__nav:hover {
+      cursor: pointer;
+      background: #d8dada; }
+  .list .list__section {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #b1b4b5;
+    padding: 6px 12px;
+    color: #0c0d12;
+    font-size: 10.2px;
+    background: #cbcdce; }
+  .list--with-border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d8dada;
+    border-radius: 3px; }
+    .list--with-border .list__item:last-child {
+      border: 0; }
+
 .ipage {
   position: fixed;
   top: 0;
@@ -2092,29 +2135,6 @@ p {
       margin-left: 0;
       border-left: 3px solid #0c0d12;
       padding-left: 1em; }
-
-.tree {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .tree__subtitle {
-    display: block;
-    font-weight: 700;
-    font-size: 14px;
-    color: #569e3d;
-    margin-bottom: 6px;
-    text-decoration: none; }
-    .tree__subtitle:hover {
-      color: #569e3d; }
-  .tree__link {
-    display: block;
-    font-weight: 400;
-    font-size: 14px;
-    color: #569e3d;
-    text-decoration: underline;
-    margin-bottom: 6px; }
-    .tree__link:hover {
-      color: #569e3d; }
 
 .u-mg--none {
   margin: 0px; }

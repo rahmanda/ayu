@@ -18,7 +18,6 @@ $theme-modal-enable: true !default;
 $theme-paginator-enable: true !default;
 $theme-post-enable: true !default;
 $theme-badge-enable: true !default;
-$theme-tree-enable: true !default;
 
 // -------------------------------------------
 // Base
@@ -44,4 +43,4 @@ $theme-tree-enable: true !default;
 @import "components/paginator";
 @import "components/post";
 @import "components/badge";
-@import "components/tree";
+@import "components/list";
