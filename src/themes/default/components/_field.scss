@@ -9,9 +9,9 @@ $theme-field-input-padding: (
     x-large: calculate-spacing(1.5) calculate-spacing(2)
 ) !default;
 
-$theme-field-input-error-color: $pink !default;
+$theme-field-input-error-color: lighten(map-get($theme-colors, red), 10%) !default;
 
-$theme-field-input-active-color: $bright-blues !default;
+$theme-field-input-active-color: map-get($theme-colors, blue) !default;
 
 // TODO: use theme color instead
 $theme-field-input-active-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 5px rgba(81, 167, 232, .5) !default;

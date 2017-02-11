@@ -1,0 +1,14 @@
+// ===========================================
+// Badge - Default Theme
+// ==========================================
+
+$theme-badge-padding: calculate-spacing(.5) calculate-spacing(1) !default;
+$theme-badge-margin: calculate-spacing(1) !default;
+$theme-badge-border-radius: $theme-border-radius !default;
+
+// Badge
+$theme-color-badge: (
+    background: map-get($theme-colors, green),
+    foreground: map-get($theme-colors, white),
+    hover: lighten(map-get($theme-colors, green), 5%)
+) !default;

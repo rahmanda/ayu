@@ -27,12 +27,12 @@ $theme-post-line-height: (
 
 // Post
 $theme-color-post: (
-    background: $white,
-    foreground: $black,
-    title: $japanese-indigo,
-    blockquote: $japanese-indigo,
-    border: $timberwolf,
-    link-default: $zomp,
-    link-hover: $dark-zomp,
-    date: $laurel-green
+    background: map-get($theme-colors, white),
+    foreground: map-get($theme-colors, black),
+    title: map-get($theme-colors, black),
+    blockquote: map-get($theme-colors, black),
+    border: map-get($theme-colors, green),
+    link-default: map-get($theme-colors, green),
+    link-hover: map-get($theme-colors, green),
+    date: map-get($theme-colors, green)
 ) !default;

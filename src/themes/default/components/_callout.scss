@@ -4,22 +4,28 @@
 
 $theme-callout-padding: (
     medium: calculate-spacing(.5) calculate-spacing(1),
-    large: calculate-spacing(1) calculate-spacing(1.5)
+    large: calculate-spacing(1) calculate-spacing(1.5),
+    x-large: calculate-spacing(1.5) calculate-spacing(2)
 ) !default;
 
-$theme-color-callout-success: (
-    background: $green,
-    foreground: $deep-green
+$theme-color-callout-green: (
+    background: lighten(map-get($theme-colors, green), 50%),
+    foreground: map-get($theme-colors, green)
 ) !default;
 
-$theme-color-callout-error: (
-    background: $pink,
-    foreground: $red
+$theme-color-callout-red: (
+    background: lighten(map-get($theme-colors, red), 50%),
+    foreground: map-get($theme-colors, red)
 ) !default;
 
-$theme-color-callout-warning: (
-    background: $green,
-    foreground: $deep-green
+$theme-color-callout-yellow: (
+    background: lighten(map-get($theme-colors, orange), 50%),
+    foreground: map-get($theme-colors, orange)
+) !default;
+
+$theme-color-callout-gray: (
+    background: lighten(map-get($theme-colors, gray), 30%),
+    foreground: map-get($theme-colors, gray)
 ) !default;
 
 $theme-callout-position-top: -50px !default;

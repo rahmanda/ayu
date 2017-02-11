@@ -7,7 +7,7 @@ $theme-tree-link-margin: calculate-spacing(1) !default;
 
 // Tree
 $theme-color-tree: (
-    subtitle: $japanese-indigo,
-    list-default: $zomp,
-    list-hover: $dark-zomp
+    subtitle: map-get($theme-colors, green),
+    list-default: map-get($theme-colors, green),
+    list-hover: map-get($theme-colors, green)
 ) !default;

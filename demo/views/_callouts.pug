@@ -1,17 +1,54 @@
 section.section(id= "fields", data-module="notification")
   header.section__header
-    h2.u-text--large.u-mg-bottom--medium Notification
+    h2.u-text--large.u-mg-bottom--medium Callout
+    p Callout is a colorful box that can be used as, not limited to note on a post or flash notification
   .section__content.u-mg-bottom--medium
-    p 1. Success notification
+    p 1. Basic Callout
+    .section__items.u-mg-bottom--medium
+      .row
+        .gr-4
+          .callout.callout--block This is basic callout with boring color
+        .gr-4
+          .callout.callout--block.callout--large Large basic callout
+        .gr-4
+          .callout.callout--block.callout--x-large Extra Large basic callout
+    p 2. Green Callout
+    .section__items.u-mg-bottom--medium
+      .row
+        .gr-4
+          .callout.callout--block.callout--green Now this is starting to be interesting
+        .gr-4
+          .callout.callout--block.callout--green.callout--large Large Green Callout
+        .gr-4
+          .callout.callout--block.callout--green.callout--x-large Extra Large basic callout
+    p 3. Red Callout
+    .section__items.u-mg-bottom--medium
+      .row
+        .gr-4
+          .callout.callout--block.callout--red Yeay, another color variant!
+        .gr-4
+          .callout.callout--block.callout--red.callout--large Yeay, another color variant!
+        .gr-4
+          .callout.callout--block.callout--red.callout--x-large Yeay, another color variant!
+    p 4. Yellow Callout
+    .section__items.u-mg-bottom--medium
+      .row
+        .gr-4
+          .callout.callout--block.callout--yellow You have pretty much gotten the idea, right?
+        .gr-4
+          .callout.callout--block.callout--yellow.callout--large You have pretty much gotten the idea, right?
+        .gr-4
+          .callout.callout--block.callout--yellow.callout--x-large You have pretty much gotten the idea, right?
+    p 5. Success notification
     button.btn.btn--common(data-type="trigger", data-target='success-notif') Click to Show Notification
     .section__items
-      .callout.callout--notification#success-notif.
+      .callout.callout--green.callout--notification#success-notif.
         This is just notif
         #[span.callout__action #[i.i-close]]
   .section__content.u-mg-bottom--medium
-    p 2. Error notification
+    p 6. Error notification
     button.btn.btn--common(data-type="trigger", data-target='error-notif') Click to Show Notification
     .section__items
-      .callout.callout--notification.callout--error#error-notif.
+      .callout.callout--red.callout--notification.callout--error#error-notif.
         This is just notif
         #[span.callout__action #[i.i-close]]

@@ -1,0 +1,28 @@
+// =====================================================
+// Badge
+// =====================================================
+
+$badge-prefix: "badge" !default;
+$theme-badge-enable: false !default;
+
+@if ($theme-badge-enable == true) {
+.#{$badge-prefix} {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: $theme-badge-margin;
+    padding: $theme-badge-padding;
+    color: map-get($theme-color-badge, foreground);
+    background: map-get($theme-color-badge, background);
+    font-size: map-get($theme-font-size, small);
+    line-height: map-get($theme-line-height, small);
+    font-weight: map-get($theme-font-weight, normal);
+    border-radius: $theme-badge-border-radius;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        background: map-get($theme-color-badge, hover);
+    }
+}
+
+}

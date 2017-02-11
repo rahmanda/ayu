@@ -12,18 +12,18 @@ $theme-callout-enable: false !default;
 .#{$callout-prefix} {
     @include border($theme-border-size,
 		            $theme-border-style,
-                    map-get($theme-color-callout-warning, foreground),
+                    map-get($theme-color-callout-gray, foreground),
 		            $theme-border-radius);
 
     font-size: map-get($theme-font-size, medium);
     font-family: $theme-font-family;
 
-    color: $theme-color-background;
-    background: map-get($theme-color-callout-warning, background);
+    color: map-get($theme-color-callout-gray, foreground);
+    background: map-get($theme-color-callout-gray, background);
 
     padding: map-get($theme-callout-padding, medium);
+    box-sizing: border-box;
 
-    margin: 0 auto;
     width: $theme-callout-width;
 
     &__action {
@@ -36,16 +36,51 @@ $theme-callout-enable: false !default;
         left: 0;
         right: 0;
         transition: $theme-callout-transition;
+        margin: 0 auto;
 
         &.is-show {
             top: $theme-callout-position-show-top;
         }
     }
 
-    &--error {
-        border-color: map-get($theme-color-callout-error, foreground);
-        background: map-get($theme-color-callout-error, background);
+    // -----------------------------------------------------
+    // Color Variant
+    // -----------------------------------------------------
+
+    &--red {
+        border-color: map-get($theme-color-callout-red, foreground);
+        background: map-get($theme-color-callout-red, background);
+        color: map-get($theme-color-callout-red, foreground);
     }
+
+    &--green {
+        border-color: map-get($theme-color-callout-green, foreground);
+        background: map-get($theme-color-callout-green, background);
+        color: map-get($theme-color-callout-green, foreground);
+    }
+
+    &--yellow {
+        border-color: map-get($theme-color-callout-yellow, foreground);
+        background: map-get($theme-color-callout-yellow, background);
+        color: map-get($theme-color-callout-yellow, foreground);
+    }
+
+    // -----------------------------------------------------
+    // Size Variant
+    // -----------------------------------------------------
+
+    &--large {
+        padding: map-get($theme-callout-padding, large);
+    }
+
+    &--x-large {
+        padding: map-get($theme-callout-padding, x-large);
+    }
+
+    &--block {
+        width: 100%;
+    }
+
 }
 
 }

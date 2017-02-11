@@ -1,5 +1,5 @@
 $theme-dropdown-item-margin-hz: -1 * calculate-spacing(3) !default;
-$theme-color-dropdown-item-hover: $bright-gray !default;
+$theme-color-dropdown-item-hover: lighten(map-get($theme-colors, gray), 25%) !default;
 $theme-dropdown-padding: (
     small: calculate-spacing(.5),
     medium: calculate-spacing(.5) calculate-spacing(1),

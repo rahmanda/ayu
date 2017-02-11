@@ -17,8 +17,8 @@ $theme-button-padding       : (
 // -------------------------------------------
 
 $theme-color-button-disabled: (
-    background: map-get($theme-colors, gray),
-    foreground: map-get($theme-colors, deep-gray)
+    background: lighten(map-get($theme-colors, gray), 30%),
+    foreground: map-get($theme-colors, gray)
 ) !default;
 
 $theme-color-button-common-normal: (
@@ -27,12 +27,12 @@ $theme-color-button-common-normal: (
 ) !default;
 
 $theme-color-button-common-hover: (
-    background: map-get($theme-colors, bright-gray),
+    background: lighten(map-get($theme-colors, gray), 35%),
     foreground: map-get($theme-colors, black)
 ) !default;
 
 $theme-color-button-cta-normal: (
-    background: map-get($theme-colors, bright-green),
+    background: lighten(map-get($theme-colors, green), 5%),
     foreground: map-get($theme-colors, white)
 ) !default;
 
@@ -43,7 +43,7 @@ $theme-color-button-cta-hover: (
 
 $theme-color-button-inverse-cta-normal: (
     background: transparent,
-    foreground: map-get($theme-colors, bright-green)
+    foreground: lighten(map-get($theme-colors, green), 5%)
 ) !default;
 
 $theme-color-button-inverse-cta-hover: (

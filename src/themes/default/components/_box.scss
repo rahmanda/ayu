@@ -9,17 +9,17 @@ $theme-box-border-style  : $theme-border-style !default;
 $theme-box-text-align    : left !default;
 
 $theme-color-box-header: (
-    background : map-get($theme-colors, bright-gray),
-    foreground : map-get($theme-colors, gray)
+    background : lighten(map-get($theme-colors, gray), 35%),
+    foreground : lighten(map-get($theme-colors, gray), 25%)
 ) !default;
 
 $theme-color-box-header-danger: (
-    background : map-get($theme-colors, pink),
+    background : lighten(map-get($theme-colors, red), 15%),
     foreground : map-get($theme-colors, red)
 ) !default;
 
 $theme-color-box-content: (
     background : map-get($theme-colors, white),
     foreground : map-get($theme-colors, gray),
-    border     : map-get($theme-colors, gray)
+    border     : lighten(map-get($theme-colors, gray), 25%)
 ) !default;
