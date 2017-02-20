@@ -6,6 +6,24 @@ html(lang='en')
     link(href='demo.css', rel='stylesheet')
   body
     .row
+      .gr-10
+        .u-pd-right--large.u-pd-left--x-large
+          .hero
+            h1.hero__title.u-text-post--x-large.u-text-align--center Ayu
+            p.hero__body.u-text-post--medium.u-text-align--center CSS bootstrap for web UI, powered by Gridle and Ionicons, and follow BEM styleguide.
+          p.u-text-align--center #[em Why another scaffold dear developer?] Because i need my very own scaffold.
+          include _buttons.pug
+          include _fields.pug
+          include _box.pug
+          include _callouts.pug
+          include _modals.pug
+          include _cards.pug
+          p.
+            Thanks to the developer that made these cool stuff, they are either become my guide on making this framework or included in this framework -
+            #[a(href="http://getbootstrap.com") Bootstrap Twitter]
+            #[a(href= "http://gulpjs.com/") Gulp]
+            #[a(href= "http://gridle.org") Gridle.scss]
+            #[a(href= "https://github.com/driftyco/ionicons") Ionicons]
       .gr-2(style='position: relative;')
         ul.list
           li.list__item
@@ -24,21 +42,4 @@ html(lang='en')
           li.list__section Mixing Out Components
           li.list__item
             a.list__nav(href="#card") Card
-      .gr-10.u-pd-left--x-large.u-pd-right--x-large
-        .hero
-          h1.hero__title.u-text-post--x-large.u-text-align--center Ayu
-          p.hero__body.u-text-post--medium.u-text-align--center CSS bootstrap for web UI, powered by Gridle and Ionicons, and follow BEM styleguide.
-        p.u-text-align--center #[em Why another scaffold dear developer?] Because i need my very own scaffold.
-        include _buttons.pug
-        include _fields.pug
-        include _box.pug
-        include _callouts.pug
-        include _modals.pug
-        include _cards.pug
-        p.
-          Thanks to the developer that made these cool stuff, they are either become my guide on making this framework or included in this framework -
-          #[a(href="http://getbootstrap.com") Bootstrap Twitter]
-          #[a(href= "http://gulpjs.com/") Gulp]
-          #[a(href= "http://gridle.org") Gridle.scss]
-          #[a(href= "https://github.com/driftyco/ionicons") Ionicons]
     script(src='app.min.js', type="text/javascript")

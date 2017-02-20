@@ -13,6 +13,7 @@ var buffer      = require("vinyl-buffer");
 var browserify  = require("browserify");
 var argv        = require("yargs").argv;
 var chalk       = require("chalk");
+var highlighter = require("gulp-highlight");
 
 var ROOTPATH = "/";
 var SERVER   = "http://localhost:8000";
@@ -115,6 +116,7 @@ gulp.task('js-watch', ['browserify'], function(done) {
 gulp.task('pug', function() {
   return gulp.src(PATH.view.entry)
     .pipe(pug())
+    .pipe(highlighter())
     .pipe(gulp.dest(PREFIX_PATH.public));
 });
 

@@ -1,66 +1,107 @@
 section.section(id= "button")
   header.section__header
-    h2.u-text--large.u-mg-bottom--medium Buttons
-  .section__content.u-mg-bottom--medium
-    p 1. Basic Button
-    .section__items
+    h2.u-text-post--large.u-mg-bottom--medium Buttons
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Basic Button
+    .section__items.u-mg-bottom--medium
       button.btn.btn--x-large.u-mg-right--small x-large
       button.btn.btn--large.u-mg-right--small large
       button.btn.u-mg-right--small medium
       button.btn.btn--small small
-  .section__content.u-mg-bottom--medium
-    p 2. Button CTA
-    .section__items
+    code(class= 'html').
+      <button class='btn btn--x-large'>x-large</button>
+      <button class='btn btn--large'>large</button>
+      <button class='btn'>medium</button>
+      <button class='btn btn--small'>small</button>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Button CTA
+    .section__items.u-mg-bottom--medium
       button.btn.btn--cta.btn--x-large.u-mg-right--small x-large
       button.btn.btn--cta.btn--large.u-mg-right--small large
       button.btn.btn--cta.u-mg-right--small medium
       button.btn.btn--cta.btn--small small
-  .section__content.u-mg-bottom--medium
-    p 3. Button Inverse CTA
-    .section__items
+    code(class= 'html').
+      <button class='btn btn--cta btn--x-large'>x-large</button>
+      <button class='btn btn--cta btn--large'>large</button>
+      <button class='btn btn--cta'>medium</button>
+      <button class='btn btn--cta btn--small'>small</button>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Button Inverse CTA
+    .section__items.u-mg-bottom--medium
       button.btn.btn--i-cta.btn--x-large.u-mg-right--small x-large
       button.btn.btn--i-cta.btn--large.u-mg-right--small large
       button.btn.btn--i-cta.u-mg-right--small medium
       button.btn.btn--i-cta.btn--small small
-  .section__content.u-mg-bottom--medium
-    p 4. Button Secondary
-    .section__items
+    code(class= 'html').
+      <button class='btn btn--i-cta btn--x-large'>x-large</button>
+      <button class='btn btn--i-cta btn--large'>large</button>
+      <button class='btn btn--i-cta'>medium</button>
+      <button class='btn btn--i-cta btn--small'>small</button>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Button Secondary
+    .section__items.u-mg-bottom--medium
       button.btn.btn--secondary.btn--x-large.u-mg-right--small x-large
       button.btn.btn--secondary.btn--large.u-mg-right--small large
       button.btn.btn--secondary.u-mg-right--small medium
       button.btn.btn--secondary.btn--small small
-  .section__content.u-mg-bottom--medium
-    p 5. Button Inverse Secondary
-    .section__items
+    code(class= 'html').
+      <button class='btn btn--secondary btn--x-large'>x-large</button>
+      <button class='btn btn--secondary btn--large'>large</button>
+      <button class='btn btn--secondary'>medium</button>
+      <button class='btn btn--secondary btn--small'>small</button>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Button Inverse Secondary
+    .section__items.u-mg-bottom--medium
       button.btn.btn--i-secondary.btn--x-large.u-mg-right--small x-large
       button.btn.btn--i-secondary.btn--large.u-mg-right--small large
       button.btn.btn--i-secondary.u-mg-right--small medium
       button.btn.btn--i-secondary.btn--small small
-  .section__content.u-mg-bottom--medium
-    p 6. Button Disabled
-    .section__items
+    code(class= 'html').
+      <button class='btn btn--i-secondary btn--x-large'>x-large</button>
+      <button class='btn btn--i-secondary btn--large'>large</button>
+      <button class='btn btn--i-secondary'>medium</button>
+      <button class='btn btn--i-secondary btn--small'>small</button>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Button Disabled
+    .section__items.u-mg-bottom--medium
       button.btn.btn--cta.btn--x-large.u-mg-right--small(disabled= true) x-large
       button.btn.btn--cta.btn--large.u-mg-right--small(disabled= true) large
       button.btn.btn--cta.u-mg-right--small(disabled= true) medium
       button.btn.btn--cta.btn--small(disabled= true) small
-
-  .section__content.u-mg-bottom--medium
-    p 7. Button Common with Icon
-    .section__items
+    code(class= 'html').
+      <button class='btn btn--cta btn--x-large' disabled>x-large</button>
+      <button class='btn btn--cta btn--large' disabled>large</button>
+      <button class='btn btn--cta' disabled>medium</button>
+      <button class='btn btn--cta btn--small' disabled>small</button>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Button Common with Icon
+    p
+      i Note: We do not provide icon out of the box, so you can use whatever icons you like
+    .section__items.u-mg-bottom--medium
       button.btn.btn--x-large.u-mg-right--small #[i.i-android-attach] x-large
       button.btn.btn--large.u-mg-right--small #[i.i-android-attach] large
       button.btn.u-mg-right--small #[i.i-android-attach] medium
       button.btn.btn--small #[i.i-android-attach] small
-  .section__content.u-mg-bottom--medium
-    p 8. Any Button with Icon
-    .section__items
+    code(class= 'html').
+      <button class='btn btn--x-large'><i class='i-android-attach'></i>x-large</button>
+      <button class='btn btn--large'><i class='i-android-attach'></i>large</button>
+      <button class='btn'><i class='i-android-attach'></i>medium</button>
+      <button class='btn btn--small'><i class='i-android-attach'></i>small</button>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Any Button with Icon
+    .section__items.u-mg-bottom--medium
       button.btn.btn--cta.btn--x-large.u-mg-right--small #[i.i-android-attach] x-large
       button.btn.btn--cta.btn--large.u-mg-right--small(disabled= true) #[i.i-android-attach] large
       button.btn.btn--i-cta.u-mg-right--small #[i.i-android-attach] medium
       button.btn.btn--small #[i.i-android-attach] small
-  .section__content.u-mg-bottom--medium
-    p 9. Button Block - Use Grid
-    .section__items
+    code(class= 'html').
+      <button class='btn btn--x-large'><i class='i-android-attach'></i>x-large</button>
+      <button class='btn btn--large'><i class='i-android-attach'></i>large</button>
+      <button class='btn'><i class='i-android-attach'></i>medium</button>
+      <button class='btn btn--small'><i class='i-android-attach'></i>small</button>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Button Block - Use Grid
+    .section__items.u-mg-bottom--medium
       .row
         .gr-3
           button.btn.btn--cta.btn--block.btn--x-large #[i.i-android-attach] x-large
@@ -70,21 +111,27 @@ section.section(id= "button")
           button.btn.btn--i-cta.btn--block #[i.i-android-attach] medium
         .gr-3
           button.btn.btn--small.btn--block #[i.i-android-attach] small
-  .section__content.u-mg-bottom--medium
-    p 10. Button Dropdown
-    .section__items(data-module="actions")
+    code(class= 'html').
+      <div class='row'>
+        <div class='gr-3'>
+          <button class='btn btn--cta btn--block btn--x-large'>x-large</button>
+        </div>
+      </div>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Button Dropdown
+    .section__items.u-mg-bottom--medium(data-module="actions")
       .btn-dropdown.u-mg-right--small(data-type="dropdown")
         button.btn.btn--cta common dropdown #[i.i-android-arrow-dropdown]
         .dropdown
+          .dropdown__item
+            h4 Item dropdown 1
+            .dropdown__item-content Lorem ipsum dolor sit amet, bla blab blab bla bla
           .dropdown__item.
-            #[h4 Item dropdown 1]
-            #[.dropdown__item-content Lorem ipsum dolor sit amet, bla blab blab bla bla]
+            h4 Item dropdown 2
+            .dropdown__item-content Lorem ipsum dolor sit amet, bla blab blab bla bla
           .dropdown__item.
-            #[h4 Item dropdown 2]
-            #[.dropdown__item-content Lorem ipsum dolor sit amet, bla blab blab bla bla]
-          .dropdown__item.
-            #[h4 Item dropdown 3]
-            #[.dropdown__item-content Lorem ipsum dolor sit amet, bla blab blab bla bla]
+            h4 Item dropdown 3
+            .dropdown__item-content Lorem ipsum dolor sit amet, bla blab blab bla bla
       .btn-dropdown.u-mg-right--small(data-type="dropdown")
         button.btn.btn--cta dropdown right #[i.i-android-arrow-dropdown]
         ul.dropdown.dropdown--right
@@ -103,17 +150,43 @@ section.section(id= "button")
           li.dropdown__item Item dropdown 1
           li.dropdown__item Item dropdown 2
           li.dropdown__item Item dropdown 3
-  .section__content.u-mg-bottom--medium
-    p 11. Button Group
-    .section__items
+    code(class= 'html').
+      <div class='btn-dropdown'>
+        <button class='btn btn--cta'>Dropdown <i class='i-android-arrow-dropdown'></i></button>
+        <div class='dropdown'>
+          <div class='dropdown__item'>
+            <div class='dropdown__item-content'>Content of dropdown</div>
+          </div>
+          <div class='dropdown__item'>
+            <div class='dropdown__item-content'>Content of dropdown</div>
+          </div>
+        </div>
+      </div>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Button Group
+    p
+      i Note: buttons should be on same size
+    .section__items.u-mg-bottom--medium
       .btn-group
         button.btn.btn--x-large #[i.i-android-attach] x-large
         button.btn.btn--x-large(disabled= true) x-large
         button.btn.btn--x-large x-large
-  .section__content.u-mg-bottom--medium
-    p 12. Button with Anchor Tag
-    .section__items
+    code(class= 'html').
+      <div class='btn-group'>
+        <button class='btn btn--x-large'>x-large</button>
+        <button class='btn btn--x-large' disabled>x-large</button>
+        <button class='btn btn--x-large'>x-large</button>
+      </div>
+  .section__content.u-mg-bottom--x-large
+    p.u-text--large Button with Anchor Tag
+    .section__items.u-mg-bottom--medium
       .btn-group
         a.btn.btn--x-large(href= '#') x-large
         a.btn.btn--x-large(href= '#', disabled= true) x-large
         a.btn.btn--x-large(href= '#') x-large
+    code(class= 'html').
+      <div class='btn-group'>
+        <a class='btn btn--x-large' href='#'>x-large</a>
+        <a class='btn btn--x-large' href='#' disabled>x-large</a>
+        <a class='btn btn--x-large' href='#'>x-large</a>
+      </div>
