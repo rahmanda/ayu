@@ -23,7 +23,7 @@ $theme-tab-nav-float: left !default;
 
 $theme-tab-panel-border-size: $theme-border-size !default;
 $theme-tab-panel-border-color: $theme-border-color !default;
-$theme-tab-panel-padding: calculate-spacing(1.5) calculate-spacing(2) !default;
+$theme-tab-panel-padding: calculate-spacing(3) !default;
 $theme-tab-panel-color: (
     foreground: $theme-color-text,
     background: $theme-color-background
