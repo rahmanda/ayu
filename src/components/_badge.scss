@@ -26,18 +26,34 @@ $theme-badge-enable: false !default;
 
     &--gray {
         background: map-get($theme-colors, gray);
+
+        &:hover {
+            background: lighten(map-get($theme-colors, gray), 5%);
+        }
     }
 
     &--blue {
         background: map-get($theme-colors, blue);
+
+        &:hover {
+            background: lighten(map-get($theme-colors, blue), 5%);
+        }
     }
 
     &--red {
         background: map-get($theme-colors, red);
+
+        &:hover {
+            background: lighten(map-get($theme-colors, red), 5%);
+        }
     }
 
     &--orange {
         background: map-get($theme-colors, orange);
+
+        &:hover {
+            background: lighten(map-get($theme-colors, orange), 5%);
+        }
     }
 }
 

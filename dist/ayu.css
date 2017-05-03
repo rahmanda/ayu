@@ -1585,12 +1585,20 @@ p {
     background: #60b044; }
   .badge--gray {
     background: #979b9c; }
+    .badge--gray:hover {
+      background: #a4a8a8; }
   .badge--blue {
     background: #51a7e8; }
+    .badge--blue:hover {
+      background: #68b2eb; }
   .badge--red {
     background: #d90429; }
+    .badge--red:hover {
+      background: #f2042e; }
   .badge--orange {
     background: #c99600; }
+    .badge--orange:hover {
+      background: #e3a900; }
 
 .btn {
   border-width: 1px;
