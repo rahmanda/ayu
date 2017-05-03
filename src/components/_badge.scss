@@ -23,6 +23,22 @@ $theme-badge-enable: false !default;
         cursor: pointer;
         background: map-get($theme-color-badge, hover);
     }
+
+    &--gray {
+        background: map-get($theme-colors, gray);
+    }
+
+    &--blue {
+        background: map-get($theme-colors, blue);
+    }
+
+    &--red {
+        background: map-get($theme-colors, red);
+    }
+
+    &--orange {
+        background: map-get($theme-colors, orange);
+    }
 }
 
 }

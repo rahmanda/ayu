@@ -1,0 +1,78 @@
+// =====================================================
+// Tab
+// =====================================================
+// "We style it because the built-in is suck"
+
+$tab-prefix: "tab" !default;
+$theme-tab-enable: false !default;
+
+@if ($theme-tab-enable == true) {
+
+.#{$tab-prefix} {
+    font-size: map-get($theme-font-size, medium);
+    font-family: $theme-font-family;
+
+    display: block;
+
+    &-nav {
+        @include clearfix;
+
+        display: block;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    &-nav__menu {
+        @include border($theme-tab-nav-border-size,
+                        $theme-border-style,
+                        map-get($theme-tab-nav-border-color, normal),
+                        $theme-tab-nav-border-radius);
+        display: block;
+
+        list-style: none;
+
+        color: map-get($theme-tab-nav-color, foreground);
+        background: map-get($theme-tab-nav-color, background);
+
+        float: $theme-tab-nav-float;
+
+        margin: $theme-tab-nav-margin;
+        padding: $theme-tab-nav-padding;
+        box-sizing: border-box;
+
+        &:first-child {
+            margin: $theme-tab-nav-first-child-margin;
+        }
+
+        &.is-active {
+            @include border($theme-tab-nav-border-size,
+                            $theme-border-style,
+                            map-get($theme-tab-nav-border-color, is-active),
+                            $theme-tab-nav-border-radius);
+
+            color: map-get($theme-tab-nav-color--is-active, foreground);
+            background: map-get($theme-tab-nav-color--is-active, background);
+        }
+    }
+
+    &__panel {
+        @include border($theme-tab-panel-border-size,
+                        $theme-border-style,
+                        $theme-tab-panel-border-color,
+                        $theme-border-radius);
+
+        display: none;
+
+        color: map-get($theme-tab-panel-color, foreground);
+        background: map-get($theme-tab-panel-color, background);
+
+        padding: $theme-tab-panel-padding;
+
+        &.is-active {
+            display: block;
+        }
+    }
+}
+
+}

@@ -1,0 +1,30 @@
+// ===========================================
+// Tab - Default Theme
+// ==========================================
+
+$theme-tab-nav-border-size: $theme-border-size !default;
+$theme-tab-nav-border-radius: $theme-border-radius $theme-border-radius 0 0 !default;
+$theme-tab-nav-border-color: (
+    normal: $theme-border-color,
+    is-active: $theme-border-color $theme-border-color $theme-color-background
+) !default;
+$theme-tab-nav-color: (
+    foreground: map-get($theme-colors, gray),
+    background: lighten(map-get($theme-colors, gray), 30%)
+) !default;
+$theme-tab-nav-color--is-active: (
+    foreground: $theme-color-text,
+    background: $theme-color-background
+) !default;
+$theme-tab-nav-margin: 0 0 (-1 * $theme-tab-nav-border-size) (-1 * $theme-tab-nav-border-size) !default;
+$theme-tab-nav-first-child-margin: 0 0 (-1 * $theme-tab-nav-border-size) !default;
+$theme-tab-nav-padding: calculate-spacing(1.5) calculate-spacing(2) !default;
+$theme-tab-nav-float: left !default;
+
+$theme-tab-panel-border-size: $theme-border-size !default;
+$theme-tab-panel-border-color: $theme-border-color !default;
+$theme-tab-panel-padding: calculate-spacing(1.5) calculate-spacing(2) !default;
+$theme-tab-panel-color: (
+    foreground: $theme-color-text,
+    background: $theme-color-background
+) !default;

@@ -12,11 +12,13 @@ html(lang='en')
             h1.hero__title.u-text-post--x-large.u-text-align--center Ayu
             p.hero__body.u-text-post--medium.u-text-align--center CSS bootstrap for web UI, powered by Gridle and Ionicons, and follow BEM styleguide.
           p.u-text-align--center #[em Why another scaffold dear developer?] Because i need my very own scaffold.
+          include _badge.pug
           include _buttons.pug
           include _fields.pug
           include _box.pug
           include _callouts.pug
           include _modals.pug
+          include _tab.pug
           include _cards.pug
           p.
             Thanks to the developer that made these cool stuff, they are either become my guide on making this framework or included in this framework -
@@ -30,6 +32,8 @@ html(lang='en')
             a.list__nav(href="#") Introduction
           li.list__section Components
           li.list__item
+            a.list__nav(href="#badge") Badges
+          li.list__item
             a.list__nav(href="#button") Buttons
           li.list__item
             a.list__nav(href="#field") Fields
@@ -39,6 +43,8 @@ html(lang='en')
             a.list__nav(href="#callout") Callout
           li.list__item
             a.list__nav(href="#modal") Modal
+          li.list__item
+            a.list__nav(href="#tab") Tab
           li.list__section Mixing Out Components
           li.list__item
             a.list__nav(href="#card") Card

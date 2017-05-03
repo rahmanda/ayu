@@ -55,7 +55,7 @@ var BUILD_NAME = {
 
 // Static server + watching asset files
 gulp.task('serve', ['sass-minified', 'sass-unminified', 'browserify', 'pug', 'demo', 'static'], function() {
-  var sync = argv.browserify ? argv.browserify : 'false';
+  var sync = argv.browserify ? argv.browserify : 'true';
 
   if (sync === 'true') {
     browserSync.init({

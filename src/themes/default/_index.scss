@@ -7,6 +7,7 @@
 $theme-max-breakpoint: 1224px !default;
 $theme-cdn-icon: false !default;
 
+$theme-badge-enable: true !default;
 $theme-box-enable: true !default;
 $theme-button-enable: true !default;
 $theme-callout-enable: true !default;
@@ -17,7 +18,7 @@ $theme-icon-enable: true !default;
 $theme-modal-enable: true !default;
 $theme-paginator-enable: true !default;
 $theme-post-enable: true !default;
-$theme-badge-enable: true !default;
+$theme-tab-enable: true !default;
 
 // -------------------------------------------
 // Base
@@ -33,14 +34,15 @@ $theme-badge-enable: true !default;
 // Components
 // -------------------------------------------
 
+@import "components/badge";
 @import "components/box";
 @import "components/button";
 @import "components/callout";
 @import "components/dropdown";
 @import "components/field";
 @import "components/inline-page";
+@import "components/list";
 @import "components/modal";
 @import "components/paginator";
 @import "components/post";
-@import "components/badge";
-@import "components/list";
+@import "components/tab";
