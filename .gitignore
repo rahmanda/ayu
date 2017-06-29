@@ -2,4 +2,5 @@
 /bower_components
 /public
 .env
+npm-debug.log
 .*swp
