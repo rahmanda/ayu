@@ -26,6 +26,7 @@ It is very easy to extend because every unit can be easily overidden. Every exte
 Download the file here:
 - [Minimized version](https://raw.githubusercontent.com/rahmanda/ayu/master/dist/ayu.min.css) (42kb)  
 - [Unminimized version](https://raw.githubusercontent.com/rahmanda/ayu/master/dist/ayu.css) (56kb)  
+
 and reference it to your HTML head tag `<link rel='stylesheet' href='ayu.min.css' />`.  
 
 You can also install it via `bower install ayu` or via `npm install ayu-css`.  
