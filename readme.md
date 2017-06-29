@@ -5,6 +5,7 @@ Ayu is yet another CSS bootstrap for web UI. It is built over simplicity, flexib
 
 ## Components  
 Ayu consists of components below:  
+
 - Badges  
 - Buttons  
 - Fields  
@@ -12,6 +13,7 @@ Ayu consists of components below:
 - Callout  
 - Modal  
 - Grid (via Gridle)  
+
 They are very lite and highly reusable. Even so, you can build new UI by combining two or more components.
 
 ## Styleguide  
