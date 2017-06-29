@@ -1,6 +1,6 @@
 {
   "name": "ayu-css",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Another css bootstrap for web UI, powered by Gridle and Ionicons",
   "main": "src/ayu.scss",
   "scripts": {
