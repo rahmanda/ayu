@@ -71,7 +71,7 @@ gulp.task('serve', ['sass-minified', 'sass-unminified', 'browserify', 'pug', 'de
   gulp.watch(PATH.demo.entry, ['demo']);
 });
 
-gulp.task('build', ['sass-unminified', 'sass-minified']);
+gulp.task('build', ['sass-unminified', 'sass-minified', 'browserify', 'pug', 'demo', 'static']);
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass-unminified', function() {

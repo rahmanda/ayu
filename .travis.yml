@@ -1,0 +1,23 @@
+sudo: false
+dist: trusty
+language: node_js
+git:
+  depth: 3
+node_js:
+  - "5"
+  - "7"
+before_install:
+  - mkdir public
+install:
+  - npm install
+before_script:
+  - npm install -g gulp-cli
+  - npm install -g bower
+  - bower install
+script:
+  - gulp build
+cache:
+  directories:
+    - node_modules
+    - bower_components
+
