@@ -8,10 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rahmanda/lightning.git"
+    "url": "git+https://github.com/rahmanda/ayu.git"
   },
   "keywords": [
-    "scaffolding"
+    "bootstrap",
+    "css",
+    "scss",
+    "UI",
+    "user interface"
   ],
   "author": "Rahmanda Wibowo <rahmandawibowo@gmail.com>",
   "license": "MIT",
