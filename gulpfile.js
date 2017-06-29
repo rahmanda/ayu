@@ -83,6 +83,7 @@ gulp.task('sass-unminified', function() {
     .pipe(cssnano())
     .pipe(rename(BUILD_NAME.css.unminified))
     .pipe(gulp.dest(PATH.sass.dist))
+    .pipe(gulp.dest(PATH.demo.dist))
     .pipe(browserSync.stream());
 });
 
@@ -94,7 +95,8 @@ gulp.task('sass-minified', function() {
     }))
     .pipe(autoprefixer())
     .pipe(rename(BUILD_NAME.css.minified))
-    .pipe(gulp.dest(PATH.sass.dist));
+    .pipe(gulp.dest(PATH.sass.dist))
+    .pipe(gulp.dest(PATH.demo.dist));
 });
 
 // Compile all js files into one file
@@ -151,7 +153,7 @@ gulp.task('static-watch', ['static'], function(done) {
 // Create static website server
 // need to be executed separately from main task
 gulp.task('server', serve({
-  root: [PREFIX_PATH.public, PREFIX_PATH.dist],
+  root: [PREFIX_PATH.public],
   port: 8000
 }));
 
