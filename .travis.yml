@@ -14,8 +14,10 @@ before_script:
   - npm install -g gulp-cli
   - npm install -g bower
   - bower install
+  - gem install percy-cli
 script:
   - gulp build
+  - percy snapshot public/
 cache:
   directories:
     - node_modules
