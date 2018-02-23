@@ -138,10 +138,12 @@ $_gridle-packages : (
 	)
 );
 
+// scss-lint:disable NameFormat
 @include gridle_setup($gridle-setup);
 @include gridle_register_state(mobile, $gridle-breakpoint-mobile);
 @include gridle_register_state(tablet, $gridle-breakpoint-tablet);
 @include gridle_generate_classes;
+// scss-lint:enable NameFormat
 
 .container {
     max-width: $theme-max-breakpoint;

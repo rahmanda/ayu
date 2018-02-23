@@ -10,6 +10,7 @@
 // 1. Correct the line height in all browsers.
 // 2. Prevent adjustments of font size after orientation changes in
 //    IE on Windows Phone and in iOS.
+// scss-lint:disable all
 
 // Document
 
@@ -263,7 +264,7 @@ button:-moz-focusring,
 fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+    padding: .35em .625em .75em;
 }
 
 // 1. Correct the text wrapping in Edge and IE.
@@ -371,3 +372,4 @@ template {
 [hidden] {
     display: none;
 }
+// scss-lint:enable all
