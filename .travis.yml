@@ -4,20 +4,22 @@ language: node_js
 git:
   depth: 3
 node_js:
-  - "5"
-  - "7"
-before_install:
-  - mkdir public
+  - "8"
 install:
-  - npm install
-before_script:
   - npm install -g gulp-cli
-  - npm install -g bower
-  - bower install
-script:
-  - gulp build
+  - npm install
 cache:
   directories:
+    - ~/.npm
     - node_modules
-    - bower_components
-
+jobs:
+  include:
+    - stage: test
+      script: gulp build
+    - stage: publish
+      script:
+        - cp package.json dist
+        - cd dist && npm publish
+      on:
+        tags: true
+        condition: $TRAVIS_TAG ~= /^v(\d+\.)?(\d+\.)?(\*|\d+)$/
