@@ -2,10 +2,7 @@
   "name": "ayu-css",
   "version": "0.2.5",
   "description": "Another css bootstrap for web UI, powered by Gridle and Ionicons",
-  "main": "src/ayu.scss",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "ayu.min.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rahmanda/ayu.git"
@@ -23,6 +20,9 @@
     "url": "https://github.com/rahmanda/ayu/issues"
   },
   "homepage": "https://github.com/rahmanda/ayu#readme",
+  "peerDependencies": {
+    "ionicons": "^2.0.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "browserify": "^13.0.1",
@@ -42,5 +42,8 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "yargs": "^6.3.0"
+  },
+  "dependencies": {
+    "gridle": "^2.0.48"
   }
 }

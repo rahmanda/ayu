@@ -2,7 +2,7 @@
 // Grid Settings
 // ==============================================================
 
-@import "gridle/gridle";
+@import "node_modules/gridle/sass/gridle/_gridle";
 
 $gridle-setup: (
     context: $theme-grid-context,

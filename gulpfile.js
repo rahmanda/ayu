@@ -20,8 +20,8 @@ var SERVER   = "http://localhost:8000";
 var PREFIX_PATH = {
   src: 'src',
   dist: 'dist',
-  demo: 'demo',
-  public: 'public'
+  demo: 'src/docs',
+  public: 'docs'
 };
 var PATH = {
   demo    : {
@@ -75,10 +75,8 @@ gulp.task('build', ['sass-unminified', 'sass-minified', 'browserify', 'pug', 'de
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass-unminified', function() {
-  return gulp.src(PATH.sass.src)
-    .pipe(sass({
-      includePaths: ['bower_components/gridle/sass']
-    }))
+  return gulp.src(PATH.sass.entry)
+    .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(rename(BUILD_NAME.css.unminified))
@@ -89,10 +87,8 @@ gulp.task('sass-unminified', function() {
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass-minified', function() {
-  return gulp.src(PATH.sass.src)
-    .pipe(sass({
-      includePaths: ['bower_components/gridle/sass']
-    }))
+  return gulp.src(PATH.sass.entry)
+    .pipe(sass())
     .pipe(autoprefixer())
     .pipe(rename(BUILD_NAME.css.minified))
     .pipe(gulp.dest(PATH.sass.dist))
@@ -130,9 +126,7 @@ gulp.task('pug-watch', ['pug'], function(done) {
 // Minify and clone icon css
 gulp.task('demo', function() {
   return gulp.src(PATH.demo.entry)
-    .pipe(sass({
-      includePaths: ['bower_components/Ionicons/scss']
-    }))
+    .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(gulp.dest(PATH.demo.dist))
