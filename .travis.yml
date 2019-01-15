@@ -28,5 +28,5 @@ jobs:
         - cp package.json dist
         - cd dist && npm publish
       on:
-        tags: true
-        condition: $TRAVIS_BRANCH =~ /^v(\d+\.)?(\d+\.)?(\*|\d+)$/
+        all_branches: true
+        condition: $TRAVIS_TAG =~ /^v(\d+\.)?(\d+\.)?(\*|\d+)$/
