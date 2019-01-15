@@ -1,6 +1,9 @@
 sudo: false
 dist: trusty
 language: node_js
+stages:
+  - test
+  - publish
 git:
   depth: 3
 node_js:
@@ -19,8 +22,10 @@ jobs:
       script: gulp build
     - stage: publish
       script:
+        - gulp build
+        - cp .npmrc dist
         - cp package.json dist
         - cd dist && npm publish
       on:
         tags: true
-        condition: $TRAVIS_TAG ~= /^v(\d+\.)?(\d+\.)?(\*|\d+)$/
+      if: $TRAVIS_TAG ~= /^v(\d+\.)?(\d+\.)?(\*|\d+)$/
