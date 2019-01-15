@@ -20,11 +20,3 @@ jobs:
   include:
     - stage: test
       script: gulp build
-    - stage: publish
-      script:
-        - gulp build
-        - cp readme.md dist
-        - cp .npmrc dist
-        - cp package.json dist
-        - cd dist && npm publish
-      if: $TRAVIS_BRANCH ~= /^v(\d+\.)?(\d+\.)?(\*|\d+)$/
