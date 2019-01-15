@@ -3,7 +3,8 @@ dist: trusty
 language: node_js
 stages:
   - test
-  - publish
+  - name: publish
+    if: $TRAVIS_TAG ~= /^v(\d+\.)?(\d+\.)?(\*|\d+)$/
 git:
   depth: 3
 node_js:
@@ -29,4 +30,3 @@ jobs:
         - cd dist && npm publish
       on:
         tags: true
-      if: $TRAVIS_TAG ~= /^v(\d+\.)?(\d+\.)?(\*|\d+)$/
