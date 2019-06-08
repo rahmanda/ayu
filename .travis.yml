@@ -27,4 +27,5 @@ jobs:
         - cp readme.md dist
         - cp .npmrc dist
         - cp package.json dist
+        - cp -R src dist
         - cd dist && npm publish
